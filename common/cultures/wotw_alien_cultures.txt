@@ -1,0 +1,21 @@
+﻿wotw_nebulons_culture={
+	color= hsv{ 0.0 0.47 0.70 }
+	religion = atheist
+	traits = { wotw_nebulons_heritage wotw_nebulons_language }
+	male_common_first_names={
+		Glarb Glerb Glirb Glorb Glurb Glyrb Gla_rb Glo_rb Glu_rb
+	}
+	female_common_first_names = {
+		Glabba Glebba Glibba Globba Glubba Glybba Gla_bba Glo_bba Glu_bba
+	}	
+	noble_last_names = {
+		Glagg-Cligg Glegg-Cligg Gligg-Cligg Glogg-Cligg Glugg-Cligg Glygg-Cligg Gla_gg-Cligg Glo_gg-Cligg Glu_gg-Cligg
+	}
+	common_last_names={
+		Grabb Grebb Gribb Grobb Grubb Grybb Gra_bb Gro_bb Gru_bb
+	}
+	graphics = east_asian
+	ethnicities = {
+		1 = caucasian
+	}
+}

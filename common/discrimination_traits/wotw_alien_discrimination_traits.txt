@@ -1,0 +1,6 @@
+﻿wotw_nebulons_heritage = {
+	heritage = yes
+}
+
+wotw_nebulons_language = {
+}
