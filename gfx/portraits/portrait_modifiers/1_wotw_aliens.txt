@@ -1,4 +1,4 @@
-﻿aliens_aliens = {
+﻿wotw_aliens = {
     usage = game
     selection_behavior = weighted_random
 
