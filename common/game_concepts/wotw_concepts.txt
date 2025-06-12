@@ -1,3 +1,3 @@
 ﻿concept_alien_menace = {
-    texture = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	texture = "gfx/interface/icons/event_icons/event_newspaper.dds"
 }

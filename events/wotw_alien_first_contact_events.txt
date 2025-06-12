@@ -1,92 +1,232 @@
 ﻿namespace = wotw_first_contact
 
 wotw_first_contact.1 = {
-    type = country_event
-    placement = scope:wotw_sighting_state
+	type = country_event
+	placement = scope:wotw_sighting_state
 
-    title = wotw_first_contact.1.t
-    desc = wotw_first_contact.1.d
-    flavor = wotw_first_contact.1.f
+	title = wotw_first_contact.1.t
+	desc = wotw_first_contact.1.d
+	flavor = wotw_first_contact.1.f
 
-    event_image = {
-        video = "middleeast_courtroom_upheaval"
-    }
+	event_image = {
+		video = "middleeast_courtroom_upheaval"
+	}
 
-    icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 
-    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-    duration = 3
+	duration = 3
 
-    dlc = dlc_wotw
+	dlc = dlc_wotw
 
-    trigger = {
-        # triggered by je_wotw_first_contact
-    }
+	trigger = {
+		# triggered by je_wotw_first_contact
+	}
 
-    immediate = {
-        random_scope_state = {
-            save_scope_as = wotw_sighting_state
-        }
-    }
+	immediate = {
+		random_scope_state = {
+			save_scope_as = wotw_sighting_state
+		}
+	}
 
-    option = {
-        name = wotw_first_contact.1.a
-        default_option = yes
-    }
+	option = {
+		name = wotw_first_contact.1.a
+		default_option = yes
+		custom_tooltip = wotw_no_effects
+	}
 
-    option = {
-        name = wotw_first_contact.1.b
-    }
+	option = {
+		name = wotw_first_contact.1.b
+		scope:wotw_sighting_state = {
+			add_radicals_in_state = {
+				pop_type = peasants
+				value = small_radicals
+			}
+		}
+	}
 
-    option = {
-        name = wotw_first_contact.1.c
-    }
+	option = {
+		name = wotw_first_contact.1.c
+		add_modifier = {
+			name = modifier_wotw_investigating_sightings
+			months = 24
+		}
+		scope:wotw_sighting_state = {
+			add_loyalists_in_state = {
+				pop_type = peasants
+				value = small_radicals
+			}
+		}
+		wotw_add_awareness_effect = {
+			AMOUNT = 1
+		}
+	}
 
 }
 
-temp_event = { #
-    type = country_event
-    placement = root
+wotw_first_contact.2 = {
+	type = country_event
+	placement = scope:wotw_sighting_state
 
-    title = temp_event.t
-    desc = temp_event.d
-    flavor = temp_event.f
+	title = wotw_first_contact.2.t
+	desc = wotw_first_contact.2.d
+	flavor = wotw_first_contact.2.f
 
-    event_image = {
-        video = "media_alias"
-    }
+	event_image = {
+		video = "europenorthamerica_russian_serfs"
+	}
 
-    icon = "gfx/interface/icons/event_icons/event_temp.dds"
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 
-    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-    duration = 3
+	duration = 3
 
-    dlc = dlc_wotw
+	dlc = dlc_wotw
 
-    trigger = {
-    }
+	trigger = {
+		any_scope_state = {
+			total_urbanization <= 50
+		}
+	}
 
-    cancellation_trigger = {
-    }
+	cooldown = {
+		years = 2
+	}
 
-    cooldown = {
-    }
+	immediate = {
+		random_scope_state = {
+			limit = {
+				total_urbanization <= 50
+			}
+			save_scope_as = wotw_sighting_state
+		}
+	}
 
-    immediate = {
-    }
+	option = {
+		name = wotw_first_contact.2.a
+		default_option = yes
+		scope:wotw_sighting_state = {
+			add_radicals_in_state = {
+				pop_type = peasants
+				value = small_radicals
+			}
+			add_modifier = {
+				name = modifier_wotw_mysterious_crop_circles
+				months = 12
+			}
+		}
+		wotw_add_awareness_effect = {
+			AMOUNT = 1
+		}
+	}
 
-    option = {
-        name = temp_event.a
-        default_option = yes
-    }
+	option = {
+		name = wotw_first_contact.2.b
+		trigger = {
+			OR = {
+				has_law = law_type:law_local_police
+				has_law = law_type:law_dedicated_police
+				has_law = law_type:law_militarized_police
+			}
+		}
+		show_as_unavailable = {
+			always = yes
+		}
+		highlighted_option = yes
+		scope:wotw_sighting_state = {
+			add_radicals_in_state = {
+				pop_type = peasants
+				value = small_radicals
+			}
+			add_modifier = {
+				name = modifier_wotw_mysterious_crop_circles
+				months = 12
+			}
+		}
+		wotw_add_awareness_effect = {
+			AMOUNT = 2
+		}
+	}
 
-    option = {
-        name = temp_event.b
-    }
+}
 
-    after = {
-    }
+wotw_first_contact.3 = {
+	type = country_event
+	placement = root
+
+	title = wotw_first_contact.3.t
+	desc = wotw_first_contact.3.d
+	flavor = wotw_first_contact.3.f
+
+	event_image = {
+		video = "africa_construction_colony"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	duration = 3
+
+	dlc = dlc_wotw
+
+	trigger = {
+	}
+
+	cooldown = {
+		years = 2
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = wotw_first_contact.3.a
+		default_option = yes
+		wotw_add_awareness_effect = {
+			AMOUNT = 1
+		}
+	}
+
+	option = {
+		name = wotw_first_contact.3.b
+		add_modifier = {
+			name = modifier_wotw_interviewed_ufo_witnesses
+			months = 60
+			is_decaying = yes
+		}
+		wotw_add_awareness_effect = {
+			AMOUNT = 2
+		}
+	}
+
+	option = {
+		name = wotw_first_contact.3.c
+		trigger = {
+			OR = {
+				has_law = law_type:law_censorship
+				has_law = law_type:law_outlawed_dissent
+			}
+		}
+		show_as_unavailable = {
+			always = yes
+		}
+		highlighted_option = yes
+		scope:wotw_sighting_state = {
+			add_radicals_in_state = {
+				pop_type = peasants
+				value = medium_radicals
+			}
+			add_modifier = {
+				name = modifier_wotw_suppressing_rumors
+				months = 60
+			}
+		}
+		wotw_remove_awareness_effect = {
+			AMOUNT = 1
+		}
+	}
 
 }

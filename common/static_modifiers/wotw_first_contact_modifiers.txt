@@ -1,0 +1,19 @@
+﻿modifier_wotw_investigating_sightings = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
+	country_bureaucracy_add = -10
+	country_legitimacy_base_add = -5
+}
+
+modifier_wotw_mysterious_crop_circles = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	building_group_bg_agriculture_throughput_add = -0.05
+}
+
+modifier_wotw_interviewed_ufo_witnesses = {
+	country_authority_add = -0.05
+}
+
+modifier_wotw_suppressing_rumors = {
+	state_radicals_and_loyalists_from_sol_change_mult = 0.10
+	state_turmoil_effects_mult = 0.10
+}

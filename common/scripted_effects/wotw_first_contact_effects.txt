@@ -1,0 +1,19 @@
+﻿wotw_add_awareness_effect = {
+	custom_tooltip = wotw_add_awareness
+	change_variable = {
+		name = wotw_local_aliens_var
+		add = $AMOUNT$
+	}
+}
+
+wotw_remove_awareness_effect = {
+	custom_tooltip = wotw_remove_awareness
+	change_variable = {
+		name = wotw_local_aliens_var
+		subtract = $AMOUNT$
+	}
+}
+
+wotw_cleanup_first_contact_effect = {
+
+}

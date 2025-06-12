@@ -31,26 +31,89 @@ je_wotw_first_contact = {
 		}
 	}
 
-	modifiers_while_active = {
-	}
-
 	complete = {
-		custom_tooltip = je_wotw_first_contact_complete
+		custom_tooltip = {
+			text = je_wotw_first_contact_complete
+			var:wotw_local_aliens_var >= 10
+		}
 	}
 
 	on_complete = {
+		wotw_cleanup_first_contact_effect = yes
 	}
 
 	invalid = {
-		custom_tooltip = je_wotw_aliens_invalid
+		custom_tooltip = {
+			text = je_wotw_aliens_invalid
+			has_global_variable = wotw_aliens_whacked
+		}
 	}
 
 	on_invalid = {
+		wotw_cleanup_first_contact_effect = yes
+	}
+
+	on_monthly_pulse = {
+		random_events = {
+			chance_of_no_event = 95
+			5 = wotw_first_contact.2
+		}
 	}
 
 	status_desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = je_wotw_first_contact_status_1
+				trigger = {
+					has_variable = wotw_local_aliens_var
+					var:wotw_local_aliens_var < 3
+				}
+			}
+			triggered_desc = {
+				desc = je_wotw_first_contact_status_2
+				trigger = {
+					has_variable = wotw_local_aliens_var
+					var:wotw_local_aliens_var < 6
+				}
+			}
+			triggered_desc = {
+				desc = je_wotw_first_contact_status_3
+				trigger = {
+					has_variable = wotw_local_aliens_var
+					var:wotw_local_aliens_var < 9
+				}
+			}
+			triggered_desc = {
+				desc = je_wotw_first_contact_status_4
+				trigger = {
+					has_variable = wotw_local_aliens_var
+					var:wotw_local_aliens_var >= 9
+				}
+			}
+		}
 	}
 
-	weight = 100
+	weight = 1000
 
+}
+
+je_wotw_the_alien_menace = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	group = je_group_crises
+
+	should_be_pinned_by_default = yes
+
+	is_shown_when_inactive = {
+		has_variable = wotw_local_aliens_var
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = je_wotw_first_contact_complete
+			var:wotw_local_aliens_var >= 10
+		}
+	}
+
+	weight = 1000
 }

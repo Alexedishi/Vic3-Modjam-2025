@@ -1,0 +1,33 @@
+﻿l_english:
+ # Journal Entries
+ je_wotw_first_contact: "Encounters of a Different Kind"
+ je_wotw_first_contact_reason: "Inexplicable happens and paranormal sightings have been reported in the hinterlands of [ROOT.GetCountry.GetName]. While the peasantry are often redisposed to superstition, the repeated and consistent nature of these reports have piqued the interest of senior officials in [ROOT.GetCountry.GetCapital.GetCityHubName]. Only time will tell these are mere rumors and hysterics."
+ je_wotw_first_contact_complete: "[ROOT.GetCountry.GetNameNoFlag] has identified the [concept_alien_menace]"
+ je_wotw_aliens_invalid: "The [concept_alien_menace] has been resolved"
+ je_wotw_first_contact_status_1: "[ROOT.GetCountry.GetNameNoFlag] is unaware of the [concept_alien_menace]."
+ je_wotw_first_contact_status_2: "[ROOT.GetCountry.GetNameNoFlag] is suspicious of an [concept_alien_menace]."
+ je_wotw_first_contact_status_3: "[ROOT.GetCountry.GetNameNoFlag] is searching for the [concept_alien_menace]."
+ je_wotw_first_contact_status_4: "[ROOT.GetCountry.GetNameNoFlag] is convinced of an [concept_alien_menace]."
+
+ # events
+ wotw_first_contact.1.t: "A Ridiculous Sighting"
+ wotw_first_contact.1.d: ""
+ wotw_first_contact.1.f: ""
+ wotw_first_contact.1.a: "Why do we care for this man's demented ravings?"
+ wotw_first_contact.1.b: "Have this lunatic committed."
+ wotw_first_contact.1.c: "Follow-up with a formal investigation."
+ wotw_first_contact.2.t: "Crop Circles"
+ wotw_first_contact.2.d: ""
+ wotw_first_contact.2.f: ""
+ wotw_first_contact.2.a: "Just what are they babbling on about?"
+ wotw_first_contact.2.b: "Have local authorities check it out."
+ wotw_first_contact.3.t: "Streaks in the Night"
+ wotw_first_contact.3.d: ""
+ wotw_first_contact.3.f: ""
+ wotw_first_contact.3.a: "Just what are they babbling on about?"
+ wotw_first_contact.3.b: "Have local authorities conduct interviews."
+ wotw_first_contact.3.c: "Nip this in the bud. We don't want any hysterics."
+
+ # tooltips
+ wotw_add_awareness: ""
+ wotw_remove_awareness: ""
