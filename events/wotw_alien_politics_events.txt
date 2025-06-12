@@ -1,0 +1,82 @@
+namespace = wotw_politics
+
+wotw_politics.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = wotw_politics.1.t
+	desc = wotw_politics.1.d
+	flavor = wotw_politics.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	# Let it happen
+	option = {
+		name = wotw_politics.1.a
+		add_modifier = {
+			name = wotw_alien_smodifier_giant_cacophony
+			days = 3650 # 10 years
+			is_decaying = yes
+		}
+		show_as_tooltip = {
+			create_political_movement = {
+				type = wotw_movement_alien_thinkers
+			}
+			create_political_movement = {
+				type = wotw_movement_alien_warlikes
+			}
+			create_political_movement = {
+				type = wotw_movement_alien_talkers
+			}
+		}
+	}
+
+	option = {
+		name = wotw_politics.1.b
+		trigger = {
+			NOT = {
+				has_law = law_type:law_protected_speech
+			}
+		}
+		show_as_unavailable = {
+			always = yes
+		}
+		add_modifier = {
+			name = wotw_alien_smodifier_giant_cacophony
+			multiplier = 0.5 # 50% of the original modifier
+			days = 3650 # 10 years
+			is_decaying = yes
+		}
+		show_as_tooltip = {
+			create_political_movement = {
+				type = wotw_movement_alien_thinkers
+			}
+			create_political_movement = {
+				type = wotw_movement_alien_warlikes
+			}
+			create_political_movement = {
+				type = wotw_movement_alien_talkers
+			}
+		}
+	}
+
+	after = {
+		create_political_movement = {
+			type = wotw_movement_alien_thinkers
+		}
+		create_political_movement = {
+			type = wotw_movement_alien_warlikes
+		}
+		create_political_movement = {
+			type = wotw_movement_alien_talkers
+		}
+	}
+}

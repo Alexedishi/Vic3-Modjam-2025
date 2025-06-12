@@ -1,0 +1,8 @@
+
+# Increases attraction to alien political movements
+
+wotw_alien_modifier_alien_movement_support_mult = {
+	decimals=0
+	color=neutral
+	percent=yes
+}

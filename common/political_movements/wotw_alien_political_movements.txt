@@ -1,0 +1,436 @@
+wotw_movement_alien_thinkers = {
+	category = movement_category_ideological
+
+	ideology = wotw_ideology_alien_thinker	
+
+	character_ideologies = {
+		wotw_ideology_alien_thinker
+	}
+	
+	disband_trigger = {
+		# TODO
+	}
+	on_disbanded = {}
+	
+	creation_trigger = {
+	}
+
+	creation_weight = {
+		# Created by event
+		value = 0
+	}	
+
+	on_created = {
+		add_movement_enthusiasm_modifier = yes
+	}
+	
+	character_support_trigger = {
+		has_ideology = ideology:wotw_ideology_alien_thinker
+	}
+	character_support_weight = {
+		# Every character with the "alien thinker" ideology supports this movement
+		value = 9999
+	}
+	
+	pop_support_factors = {
+		movement_support_high_urbanization
+		movement_support_high_literacy	
+		movement_support_academics
+		movement_support_engineers
+		movement_support_bureaucrats
+		movement_support_clerks
+	}	
+
+	pop_support_weight = {
+		add = {
+			desc = "URBAN_STATE"
+			value = 40
+			multiply = state.state_urbanization_rate
+		}
+
+		if = {
+			limit = {
+				is_pop_type = academics
+			}
+			add = {
+				desc = "POP_ACADEMICS"
+				value = 100
+			}
+		}
+		else_if = {
+			limit = {
+				is_pop_type = engineers
+			}
+			add = {
+				desc = "POP_ENGINEERS"
+				value = 80
+			}
+		}
+		else_if = {
+			limit = {
+				is_pop_type = bureaucrats
+			}
+			add = {
+				desc = "POP_BUREAUCRATS"
+				value = 60
+			}
+		}
+		else_if = {
+			limit = {
+				is_pop_type = clerks
+			}
+			add = {
+				desc = "POP_CLERKS"
+				value = 50
+			}
+		}
+
+		multiply = {
+			desc = "ALIEN_GIANT_CACOPHONY"
+			value = 1
+			add = owner.modifier:wotw_alien_modifier_alien_movement_support_mult
+		}
+
+		multiply = { # Illiterate pops participate at 1/10 the rate of fully literate pops
+			desc = "POP_LITERACY"
+
+			value = literacy_rate
+			add = 1
+
+			multiply = literacy_rate
+			subtract = 0.25
+			min = 0
+		}
+	}
+
+	revolution = {
+		possible = {
+			always = no
+		}
+		
+		weight = {
+			value = 0
+		}
+	
+		state_weight = {
+			value = 0
+		}
+	}
+
+	secession = {
+		possible = {
+			always = no
+		}	
+	
+		weight = {
+			value = 0
+		}	
+
+		state_weight = {
+			value = 0	
+		}		
+	}	
+	
+	additional_radicalism_factors = {
+
+	}
+}
+
+wotw_movement_alien_warlikes = {
+	category = movement_category_ideological
+
+	ideology = wotw_ideology_alien_warlike
+
+	character_ideologies = {
+		wotw_ideology_alien_warlike
+	}
+	
+	disband_trigger = {
+		# TODO
+	}
+	on_disbanded = {}
+	
+	creation_trigger = {
+	}
+
+	creation_weight = {
+		# Created by event
+		value = 0
+	}	
+
+	on_created = {
+		add_movement_enthusiasm_modifier = yes
+	}
+	
+	character_support_trigger = {
+		has_ideology = ideology:wotw_ideology_alien_warlike
+	}
+	character_support_weight = {
+		# Every character with the "alien warlike" ideology supports this movement
+		value = 9999
+	}
+	
+	pop_support_factors = {
+		movement_support_low_literacy
+		movement_support_soldiers
+		movement_support_officers
+		movement_support_peasants
+		movement_support_laborers
+	}	
+
+	pop_support_weight = {
+		add = {
+			value = 5
+			desc = "POP_BASE_SUPPORT"
+		}
+
+
+		if = {
+			limit = {
+				is_pop_type = soldiers
+			}
+			add = {
+				desc = "POP_SOLDIERS"
+				value = 100
+			}
+		}
+		if = {
+			limit = {
+				is_pop_type = officers
+			}
+			add = {
+				desc = "POP_OFFICERS"
+				value = 100
+			}
+		}
+		else_if = {
+			limit = {
+				is_pop_type = peasants
+			}
+			add = {
+				desc = "POP_PEASANT"
+				value = 20
+			}
+		}
+		else_if = {
+			limit = {
+				is_pop_type = laborers
+			}
+			add = {
+				desc = "POP_LABORERS"
+				value = 10
+			}
+		}
+
+		multiply = {
+			desc = "ALIEN_GIANT_CACOPHONY"
+			value = 1
+			add = owner.modifier:wotw_alien_modifier_alien_movement_support_mult
+		}
+
+		# Literacy doesn't matter too much for supporting the 'warlikes'
+		multiply = { # Illiterate pops participate at 1/10 the rate of fully literate pops
+			desc = "POP_LITERACY"
+
+			value = 1
+			subtract = literacy_rate
+
+			multiply = {
+				value = 1
+				subtract = literacy_rate
+			}
+
+			min = 0
+		}
+	}
+
+	revolution = {
+		possible = {
+			always = no
+		}
+		
+		weight = {
+			value = 0
+		}
+	
+		state_weight = {
+			value = 0
+		}
+	}
+
+	secession = {
+		possible = {
+			always = no
+		}	
+	
+		weight = {
+			value = 0
+		}	
+
+		state_weight = {
+			value = 0	
+		}		
+	}	
+	
+	additional_radicalism_factors = {
+
+	}
+}
+
+wotw_movement_alien_talkers = {
+	category = movement_category_ideological
+
+	ideology = wotw_ideology_alien_talker
+
+	character_ideologies = {
+		wotw_ideology_alien_talker
+	}
+	
+	disband_trigger = {
+		# TODO
+	}
+	on_disbanded = {}
+	
+	creation_trigger = {
+	}
+
+	creation_weight = {
+		# Created by event
+		value = 0
+	}	
+
+	on_created = {
+		add_movement_enthusiasm_modifier = yes
+	}
+	
+	character_support_trigger = {
+		has_ideology = ideology:wotw_ideology_alien_talker
+	}
+	character_support_weight = {
+		# Every character with the "alien talker" ideology supports this movement
+		value = 9999
+	}
+	
+	pop_support_factors = {
+		movement_support_high_literacy	
+		movement_support_aristocrats
+		movement_support_capitalists
+		movement_support_bureaucrats
+	}	
+
+	pop_support_trigger = {
+		NOR = {
+			is_pop_type = soldiers
+			is_pop_type = officers
+		}
+	}
+
+	pop_support_weight = {
+		add = {
+			value = 60
+			if = {
+				limit = {
+					OR = {
+						is_pop_type = peasants
+						is_pop_type = laborers
+						is_pop_type = clerks
+					}
+				}
+				subtract = 40
+			}
+			desc = "POP_BASE_SUPPORT"
+		}
+
+
+
+
+		if = {
+			limit = {
+				is_pop_type = capitalists
+			}
+			add = {
+				desc = "POP_CAPITALISTS"
+				value = 100
+			}
+		}
+		if = {
+			limit = {
+				is_pop_type = aristocrats
+			}
+			add = {
+				desc = "POP_ARISTOCRATS"
+				value = 100
+			}
+		}
+		else_if = {
+			limit = {
+				is_pop_type = bureaucrats
+			}
+			add = {
+				desc = "POP_BUREAUCRATS"
+				value = 40
+			}
+		}
+
+		if = {
+			limit = {
+				standard_of_living > state.average_expected_sol
+			}
+			add = {
+				desc = "IS_ABOVE_EXPECTED_SOL"
+				value = standard_of_living
+				subtract = state.average_expected_sol
+				multiply = 5
+			}
+		}
+
+
+		multiply = {
+			desc = "ALIEN_GIANT_CACOPHONY"
+			value = 1
+			add = owner.modifier:wotw_alien_modifier_alien_movement_support_mult
+		}
+
+		# Literacy doesn't matter too much for supporting the 'warlikes'
+		multiply = { # Illiterate pops participate at 1/10 the rate of fully literate pops
+			desc = "POP_LITERACY"
+
+			value = literacy_rate
+
+			multiply = literacy_rate
+			min = 0
+		}
+	}
+
+	revolution = {
+		possible = {
+			always = no
+		}
+		
+		weight = {
+			value = 0
+		}
+	
+		state_weight = {
+			value = 0
+		}
+	}
+
+	secession = {
+		possible = {
+			always = no
+		}	
+	
+		weight = {
+			value = 0
+		}	
+
+		state_weight = {
+			value = 0	
+		}		
+	}	
+	
+	additional_radicalism_factors = {
+
+	}
+}

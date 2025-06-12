@@ -1,0 +1,17 @@
+﻿l_english:
+  ALIEN_GIANT_CACOPHONY: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],ALIEN_GIANT_CACOPHONY_tt Cacophony of Voices#!"
+  ALIEN_GIANT_CACOPHONY_tt: "A cacophony of voices in society about the how to deal with the presence of aliens in our society. Some want to integrate them, others want to expel them, and some even want to worship them. The cacophony is so loud that it is hard to hear any other voices."
+  wotw_alien_modifier_alien_movement_support_mult: "Alien-Related Movements Support Multiplier"
+  wotw_alien_modifier_alien_movement_support_mult_desc: "This modifier increases the support for alien-related movements."
+
+# Thinkers
+  wotw_movement_alien_thinkers: "Thinkers Movement"
+  wotw_movement_alien_thinkers_name: "Thinkers"
+
+# Warlikes
+  wotw_movement_alien_warlikes: "Warlikes Movement"
+  wotw_movement_alien_warlikes_name: "Warlikes"
+
+# Talkers
+  wotw_movement_alien_talkers: "Talkers Movement"
+  wotw_movement_alien_talkers_name: "Talkers"
