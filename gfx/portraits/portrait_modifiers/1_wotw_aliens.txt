@@ -326,12 +326,13 @@
             modifier = {
                 add = 100
 
-                #Add your Triggers here
-                scope:character ?= {
-                    has_culture = cu:wotw_nebulons_culture
-                }
-                scope:pop ?= {
-                    has_pop_culture = wotw_nebulons_culture
+                OR = {
+                    scope:character ?= {
+                        has_culture = cu:wotw_nebulons_culture
+                    }
+                    scope:pop ?= {
+                        has_pop_culture = wotw_nebulons_culture
+                    }
                 }
             }
         }
