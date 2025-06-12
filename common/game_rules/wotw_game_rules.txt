@@ -1,0 +1,9 @@
+﻿wotw_aliens_delay = {
+    default = wotw_aliens_normal_delay
+    wotw_aliens_normal_delay = {
+    }
+    wotw_aliens_short_delay = {
+    }
+    wotw_aliens_no_delay = {
+    }
+}

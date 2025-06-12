@@ -1,21 +1,53 @@
 ﻿GLOBAL = {
 	if = {
 		limit = {
-			NOT = { has_game_rule = wotw_no_aliens_delay }
+			has_game_rule = wotw_aliens_normal_delay
 		}
 		set_global_variable = {
 			name = wotw_first_contact_delay
 			years = { 5 10 }
 		}
 	}
+	else_if = {
+		limit = {
+			has_game_rule = wotw_aliens_short_delay
+		}
+		set_global_variable = {
+			name = wotw_first_contact_delay
+			years = { 2 5 }
+		}
+	}
+	else_if = {
+		limit = {
+			has_game_rule = wotw_aliens_no_delay
+		}
+		set_global_variable = {
+			name = wotw_first_contact_delay
+			days = { 15 45 }
+		}
+	}
 	set_global_variable = {
 		name = wotw_global_aliens_var
 		value = 0
 	}
-	every_country = {
-		set_variable = {
-			name = wotw_local_aliens_var
-			value = 0
+	random_list = {
+		1 = {
+			set_global_variable = {
+				name = wotw_alien_invasion_type
+				value = 1
+			}
+		}
+		1 = {
+			set_global_variable = {
+				name = wotw_alien_invasion_type
+				value = 2
+			}
+		}
+		1 = {
+			set_global_variable = {
+				name = wotw_alien_invasion_type
+				value = 3
+			}
 		}
 	}
 }
