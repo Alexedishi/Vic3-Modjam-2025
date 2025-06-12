@@ -4,3 +4,13 @@ wotw_alien_smodifier_giant_cacophony = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
     wotw_alien_modifier_alien_movement_support_mult = 5
 }
+
+wotw_nebulons_culture_standard_of_living_modifier_positive = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+	state_wotw_nebulons_culture_standard_of_living_add = 1
+}
+
+wotw_nebulons_culture_standard_of_living_modifier_negative = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+	state_wotw_nebulons_culture_standard_of_living_add = 1
+}
