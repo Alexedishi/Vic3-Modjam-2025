@@ -1,8 +1,8 @@
-﻿#########################
-# AGASSIZ TECHNOLOGIES  #
-#########################
+﻿###############################
+# WORW MILITARY TECHNOLOGIES  #
+###############################
 
-#by Lord R and Marco Dandolo
+#by Lord R
 
 ##########################
 
