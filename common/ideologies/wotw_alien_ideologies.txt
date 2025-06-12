@@ -1,0 +1,96 @@
+wotw_ideology_alien_thinker = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_no_ideology.dds"
+	
+	show_in_list = no
+	
+	character_ideology = yes
+	
+	non_interest_group_leader_trigger = {
+		NOT = { has_role = agitator }
+	}
+	
+	interest_group_leader_weight = {
+		value = 50 
+
+		multiply = {
+			desc = "ALIEN_GIANT_CACOPHONY"
+			value = 1
+			add = owner.modifier:wotw_alien_modifier_alien_movement_support_mult
+		}
+	}
+	
+	non_interest_group_leader_weight = {
+		value = 50
+
+		multiply = {
+			desc = "ALIEN_GIANT_CACOPHONY"
+			value = 1
+			add = owner.modifier:wotw_alien_modifier_alien_movement_support_mult
+		}
+	}	
+}
+
+
+wotw_ideology_alien_warlike = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_no_ideology.dds"
+	
+	show_in_list = no
+	
+	character_ideology = yes
+	
+	non_interest_group_leader_trigger = {
+		NOT = { has_role = agitator }
+	}
+	
+	interest_group_leader_weight = {
+		value = 50 
+
+		multiply = {
+			desc = "ALIEN_GIANT_CACOPHONY"
+			value = 1
+			add = owner.modifier:wotw_alien_modifier_alien_movement_support_mult
+		}
+	}
+	
+	non_interest_group_leader_weight = {
+		value = 50
+
+		multiply = {
+			desc = "ALIEN_GIANT_CACOPHONY"
+			value = 1
+			add = owner.modifier:wotw_alien_modifier_alien_movement_support_mult
+		}
+	}	
+}
+
+wotw_ideology_alien_talker = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_no_ideology.dds"
+	
+	show_in_list = no
+	
+	character_ideology = yes
+	
+	non_interest_group_leader_trigger = {
+		NOT = { has_role = agitator }
+	}
+	
+	interest_group_leader_weight = {
+		value = 50 
+
+		multiply = {
+			desc = "ALIEN_GIANT_CACOPHONY"
+			value = 1
+			add = owner.modifier:wotw_alien_modifier_alien_movement_support_mult
+		}
+	}
+	
+	non_interest_group_leader_weight = {
+		value = 50
+
+		multiply = {
+			desc = "ALIEN_GIANT_CACOPHONY"
+			value = 1
+			add = owner.modifier:wotw_alien_modifier_alien_movement_support_mult
+		}
+	}	
+}
