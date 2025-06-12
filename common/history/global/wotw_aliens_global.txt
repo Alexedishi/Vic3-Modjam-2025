@@ -8,4 +8,14 @@
 			years = { 5 10 }
 		}
 	}
+	set_global_variable = {
+		name = wotw_global_aliens_var
+		value = 0
+	}
+	every_country = {
+		set_variable = {
+			name = wotw_local_aliens_var
+			value = 0
+		}
+	}
 }
