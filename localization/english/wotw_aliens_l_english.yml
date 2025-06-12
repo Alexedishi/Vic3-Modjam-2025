@@ -1,2 +1,7 @@
-l_english:
-  dlc_wotw: "War of the Worlds - Victorian Boogaloo"
+﻿l_english:
+  dlc_wotw: "War of the Worlds: Victorian Boogaloo"
+  dlc_wotw_desc: "#TODO Alexedishi Flavor Text"
+
+  # Game Concepts
+  concept_alien_menace: "Alien Menace"
+  concept_alien_menace_desc: "The #bold Alien Menance#! has emerged in the Victoria Era with the arrival of non-human sapients on Earth. Little is known about their origins or intentions, and political leaders fear the outbreak of mass pandemonium should their existence become public."

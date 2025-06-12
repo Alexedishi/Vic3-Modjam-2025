@@ -1,0 +1,11 @@
+﻿GLOBAL = {
+	if = {
+		limit = {
+			NOT = has_game_rule = wotw_no_aliens_delay
+		}
+		set_global_variable = {
+			name = wotw_first_contact_delay
+			years = { 5 10 }
+		}
+	}
+}

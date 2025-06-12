@@ -1,0 +1,7 @@
+﻿l_english:
+ # Journal Entries
+ je_wotw_first_contact: "Encounters of a Different Kind"
+ je_wotw_first_contact_reason: "#TODO Alexedishi Flavor Text"
+ je_wotw_first_contact_complete: "[ROOT.GetCountry.GetNameNoFlag] has identified the [concept_alien_menace]"
+
+ je_wotw_aliens_invalid: "The [concept_alien_menace] has been resolved"

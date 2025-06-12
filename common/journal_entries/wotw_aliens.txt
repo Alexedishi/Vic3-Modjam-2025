@@ -1,1 +1,60 @@
-﻿
+﻿########################################
+# WOTW ALIEN NARRATIVE JOURNAL ENTRIES #
+########################################
+
+je_wotw_first_contact = { #
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	group = je_group_crises
+
+	should_be_pinned_by_default = yes
+
+	is_shown_when_inactive = {
+		NOT = {
+			has_global_variable = wotw_first_contact_delay
+		}
+	}
+
+	possible = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					has_global_variable = wotw_aliens_have_landed
+				}
+			}
+			set_global_variable = {
+				name = wotw_aliens_have_landed
+				value = 1
+			}
+		}
+	}
+
+	modifiers_while_active = {
+	}
+
+	complete = {
+		custom_tooltip = je_wotw_first_contact_complete
+	}
+
+	on_complete = {
+	}
+
+	invalid = {
+		custom_tooltip = je_wotw_aliens_invalid
+	}
+
+	on_invalid = {
+	}
+
+	status_desc = {
+	}
+
+	weight = 100
+
+}
