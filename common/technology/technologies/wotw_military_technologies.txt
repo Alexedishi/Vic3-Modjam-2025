@@ -1,0 +1,64 @@
+﻿#########################
+# AGASSIZ TECHNOLOGIES  #
+#########################
+
+#by Lord R and Marco Dandolo
+
+##########################
+
+#Alien Ray Guns
+wotw_ray_guns_alien_tech = {
+	#Unlocks Alien Shock Troopers
+
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/nationalism.dds"
+	category = military
+	can_research = no
+
+	modifier = {
+		unit_army_offense_mult = 0.5
+		unit_kill_rate_add = 0.5
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+#Basic Ray Guns
+wotw_ray_guns_basic_tech = {
+	#Unlocks Ray Gun Infantry
+
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/nationalism.dds"
+	category = military
+	can_research = no
+
+	modifier = {
+		unit_army_offense_mult = 0.2
+		unit_kill_rate_add = 0.2
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+#Advanced Ray Guns
+wotw_ray_guns_advanced_tech = {
+	#Unlocks Ray Gun Troopers
+
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/nationalism.dds"
+	category = military
+	can_research = no
+
+	modifier = {
+		unit_army_offense_mult = 0.2
+		unit_kill_rate_add = 0.2
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}

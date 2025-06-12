@@ -1,0 +1,24 @@
+﻿#########################
+# AGASSIZ TECHNOLOGIES  #
+#########################
+
+#by Lord R and Marco Dandolo
+
+##########################
+
+#Xeno-Linguistics
+wotw_xeno_linguistics_tech = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/nationalism.dds"
+	category = society
+	can_research = no
+
+	modifier = {
+		country_influence_mult = 0.1
+		country_authority_mult = 0.1
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
