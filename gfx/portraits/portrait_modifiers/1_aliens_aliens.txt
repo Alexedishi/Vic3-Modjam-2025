@@ -1,0 +1,339 @@
+﻿aliens_aliens = {
+    usage = game
+    selection_behavior = weighted_random
+
+    #Green Super Mutants
+    fa_super_mutant_green = {
+        dna_modifiers = {
+
+            ### Head ###
+            #Cheek Fat
+            morph = {
+                mode = modify
+                gene = gene_cheek_fat
+                value = -1
+            }
+            #Cheek Forward
+            morph = {
+                mode = modify
+                gene = gene_cheek_forward
+                value = -0.25
+            }
+            #Cheek Height
+            morph = {
+                mode = modify
+                gene = gene_cheek_height
+                value = 0.25
+            }
+            #Cheek Height
+            morph = {
+                mode = modify
+                gene = gene_cheek_prom
+                value = 0.25
+            }
+            #Cheek Width
+            morph = {
+                mode = modify
+                gene = gene_cheek_width
+                value = -0.25
+            }
+
+            #Chin forward
+            morph = {
+                mode = modify
+                gene = gene_chin_forward
+                value = -0.25
+            }
+            #Chin height
+            morph = {
+                mode = modify
+                gene = gene_chin_height
+                value = 1
+            }
+            #Chin width
+            morph = {
+                mode = modify
+                gene = gene_chin_width
+                value = -0.5
+            }
+
+            #Ear Angle
+            morph = {
+                mode = modify
+                gene = gene_ear_angle
+                value = -1
+            }
+            #Ear Inner Shape
+            morph = {
+                mode = modify
+                gene = gene_ear_inner_shape
+                value = 1
+            }
+            #Ear Lower Bend
+            morph = {
+                mode = modify
+                gene = gene_ear_lower_bend
+                value = -1
+            }
+            #Ear Out
+            morph = {
+                mode = modify
+                gene = gene_ear_out
+                value = 1
+            }
+            #Ear Size
+            morph = {
+                mode = modify
+                gene = gene_ear_size
+                value = -1
+            }
+            #Ear Upper Bend
+            morph = {
+                mode = modify
+                gene = gene_ear_upper_bend
+                value = 1
+            }
+
+            #Eye Angle
+            morph = {
+                mode = modify
+                gene = gene_eye_angle
+                value = 1
+            }
+            #Eye Shut
+            morph = {
+                mode = modify
+                gene = gene_eye_shut
+                value = -1
+            }
+
+            #Forehead Angle
+            morph = {
+                mode = modify
+                gene = gene_forehead_angle
+                value = 1
+            }
+            #Forehead Brow Curve
+            morph = {
+                mode = modify
+                gene = gene_forehead_brow_curve
+                value = 1
+            }
+            #Forehead Roundness
+            morph = {
+                mode = modify
+                gene = gene_forehead_roundness
+                value = 1
+            }
+
+            #Head Height
+            morph = {
+                mode = modify
+                gene = gene_head_height
+                value = 1
+            }
+            #Head Top Height
+            morph = {
+                mode = modify
+                gene = gene_head_top_height
+                value = 1
+            }
+            #Head Top Width
+            morph = {
+                mode = modify
+                gene = gene_head_top_width
+                value = 1
+            }
+
+            #More defined Jaw
+            morph = {
+                mode = modify
+                gene = gene_jaw_def
+                value = 1
+            }
+            #Width of the Jaw
+            morph = {
+                mode = modify
+                gene = gene_jaw_width
+                value = -1
+            }
+            #Jaw Angle
+            morph = {
+                mode = modify
+                gene = gene_jaw_angle
+                value = 1
+            }
+
+            #Mouth forward
+            morph = {
+                mode = modify
+                gene = gene_mouth_forward
+                value = -0.25
+            }
+            #Mouth Height
+            morph = {
+                mode = modify
+                gene = gene_mouth_height
+                value = -0.5
+            }
+            #Mouth Width
+            morph = {
+                mode = modify
+                gene = gene_mouth_width
+                value = -1
+            }
+            #Lower Lip Full
+            morph = {
+                mode = modify
+                gene = gene_mouth_lower_lip_full
+                value = -1.0
+            }
+            #Lower Lip Size
+            morph = {
+                mode = modify
+                gene = gene_mouth_lower_lip_size
+                value = -1.0
+            }
+            #Upper Lip Full
+            morph = {
+                mode = modify
+                gene = gene_mouth_upper_lip_full
+                value = -1.0
+            }
+            #Upper Lip Size
+            morph = {
+                mode = modify
+                gene = gene_mouth_upper_lip_size
+                value = -1.0
+            }
+
+            #Nose forward
+            morph = {
+                mode = modify
+                gene = gene_nose_forward
+                value = -0.35
+            }
+            #Nostril Angle
+            morph = {
+                mode = modify
+                gene = gene_nose_nostril_angle
+                value = -1
+            }
+            #Nostril Height
+            morph = {
+                mode = modify
+                gene = gene_nose_nostril_height
+                value = -1
+            }
+            #Nostril Width
+            morph = {
+                mode = modify
+                gene = gene_nose_nostril_width
+                value = -0.15
+            }
+            #Nostril Ridge Angle
+            morph = {
+                mode = modify
+                gene = gene_nose_ridge_angle
+                value = -1
+            }
+            #Nostril Ridge Def
+            morph = {
+                mode = modify
+                gene = gene_nose_ridge_def
+                value = 1
+            }
+            #Nostril Ridge Def Min
+            morph = {
+                mode = modify
+                gene = gene_nose_ridge_def_min
+                value = -1
+            }
+            #Nose Ridge Width
+            morph = {
+                mode = modify
+                gene = gene_nose_ridge_width
+                value = -1
+            }
+            #Nose Tip Angle
+            morph = {
+                mode = modify
+                gene = gene_nose_tip_angle
+                value = 0.15
+            }
+            #Nose Tip Width
+            morph = {
+                mode = modify
+                gene = gene_nose_tip_width
+                value = -1
+            }
+
+            ### Skin Color ###
+            morph = {
+                mode = add
+                gene = aliens_aliens_color_hue
+                template = skin_color_hue_alien_grey
+                range = { 0 1 } # For the randomness to work correctly
+            }
+
+            ### Hair ###
+            #Removes beards
+            accessory = {
+                mode = replace
+                gene = beards
+                template = no_beard
+                range = { 0 1 }
+            }
+            #Removes hair
+            accessory = {
+                mode = replace
+                gene = hairstyles
+                template = no_hairstyles
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            #Removes mustaches
+            accessory = {
+                mode = replace
+                gene = mustaches
+                template = no_mustache
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            #Removes eyebrows
+            morph = {
+                mode = replace
+                gene = gene_eyebrows_shape
+                template = no_eyebrows
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            #Removes eyebrows
+            morph = {
+                mode = replace
+                gene = gene_eyebrows_fullness
+                template = no_eyebrows
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            #Removes stubble
+            morph = {
+                mode = replace
+                gene = gene_stubble
+                template = stubble_low
+                range = { 0 0 } # For the randomness to work correctly
+            }
+        }
+
+        weight = {
+            base = 0
+            modifier = {
+                add = 100
+
+                #Add your Triggers here
+                scope:character ?= {
+                    has_culture = cu:french
+                }
+                scope:pop ?= {
+                    has_pop_culture = french
+                }
+            }
+        }
+    }
+}
