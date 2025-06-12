@@ -2,7 +2,7 @@
 # WOTW ALIEN NARRATIVE JOURNAL ENTRIES #
 ########################################
 
-je_wotw_first_contact = { #
+je_wotw_first_contact = {
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 
 	group = je_group_crises
@@ -22,16 +22,12 @@ je_wotw_first_contact = { #
 	}
 
 	immediate = {
-		if = {
-			limit = {
-				NOT = {
-					has_global_variable = wotw_aliens_have_landed
-				}
-			}
-			set_global_variable = {
-				name = wotw_aliens_have_landed
-				value = 1
-			}
+		set_variable = {
+			name = wotw_local_aliens_var
+			value = 0
+		}
+		trigger_event = {
+			id = wotw_first_contact.1
 		}
 	}
 

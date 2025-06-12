@@ -1,0 +1,38 @@
+﻿namespace = wotw_first_contact
+
+wotw_first_contact.1 = {
+    type = country_event
+    placement = root
+
+    title = wotw_first_contact.t
+    desc = wotw_first_contact.d
+    flavor = wotw_first_contact.f
+
+    event_image = {
+        video = "media_alias"
+    }
+
+    icon = "gfx/interface/icons/event_icons/event_newspaper.dds".dds"
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    duration = 3
+
+    dlc = dlc_wotw
+
+    trigger = {
+        # triggered by je_wotw_first_contact
+    }
+
+    immediate = {
+    }
+
+    option = {
+        name = wotw_first_contact.a
+        default_option = yes
+    }
+
+    option = {
+        name = wotw_first_contact.b
+    }
+}
