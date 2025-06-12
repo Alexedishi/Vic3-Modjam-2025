@@ -1,4 +1,4 @@
-# "Giant cacophony" as in "cacophony of voices";
+﻿# "Giant cacophony" as in "cacophony of voices";
 # The aliens become the central focus of politics
 wotw_alien_smodifier_giant_cacophony = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds

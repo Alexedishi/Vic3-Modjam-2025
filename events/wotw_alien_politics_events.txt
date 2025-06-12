@@ -1,4 +1,4 @@
-namespace = wotw_politics
+﻿namespace = wotw_politics
 
 wotw_politics.1 = {
 	type = country_event

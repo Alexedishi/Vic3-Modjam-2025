@@ -1,4 +1,4 @@
-wotw_movement_alien_thinkers = {
+﻿wotw_movement_alien_thinkers = {
 	category = movement_category_ideological
 
 	ideology = wotw_ideology_alien_thinker	
