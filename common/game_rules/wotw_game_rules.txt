@@ -1,4 +1,4 @@
-﻿wotw_aliens_delay = {
+﻿rule_wotw_aliens_delay = {
     default = wotw_aliens_normal_delay
     wotw_aliens_normal_delay = {
     }

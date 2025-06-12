@@ -5,3 +5,12 @@
   # Game Concepts
   concept_alien_menace: "Alien Menace"
   concept_alien_menace_desc: "The #bold Alien Menance#! has emerged in the Victoria Era with the arrival of non-human sapients on Earth. Little is known about their origins or intentions, and political leaders fear the outbreak of mass pandemonium should their existence become public."
+
+  # Game Rules
+  rule_wotw_aliens_delay: "Alien Arrival Delay"
+  setting_wotw_aliens_normal_delay_rule: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_wotw_aliens_normal_delay_rule_desc Normal Delay#!#!"
+  setting_wotw_aliens_normal_delay_rule_desc: "The [concept_alien_menace] will appear #bold 5 to 10 years#! after game start."
+  setting_wotw_aliens_short_delay_rule: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_wotw_aliens_short_delay_rule_desc Short Delay#!#!"
+  setting_wotw_aliens_short_delay_rule_desc: "The [concept_alien_menace] will appear #bold 2 to 5 years#! after game start."
+  setting_wotw_aliens_no_delay_rule: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_wotw_aliens_no_delay_rule_desc No Delay#!#!"
+  setting_wotw_aliens_no_delay_rule_desc: "The [concept_alien_menace] will appear #bold immediately#! after game start."
