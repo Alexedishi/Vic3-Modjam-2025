@@ -1,6 +1,6 @@
 ﻿modifier_wotw_investigating_sightings = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
-	country_bureaucracy_add = -10
+	country_bureaucracy_add = -100
 	country_legitimacy_base_add = -5
 }
 
@@ -10,10 +10,22 @@ modifier_wotw_mysterious_crop_circles = {
 }
 
 modifier_wotw_interviewed_ufo_witnesses = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
 	country_authority_add = -0.05
 }
 
 modifier_wotw_suppressing_rumors = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
 	state_radicals_and_loyalists_from_sol_change_mult = 0.10
 	state_turmoil_effects_mult = 0.10
+}
+
+modifier_wotw_lagoon_sighting = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	building_group_bg_fishing_throughput_add = -0.05
+}
+
+modifier_wotw_nightly_patrols = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	state_turmoil_effects_mult = -0.10
 }

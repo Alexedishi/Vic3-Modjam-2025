@@ -230,3 +230,146 @@ wotw_first_contact.3 = {
 	}
 
 }
+
+wotw_first_contact.4 = {
+	type = country_event
+	placement = scope:wotw_sighting_state
+
+	title = wotw_first_contact.4.t
+	desc = wotw_first_contact.4.d
+	flavor = wotw_first_contact.4.f
+
+	event_image = {
+		video = "ep1_octopus"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	duration = 3
+
+	dlc = dlc_wotw
+
+	trigger = {
+		any_scope_state = {
+			is_coastal = yes
+			NOT = {
+				has_modifier = modifier_wotw_lagoon_sighting
+			}
+		}
+	}
+
+	cooldown = {
+		years = 2
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				is_coastal = yes
+				NOT = {
+					has_modifier = modifier_wotw_lagoon_sighting
+				}
+			}
+			save_scope_as = wotw_sighting_state
+		}
+	}
+
+	option = {
+		name = wotw_first_contact.4.a
+		default_option = yes
+		scope:wotw_sighting_state = {
+			add_radicals_in_state = {
+				pop_type = peasants
+				value = small_radicals
+			}
+			add_modifier = {
+				name = modifier_wotw_lagoon_sighting
+				months = 24
+			}
+		}
+		wotw_add_awareness_effect = {
+			AMOUNT = 1
+		}
+	}
+
+}
+
+wotw_first_contact.5 = { #
+	type = country_event
+	placement = root
+
+	title = wotw_first_contact.5.t
+	desc = wotw_first_contact.5.d
+	flavor = wotw_first_contact.5.f
+
+	event_image = {
+		video = "southamerica_public_figure_assassination"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	duration = 3
+
+	dlc = dlc_wotw
+
+	trigger = {
+	}
+
+	cooldown = {
+		years = 2
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				is_incorporated = yes
+			}
+			save_scope_as = wotw_sighting_state
+		}
+	}
+
+	option = {
+		name = wotw_first_contact.5.a
+		default_option = yes
+		scope:wotw_sighting_state = {
+			add_radicals_in_state = {
+				value = small_radicals
+			}
+		}
+		wotw_add_awareness_effect = {
+			AMOUNT = 2
+		}
+	}
+
+	option = {
+		name = wotw_first_contact.5.b
+		trigger = {
+			OR = {
+				has_law = law_type:law_local_police
+				has_law = law_type:law_dedicated_police
+				has_law = law_type:law_militarized_police
+			}
+		}
+		show_as_unavailable = {
+			always = yes
+		}
+		highlighted_option = yes
+		scope:wotw_sighting_state = {
+			add_loyalists_in_state = {
+				value = 0.01
+			}
+			add_modifier = {
+				name = modifier_wotw_nightly_patrols
+				months = 24
+			}
+		}
+		wotw_add_awareness_effect = {
+			AMOUNT = 1
+		}
+	}
+
+}
