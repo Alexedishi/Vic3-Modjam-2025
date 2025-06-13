@@ -19,6 +19,12 @@ wotw_alien_deciphering.1 = {
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
+	trigger = {
+		NOT = {
+			has_variable = wotw_alien_deciphering_var
+		}
+	}
+
 	option = {
 		name = wotw_alien_deciphering.1.a
 		show_as_tooltip = {

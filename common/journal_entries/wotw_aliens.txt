@@ -129,5 +129,12 @@ je_wotw_the_alien_menace = {
 		}
 	}
 
+	on_monthly_pulse = {
+		random_events = {
+			chance_of_no_event = 50
+			25 = wotw_alien_deciphering.1
+		}
+	}
+
 	weight = 1000
 }
