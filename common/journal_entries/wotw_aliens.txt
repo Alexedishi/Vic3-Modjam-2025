@@ -50,7 +50,6 @@ je_wotw_first_contact = {
 	}
 
 	on_complete = {
-		wotw_cleanup_first_contact_effect = yes
 		trigger_event = {
 			id = wotw_politics.1
 			popup = yes
@@ -65,7 +64,6 @@ je_wotw_first_contact = {
 	}
 
 	on_invalid = {
-		wotw_cleanup_first_contact_effect = yes
 	}
 
 	on_weekly_pulse = {

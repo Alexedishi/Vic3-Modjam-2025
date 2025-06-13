@@ -1,0 +1,11 @@
+﻿l_english:
+ # Journal Entries
+ je_wotw_the_warlikes_path: "To Enforce a Peace"
+ je_wotw_the_warlikes_path_reason: "Humanity must join forces to drive back and exterminate the [concept_alien_menace] lest they undermine us and claim Earth as their own. We must accomplish this no matter the cost!"
+ je_wotw_the_warlikes_path_complete: "The [concept_alien_menace] has been destroyed"
+
+ # Events
+ wotw_warlikes.1.t: "The Path of the Warlikes"
+ wotw_warlikes.1.d: ""
+ wotw_warlikes.1.f: ""
+ wotw_warlikes.1.a: "These invaders will face humanity!"

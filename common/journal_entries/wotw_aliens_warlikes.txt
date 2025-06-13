@@ -1,0 +1,49 @@
+﻿je_wotw_the_warlikes_path = {
+	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
+
+	 group = je_group_crises
+
+	 should_be_pinned_by_default = yes
+
+	 is_shown_when_inactive = {
+	 	custom_tooltip = {
+			text = je_wotw_first_contact_complete
+			has_variable = wotw_local_aliens_var
+			var:wotw_local_aliens_var >= 10
+		}
+	 }
+
+	 possible = {
+		 has_variable = wotw_response_var
+		 var:wotw_response_var = 3
+	 }
+
+	 immediate = {
+		 trigger_event = {
+			 id = wotw_warlikes.1
+		 }
+	 }
+
+	 complete = {
+		 custom_tooltip = {
+			 text = je_wotw_the_warlikes_path_complete
+			 NOT = {
+				 exists = c:WOTW_ALIEN
+			 }
+		 }
+	 }
+
+	 on_complete = {
+	 }
+
+	 invalid = {
+		 custom_tooltip = {
+			 text = je_wotw_aliens_invalid
+			 has_global_variable = wotw_aliens_whacked
+		 }
+	 }
+
+	 on_invalid = {
+	 }
+
+}
