@@ -1,0 +1,18 @@
+﻿l_english:
+ # Journal Entries
+ je_wotw_the_alien_menace: "The Alien Menace"
+ je_wotw_the_alien_menace_reason: ""
+ je_wotw_the_alien_menace_complete: "[ROOT.GetCountry.GetNameNoFlag] has selected its response to the [concept_alien_menace]"
+ je_wotw_the_alien_menace_invalid: "The [concept_alien_menace] has been resolved"
+
+ # Events
+
+ # Tooltips
+
+ # Scripted Progress Bars
+ wotw_thinkers_progressbar_name: "Thinkers Momentum"
+ wotw_thinkers_progressbar_desc: "Thinkers Momentum"
+ wotw_warlikes_progressbar_name: "Warlikes Momentum"
+ wotw_warlikes_progressbar_desc: "Warlikes Momentum"
+ wotw_talkers_progressbar_name: "Talkers Momentum"
+ wotw_talkers_progressbar_desc: "Talkers Momentum"
