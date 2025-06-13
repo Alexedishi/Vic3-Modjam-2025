@@ -154,7 +154,7 @@ wotw_first_contact.2 = {
 
 wotw_first_contact.3 = {
 	type = country_event
-	placement = root
+	placement = scope:wotw_sighting_state
 
 	title = wotw_first_contact.3.t
 	desc = wotw_first_contact.3.d
@@ -180,6 +180,9 @@ wotw_first_contact.3 = {
 	}
 
 	immediate = {
+		random_scope_state = {
+			save_scope_as = wotw_sighting_state
+		}
 	}
 
 	option = {
