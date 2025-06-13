@@ -5,6 +5,17 @@ pdxmesh = {
 	scale = 2
 
 	meshsettings = {
+		name = "wotw_moon_cannon_decalShape"
+		index = 0
+		texture_diffuse = "european_city_centerpiece_decal_01_diffuse.dds"
+		texture_normal = "european_city_centerpiece_decal_01_normal.dds"
+		texture_specular = "european_city_centerpiece_decal_01_properties.dds"
+		shader = "decal_local"
+		shader_file = "gfx/FX/pdxmesh_decal.shader"
+		subpass = "LocalDecals"
+	}
+
+	meshsettings = {
 		name = "wotw_moon_cannonShape"
 		index = 0
 		texture_diffuse = "wotw_moon_cannon_diffuse.dds"
@@ -14,6 +25,7 @@ pdxmesh = {
 		additional_shader_defines = { "PDX_MESH_SNAP_VERTICES_TO_TERRAIN" "EMISSIVE_NIGHT" "EMISSIVE_NIGHT_RANDOM" }
 		shader_file = "gfx/FX/pdxmesh.shader"
 	}
+
 }
 
 entity = {
