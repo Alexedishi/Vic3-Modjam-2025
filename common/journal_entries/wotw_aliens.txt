@@ -72,10 +72,10 @@ je_wotw_first_contact = {
 		random_events = {
 			# ~ every 12 weeks
 			chance_of_no_event = 85
-			5 = wotw_first_contact.2
-			5 = wotw_first_contact.3
-			5 = wotw_first_contact.4
-			5 = wotw_first_contact.5
+			3 = wotw_first_contact.2
+			3 = wotw_first_contact.3
+			3 = wotw_first_contact.4
+			3 = wotw_first_contact.5
 		}
 	}
 
