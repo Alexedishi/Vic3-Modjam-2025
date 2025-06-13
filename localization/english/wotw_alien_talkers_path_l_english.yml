@@ -1,0 +1,15 @@
+﻿l_english:
+  wotw_organize_a_congress: "Organize a Congress of Mankind"
+  wotw_organize_a_congress_desc: "Organizing a Congress of Mankind is a significant step towards uniting humanity in the face of the alien threat. It will allow us to send a diplomat. It will require careful planning and coordination and the support of the global community."
+  wotw_supported_by_three_fourths: "Countries totaling at least half of the world's [concept_prestige] have an [concept_approval] of us over #b;v 20#!. Currently: [GetPlayer.MakeScope.ScriptValue('wotw_popular_supported_talkers')|%v+]"
+
+  wotw_talkers.2.t: "A Congress of Mankind"
+  wotw_talkers.2.d: "Humanity has convened around [Country.GetRuler.GetPrimaryRoleTitle] [Country.GetRuler.GetFullName] to send as a diplomat to the aliens. [Country.GetRuler.GetSheHe] has already made preparations to depart."
+  wotw_character_departs: "@information! The diplomat departs for the agreed meeting point with the aliens."
+
+
+
+  je_wotw_the_talkers_path: "To Negotiate a Peace"
+  je_wotw_the_talkers_path_reason: "Humanity must be able to come together and negotiate a peace with the aliens. This will require organizing a congregation of nations to elect a diplomat to represent humanity."
+
+  wotw_alien_working_towards_talkers: "Working Towards a Congress of Mankind"

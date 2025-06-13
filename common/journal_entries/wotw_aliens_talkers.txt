@@ -1,0 +1,37 @@
+je_wotw_the_talkers_path = {
+	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
+
+	group = je_group_crises
+
+	should_be_pinned_by_default = yes
+
+	is_shown_when_inactive = {
+		custom_tooltip = {
+			text = je_wotw_first_contact_complete
+			var:wotw_local_aliens_var >= 10
+		}
+		# always = yes
+	}
+
+	modifiers_while_active = {
+		wotw_alien_working_towards_talkers 
+	}
+
+	scripted_button = wotw_organize_a_congress
+
+	possible = {
+		has_variable = wotw_response_var
+		var:wotw_response_var = 3
+		#always = yes
+	}
+
+	complete = {
+		# todo
+	}
+
+	on_monthly_pulse = {
+		# todo
+	}
+
+	weight = 1000
+}

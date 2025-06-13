@@ -1,0 +1,36 @@
+namespace = wotw_talkers
+
+wotw_talkers.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = wotw_talkers.2.t
+	desc = wotw_talkers.2.d
+
+	duration = 2
+
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+
+	after = {
+		set_global_variable = {
+			name = wotw_negotiator_character
+			value = ruler
+		}
+		ruler = {
+			place_character_in_void = 10000
+		}
+	}
+
+	option = {
+		name = wotw_talkers.2.a
+		custom_tooltip = "wotw_character_departs"
+	}
+
+}

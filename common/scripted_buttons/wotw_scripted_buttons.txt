@@ -32,3 +32,28 @@
 	}
 
 }
+
+wotw_organize_a_congress = {
+	name = wotw_organize_a_congress
+	desc = wotw_organize_a_congress_desc
+
+	possible = {
+		custom_tooltip = {
+			text = "wotw_supported_by_three_fourths"
+			wotw_popular_supported_talkers > 0.5
+		}
+		influence > 2000
+	}
+
+	effect = {
+		set_variable = {
+			name = wotw_response_var
+			value = 0
+		}
+		trigger_event = {
+			id = wotw_talkers.2
+			popup = yes
+		}
+	}
+
+}

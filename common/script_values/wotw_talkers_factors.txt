@@ -1,0 +1,20 @@
+﻿wotw_popular_supported_talkers = {
+	value = 0
+	every_country = {
+		limit = {
+			NOT = {
+				this = prev
+			}
+			relations:prev >= 20
+		}
+		add = prestige
+	}
+	divide = wotw_total_prestige_world
+}
+
+wotw_total_prestige_world = {
+	value = 0
+	every_country = {
+		add = prestige
+	}
+}

@@ -1,4 +1,4 @@
-namespace = wotw_alien_deciphering
+﻿namespace = wotw_alien_deciphering
 
 
 
