@@ -79,6 +79,25 @@ je_wotw_first_contact = {
 		}
 	}
 
+	on_yearly_pulse = {
+		effect = {
+			change_variable = { # provide a minimum of 1 progress per year to avoid stalling
+				name = wotw_local_aliens_var
+				add = 1
+			}
+		}
+	}
+
+	current_value = {
+		value = var:wotw_local_aliens_var
+	}
+
+	goal_add_value = {
+		value = 10
+	}
+
+	progressbar = yes
+
 	status_desc = {
 		first_valid = {
 			triggered_desc = {
