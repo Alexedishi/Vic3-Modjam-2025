@@ -1,0 +1,33 @@
+### BELT
+
+pdxmesh = {
+	name = "wotw_alien_gloves_mesh"
+	file = "wotw_alien_gloves.mesh"
+
+	meshsettings = {
+		name = "wotw_alien_gloves"
+		index = 0
+		texture_diffuse = "wotw_alien_gloves_d.dds"
+		texture_normal = "wotw_alien_gloves_n.dds"
+		texture_specular = "wotw_alien_gloves_p.dds"
+		shader = "portrait_attachment_pattern"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+
+
+entity = {
+	name = "wotw_alien_gloves_entity"
+	pdxmesh = "wotw_alien_gloves_mesh"
+
+		game_data = {
+            portrait_entity_user_data = {
+			portrait_accessory = {
+				pattern_mask = "gfx/models/portraits/attachments/alien_gloves/wotw_alien_gloves_masks.dds"	
+				#Any 4-channel texture. Each channel will be used to mask a pattern from the variation object
+				variation = "wotw_alien_bodysuit"	#A "variation" object in gfx/portraits/accessory_variations/
+			} 
+        }
+	}
+}

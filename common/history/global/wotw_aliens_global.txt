@@ -5,21 +5,51 @@
 	}
 	random_list = {
 		1 = {
+			trigger = {
+				OR = {
+					has_game_rule = wotw_invasion_type_random
+					has_game_rule = wotw_invasion_type_non_hostile
+				}
+			}
 			set_global_variable = {
 				name = wotw_alien_invasion_type
-				value = 1
+				value = flag:wotw_invasion_type_refugees
 			}
 		}
 		1 = {
+			trigger = {
+				OR = {
+					has_game_rule = wotw_invasion_type_random
+					has_game_rule = wotw_invasion_type_non_hostile
+				}
+			}
 			set_global_variable = {
 				name = wotw_alien_invasion_type
-				value = 2
+				value = flag:wotw_invasion_type_resort
 			}
 		}
 		1 = {
+			trigger = {
+				OR = {
+					has_game_rule = wotw_invasion_type_random
+					has_game_rule = wotw_invasion_type_non_hostile
+				}
+			}
 			set_global_variable = {
 				name = wotw_alien_invasion_type
-				value = 3
+				value = flag:wotw_invasion_type_saviors
+			}
+		}
+		1 = {
+			trigger = {
+				OR = {
+					has_game_rule = wotw_invasion_type_random
+					has_game_rule = wotw_invasion_type_hostile
+				}
+			}
+			set_global_variable = {
+				name = wotw_alien_invasion_type
+				value = flag:wotw_invasion_type_extermination
 			}
 		}
 	}

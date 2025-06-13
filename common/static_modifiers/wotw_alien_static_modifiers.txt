@@ -5,6 +5,19 @@ wotw_alien_smodifier_giant_cacophony = {
     wotw_alien_modifier_alien_movement_support_mult = 5
 }
 
+modifier_wotw_alien_civilization = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_minting_add = 100000
+	country_bureaucracy_add = 1000
+	country_authority_add = 1000
+	country_influence_add = 1000
+	country_radicalism_increases_full_acceptance_mult = -1
+	country_radicalism_increases_second_rate_citizen_mult = -1
+	country_radicalism_increases_open_prejudice_mult = -1
+	country_radicalism_increases_cultural_erasure_mult = -1
+	country_radicalism_increases_violent_hostility_mult = -1
+}
+
 wotw_nebulons_culture_standard_of_living_modifier_positive = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
 	state_wotw_nebulons_culture_standard_of_living_add = 1

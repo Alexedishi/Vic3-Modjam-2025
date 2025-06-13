@@ -1,10 +1,10 @@
 ﻿l_english:
   dlc_wotw: "War of the Worlds: Victorian Boogaloo"
-  dlc_wotw_desc: "#TODO Alexedishi Flavor Text"
+  dlc_wotw_desc: "An #bold Alien Menance#! has emerged in the Victoria Era with the arrival of non-human sapients on Earth. Little is known about their origins or intentions, and it will be up to you to determine your country's response to the [concept_alien_menace]."
 
   # Game Concepts
   concept_alien_menace: "Alien Menace"
-  concept_alien_menace_desc: "The #bold Alien Menance#! has emerged in the Victoria Era with the arrival of non-human sapients on Earth. Little is known about their origins or intentions, and political leaders fear the outbreak of mass pandemonium should their existence become public."
+  concept_alien_menace_desc: "The #bold Alien Menace#! has emerged in the Victoria Era with the arrival of non-human sapients on Earth. Little is known about their origins or intentions, and political leaders fear the outbreak of mass pandemonium should their existence become public."
 
   # Game Rules
   rule_wotw_aliens_delay: "Alien Arrival Delay"
@@ -15,6 +15,22 @@
   setting_wotw_aliens_no_delay: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_wotw_aliens_no_delay_desc No Delay#!#!"
   setting_wotw_aliens_no_delay_desc: "The [concept_alien_menace] will appear #bold immediately#! after game start."
 
+  rule_wotw_invasion_type: "Alien Intentions"
+  setting_wotw_invasion_type_random: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_wotw_invasion_type_random_desc Random Intent#!#!"
+  setting_wotw_invasion_type_random_desc: "The [concept_alien_menace] will have a #bold random#! intent."
+  setting_wotw_invasion_type_non_hostile: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_wotw_invasion_type_non_hostile_desc Non-Hostile Intent#!#!"
+  setting_wotw_invasion_type_non_hostile_desc: "The [concept_alien_menace] will have a #bold non-hostile#! intent."
+  setting_wotw_invasion_type_hostile: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_wotw_invasion_type_hostile_desc Hostile Intent#!#!"
+  setting_wotw_invasion_type_hostile_desc: "The [concept_alien_menace] will have a #bold #red hostile#!#! intent."
+
   # General Use Localization
   wotw_no_effects: "No immediate effects..."
   wotw_nothing_happens: "Nothing happens..."
+
+  wotw_invasion_type_refugees: "Refugees"
+  wotw_invasion_type_resort: "Resort-Goers"
+  wotw_invasion_type_saviors: "Saviors"
+  wotw_invasion_type_extermination: "Extermination Force"
+
+  WOTW_ALIEN: "Nebulons"
+  WOTW_ALIEN_ADJ: "Nebulon"
