@@ -1,6 +1,8 @@
 namespace = wotw_alien_deciphering
 
 
+
+
 wotw_alien_deciphering.1 = {
 	type = country_event
 	placement = ROOT
@@ -21,8 +23,12 @@ wotw_alien_deciphering.1 = {
 
 	trigger = {
 		NOT = {
-			has_variable = wotw_alien_deciphering_var
+			has_variable = wotw_alien_deciphering_flag
 		}
+	}
+
+	immediate = {
+		set_variable = wotw_alien_deciphering_flag
 	}
 
 	option = {
@@ -38,12 +44,6 @@ wotw_alien_deciphering.1 = {
 		set_variable = {
 			name = wotw_alien_deciphering_var
 			value = 0
-		}
-		if = {
-			limit = {
-				has_variable = wotw_xeno_researched_first_flag
-			}
-			wotw_decipher_alien_words_helper = yes
 		}
 	}
 }

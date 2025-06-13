@@ -8,29 +8,27 @@ on_wotw_acquired_technology = {
 	effect = {
 		if = {
 			limit = {
-				has_technology_researched = wotw_xeno_linguistics_tech
+				has_technology_researched = psychiatry
 				NOT = {
-					has_variable = wotw_xeno_linguistics_tech_acquired
+					has_variable = wotw_psychiatry_tech_acquired
 				}
+				has_journal_entry = je_wotw_deciphering_aliens
 			}
-			set_variable = wotw_xeno_linguistics_tech_acquired
-			if = {
-				limit = {
-					NOT = {
-						has_journal_entry = je_wotw_deciphering_aliens
-					}
+			set_variable = wotw_psychiatry_tech_acquired
+			post_notification = wotw_psychiatry_progress_message
+			wotw_decipher_alien_words_helper = yes
+		}
+		if = {
+			limit = {
+				has_technology_researched = philosophical_pragmatism
+				NOT = {
+					has_variable = wotw_philosophical_pragmatism_tech_acquired
 				}
-				trigger_event = {
-					id = wotw_alien_deciphering.1
-					popup = yes
-					days = { 3 17 }
-				}
-				set_variable = wotw_xeno_researched_first_flag
+				has_journal_entry = je_wotw_deciphering_aliens
 			}
-			else = {
-				post_notification = wotw_xeno_linguistics_progress_message
-				wotw_decipher_alien_words_helper = yes
-			}
+			set_variable = wotw_philosophical_pragmatism_tech_acquired
+			post_notification = wotw_philosophical_pragmatism_progress_message
+			wotw_decipher_alien_words_helper = yes
 		}
 	}
 }

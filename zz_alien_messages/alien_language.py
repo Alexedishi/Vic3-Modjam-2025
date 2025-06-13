@@ -94,7 +94,7 @@ def generate_word_locs(word_map):
     locs = "l_english:\n\n"
     for k, v in word_map.items():
         locs += f"  wotw_decipherable_word_{sanitize(k)}: \"[GetPlayer.GetCustom('wotw_decipher_word_{k}')]\"\n"
-        locs += f"  wotw_alien_word_{sanitize(k)}: \"{v}\"\n"
+        locs += f"  wotw_alien_word_{sanitize(k)}: \"#italic {v}#!\"\n"
         locs += f"  wotw_human_word_{sanitize(k)}: \"{k}\"\n"
     return locs
 
@@ -135,7 +135,7 @@ def generate_next_scripted_effect(parts):
             pdxpy.PdxUtil.if_statement(
                 {"has_variable": f"wotw_alien_word_deciphered_part_{index}"},
                 {f"wotw_decipher_alien_words_part_{index + 1}": True}
-            ) for index in range(len(parts) - 1)
+            ) for index in reversed(range(len(parts) - 1))
         ] + [{"wotw_decipher_alien_words_part_0": True}]
     })
 

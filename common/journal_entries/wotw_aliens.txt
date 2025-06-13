@@ -51,6 +51,10 @@ je_wotw_first_contact = {
 
 	on_complete = {
 		wotw_cleanup_first_contact_effect = yes
+		trigger_event = {
+			id = wotw_politics.1
+			popup = yes
+		}
 	}
 
 	invalid = {
@@ -64,13 +68,14 @@ je_wotw_first_contact = {
 		wotw_cleanup_first_contact_effect = yes
 	}
 
-	on_monthly_pulse = {
+	on_weekly_pulse = {
 		random_events = {
+			# ~ every 12 weeks
 			chance_of_no_event = 95
-			5 = wotw_first_contact.2
-			5 = wotw_first_contact.3
-			5 = wotw_first_contact.4
-			5 = wotw_first_contact.5
+			1 = wotw_first_contact.2
+			1 = wotw_first_contact.3
+			1 = wotw_first_contact.4
+			1 = wotw_first_contact.5
 		}
 	}
 
