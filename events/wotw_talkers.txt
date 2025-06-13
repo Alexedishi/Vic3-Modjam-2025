@@ -33,14 +33,14 @@ wotw_talkers.2 = {
 			trigger_event = {
 				id = wotw_talkers.4
 				popup = yes
-				days = { 7 31 }
+				days = { 45 180 }
 			}
 		}
 		else = {
 			trigger_event = {
 				id = wotw_talkers.3
 				popup = yes
-				days = { 7 31 }
+				days = { 45 180 }
 			}
 		}
 	}
@@ -78,14 +78,14 @@ wotw_talkers.3 = {
 			trigger_event = {
 				id = wotw_talkers.8
 				popup = yes
-				days = { 7 31 }
+				days = { 45 180 }
 			}
 		}
 		else = {
 			trigger_event = {
 				id = wotw_talkers.5
 				popup = yes
-				days = { 7 31 }
+				days = { 45 180 }
 			}
 		}
 	}
@@ -117,7 +117,7 @@ wotw_talkers.4 = {
 		trigger_event = {
 			id = wotw_talkers.7
 			popup = yes
-			days = { 7 31 }
+			days = { 45 180 }
 		}
 	}
 
@@ -148,7 +148,7 @@ wotw_talkers.5 = {
 		trigger_event = {
 			id = wotw_talkers.6
 			popup = yes
-			days = { 7 31 }
+			days = { 45 180 }
 		}
 	}
 
@@ -212,7 +212,6 @@ wotw_talkers.7 = {
 	option = {
 		name = wotw_talkers.7.a
 		global_var:wotw_negotiator_character = {
-			free_character_from_void = yes
 			kill_character = yes
 		}
 	}

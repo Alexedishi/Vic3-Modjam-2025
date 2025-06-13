@@ -29,7 +29,7 @@
 # Dead at arrival
   wotw_talkers.4.t: "No Contact"
   wotw_talkers.4.d: "Since our diplomat arrived at the agreed meeting point, we have not heard from them. We have sent a search party to find them, but they have not returned. We fear the worst."
-
+  wotw_talkers.4.a: "Send a Search Party"
 
 # Electricity
   wotw_talkers.5.t: "A Gracious Light"

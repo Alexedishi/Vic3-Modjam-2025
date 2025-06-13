@@ -64,6 +64,12 @@ wotw_ignore_the_damocles = {
 	name = wotw_ignore_the_damocles
 	desc = wotw_ignore_the_damocles_desc
 
+	visible = {
+		NOT = {
+			has_variable = wotw_ignored_the_damocles
+		}
+	}
+
 	possible = {
 		has_journal_entry = je_wotw_the_damocles_of_industry
 	}
