@@ -122,6 +122,8 @@ je_wotw_the_alien_menace = {
 		has_variable = wotw_local_aliens_var
 	}
 
+	scripted_button = wotw_select_response_button
+
 	scripted_progress_bar = wotw_thinkers_progressbar
 	scripted_progress_bar = wotw_warlikes_progressbar
 	scripted_progress_bar = wotw_talkers_progressbar
@@ -130,6 +132,21 @@ je_wotw_the_alien_menace = {
 		custom_tooltip = {
 			text = je_wotw_first_contact_complete
 			var:wotw_local_aliens_var >= 10
+		}
+	}
+
+	complete = {
+		custom_tooltip = {
+			text = je_wotw_the_alien_menace_complete
+			has_variable = wotw_response_var
+			var:wotw_response_var != 0
+		}
+	}
+
+	invalid = {
+		custom_tooltip = {
+			text = je_wotw_the_alien_menace_invalid
+			has_global_variable = wotw_aliens_whacked
 		}
 	}
 
