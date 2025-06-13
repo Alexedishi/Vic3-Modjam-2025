@@ -22,3 +22,20 @@ wotw_xeno_linguistics_tech = {
 		value = 1
 	}
 }
+
+#Xeno-Cryptography
+wotw_xeno_cryptography_tech = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/nationalism.dds"
+	category = society
+	can_research = no
+
+	modifier = {
+		country_influence_mult = 0.2
+		country_authority_mult = 0.2
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
