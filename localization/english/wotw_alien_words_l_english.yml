@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 
   wotw_decipherable_word_we: "[GetPlayer.GetCustom('wotw_decipher_word_we')]"
   wotw_alien_word_we: "iy"

@@ -74,14 +74,14 @@ def generate_cuslocs(word_map):
                         "trigger": {
                             "has_variable": f"wotw_alien_word_deciphered_{sanitize(k)}"
                         },
-                        "localization_key": f"wotw_alien_word_{sanitize(k)}"
+                        "localization_key": f"wotw_human_word_{sanitize(k)}"
                     }},
                     {"text": {
                         "trigger": {
                             "always": False
                         },
                         "fallback": True,
-                        "localization_key": f"wotw_human_word_{sanitize(k)}"
+                        "localization_key": f"wotw_alien_word_{sanitize(k)}"
                     }}
                 ]
             }
@@ -123,8 +123,21 @@ def write_scripted_effect(part, index):
     return {
         f"wotw_decipher_alien_words_part_{index}": [
             {"set_variable": f"wotw_alien_word_deciphered_{sanitize(k)}"} for k in part
+        ] + [
+            { "set_variable": f"wotw_alien_word_deciphered_part_{index}"}
         ]
     }
+
+def generate_next_scripted_effect(parts):
+    import pdxpy
+    return pdxpy.PdxObject({
+        f"wotw_decipher_alien_words_next_part": [
+            pdxpy.PdxUtil.if_statement(
+                {"has_variable": f"wotw_alien_word_deciphered_part_{index}"},
+                {f"wotw_decipher_alien_words_part_{index + 1}": True}
+            ) for index in range(len(parts) - 1)
+        ] + [{"wotw_decipher_alien_words_part_0": True}]
+    })
 
 
 def generate_scripted_effect(word_map):
@@ -155,14 +168,14 @@ def main():
         cuslocs = generate_cuslocs(word_map)
         f.write(str(cuslocs))
 
-    with open("../localization/english/wotw_alien_words_l_english.yml", "w", encoding="utf-8") as f:
+    with open("../localization/english/wotw_alien_words_l_english.yml", "w", encoding="utf-8-sig") as f:
         f.write(generate_word_locs(word_map))
 
-    with open("../localization/english/wotw_alien_messages_l_english.yml", "w", encoding="utf-8") as f:
+    with open("../localization/english/wotw_alien_messages_l_english.yml", "w", encoding="utf-8-sig") as f:
         f.write(generate_main_locs())
 
     with open("../common/scripted_effects/wotw_decipher_alien_words.txt", "w", encoding="utf-8") as f:
-        f.write(str(generate_scripted_effect(word_map)))
+        f.write(str(generate_scripted_effect(word_map)) + "\n" + str(generate_next_scripted_effect(divide_scripted_effects(word_map))))
 
 
 if __name__ == "__main__":
