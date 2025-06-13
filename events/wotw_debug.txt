@@ -5,6 +5,8 @@ wotw_debug.1 = {
 	type = country_event
 	placement = ROOT
 
+	hidden = yes
+
 	immediate = {
 		wotw_spawn_alien_tag = yes
 	}
