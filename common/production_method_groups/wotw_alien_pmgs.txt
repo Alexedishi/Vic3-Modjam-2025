@@ -1,0 +1,9 @@
+﻿pmg_wotw_alien_emporium = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	is_hidden_when_unavailable = yes
+
+	production_methods = {
+		pm_wotw_alien_emporium
+	}
+}

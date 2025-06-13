@@ -22,7 +22,7 @@ special_genes = {
 					1 = wotw_alien_bodysuit
 				}		   
 				female = {
-					1 = wotw_alien_bodysuit
+					1 = wotw_alien_bodysuit_f
 				}		
 				boy = {
 					1 = empty
@@ -52,7 +52,7 @@ special_genes = {
 					1 = wotw_alien_leg_armor
 				}		   
 				female = {
-					1 = wotw_alien_leg_armor
+					1 = wotw_alien_leg_armor_f
 				}		
 				boy = {
 					1 = empty
@@ -82,7 +82,7 @@ special_genes = {
 					1 = wotw_alien_arm_armor
 				}		   
 				female = {
-					1 = wotw_alien_arm_armor
+					1 = wotw_alien_arm_armor_f
 				}		
 				boy = {
 					1 = empty
@@ -112,7 +112,7 @@ special_genes = {
 					1 = wotw_alien_belt
 				}		   
 				female = {
-					1 = wotw_alien_belt
+					1 = wotw_alien_belt_f
 				}		
 				boy = {
 					1 = empty
@@ -142,7 +142,7 @@ special_genes = {
 					1 = wotw_alien_boots
 				}		   
 				female = {
-					1 = wotw_alien_boots
+					1 = wotw_alien_boots_f
 				}		
 				boy = {
 					1 = empty
@@ -172,7 +172,7 @@ special_genes = {
 					1 = wotw_alien_gloves
 				}		   
 				female = {
-					1 = wotw_alien_gloves
+					1 = wotw_alien_gloves_f
 				}		
 				boy = {
 					1 = empty
@@ -202,7 +202,7 @@ special_genes = {
 					1 = wotw_alien_necklace
 				}		   
 				female = {
-					1 = wotw_alien_necklace
+					1 = wotw_alien_necklace_f
 				}		
 				boy = {
 					1 = empty
@@ -232,7 +232,7 @@ special_genes = {
 					1 = wotw_alien_helmet
 				}		   
 				female = {
-					1 = wotw_alien_helmet
+					1 = wotw_alien_helmet_f
 				}		
 				boy = {
 					1 = empty

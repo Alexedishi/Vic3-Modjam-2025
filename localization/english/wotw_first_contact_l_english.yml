@@ -54,8 +54,12 @@
  wotw_first_contact.9.a: ""
 
  # tooltips
- wotw_add_awareness: ""
- wotw_remove_awareness: ""
+ wotw_add_1_awareness: "[ROOT.GetCountry.GetNameNoFlag] gains #bold #green minor#!#! awareness of the [concept_alien_menace]"
+ wotw_add_2_awareness: "[ROOT.GetCountry.GetNameNoFlag] gains #bold #green medium#!#! awareness of the [concept_alien_menace]"
+ wotw_add_3_awareness: "[ROOT.GetCountry.GetNameNoFlag] gains #bold #green major#!#! awareness of the [concept_alien_menace]"
+ wotw_remove_1_awareness: "[ROOT.GetCountry.GetNameNoFlag] loses #bold #red minor#!#! awareness of the [concept_alien_menace]"
+ wotw_remove_2_awareness: "[ROOT.GetCountry.GetNameNoFlag] loses #bold #red medium#!#! awareness of the [concept_alien_menace]"
+ wotw_remove_3_awareness: "[ROOT.GetCountry.GetNameNoFlag] loses #bold #red major#!#! awareness of the [concept_alien_menace]"
 
  # modifiers
  modifier_wotw_investigating_sightings: "Investigating Strange Sightings"

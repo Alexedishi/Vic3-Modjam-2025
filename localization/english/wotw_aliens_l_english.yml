@@ -34,3 +34,8 @@
 
   WOTW_ALIEN: "Nebulons"
   WOTW_ALIEN_ADJ: "Nebulon"
+
+ # Buildings
+  building_wotw_alien_emporium: "Alien Emporium"
+  pmg_wotw_alien_emporium: "Alien Emporium"
+  pm_wotw_alien_emporium: "Alien Emporium"

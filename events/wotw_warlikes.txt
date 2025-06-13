@@ -1,0 +1,38 @@
+﻿namespace = wotw_warlikes
+
+wotw_warlikes.1 = {
+	type = country_event
+	placement = root
+
+	title = wotw_warlikes.1.t
+	desc = wotw_warlikes.1.d
+	flavor = wotw_warlikes.1.f
+
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	duration = 3
+
+	dlc = dlc_wotw
+
+	trigger = {
+		# triggered by je_wotw_the_warlikes_path
+	}
+
+	immediate = {
+		c:WOTW_ALIEN = {
+			save_scope_as = aliens_country_scope
+		}
+	}
+
+	option = {
+		name = wotw_warlikes.1.a
+		default_option = yes
+	}
+
+}
