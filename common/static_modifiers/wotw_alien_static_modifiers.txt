@@ -18,7 +18,6 @@ modifier_wotw_alien_civilization = {
 	country_radicalism_increases_violent_hostility_mult = -1
 }
 
-
 wotw_nebulons_culture_standard_of_living_modifier_positive = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
 	state_wotw_nebulons_culture_standard_of_living_add = 1

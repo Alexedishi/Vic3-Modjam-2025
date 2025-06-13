@@ -1,10 +1,10 @@
 ﻿l_english:
   dlc_wotw: "War of the Worlds: Victorian Boogaloo"
-  dlc_wotw_desc: "#TODO Alexedishi Flavor Text"
+  dlc_wotw_desc: "An #bold Alien Menance#! has emerged in the Victoria Era with the arrival of non-human sapients on Earth. Little is known about their origins or intentions, and it will be up to you to determine your country's response to the [concept_alien_menace]."
 
   # Game Concepts
   concept_alien_menace: "Alien Menace"
-  concept_alien_menace_desc: "The #bold Alien Menance#! has emerged in the Victoria Era with the arrival of non-human sapients on Earth. Little is known about their origins or intentions, and political leaders fear the outbreak of mass pandemonium should their existence become public."
+  concept_alien_menace_desc: "The #bold Alien Menace#! has emerged in the Victoria Era with the arrival of non-human sapients on Earth. Little is known about their origins or intentions, and political leaders fear the outbreak of mass pandemonium should their existence become public."
 
   # Game Rules
   rule_wotw_aliens_delay: "Alien Arrival Delay"
@@ -26,3 +26,6 @@
   # General Use Localization
   wotw_no_effects: "No immediate effects..."
   wotw_nothing_happens: "Nothing happens..."
+
+  WOTW_ALIEN: "Nebulons"
+  WOTW_ALIEN_ADJ: "Nebulon"

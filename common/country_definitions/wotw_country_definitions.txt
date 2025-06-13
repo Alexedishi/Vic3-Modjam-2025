@@ -1,0 +1,7 @@
+﻿WOTW_ALIEN = { # Testing Tag
+	color = { 100 100 100 }
+	country_type = recognized
+	tier = hegemony
+	cultures = { wotw_nebulons_culture }
+	capital = STATE_ILE_DE_FRANCE
+}
