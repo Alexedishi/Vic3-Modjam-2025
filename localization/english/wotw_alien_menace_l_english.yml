@@ -9,6 +9,10 @@
 
  # Tooltips
 
+ # Scripted Buttons
+ wotw_select_response_button: "Select Response to the Aliens"
+ wotw_select_response_button_desc: "The [concept_alien_menace] demands state action. Once we are ready, we can commit to a plan of action to deal with this problem."
+
  # Scripted Progress Bars
  wotw_thinkers_progressbar_name: "Thinkers Momentum"
  wotw_thinkers_progressbar_desc: "Thinkers Momentum"
