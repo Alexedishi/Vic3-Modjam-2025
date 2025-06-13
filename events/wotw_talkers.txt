@@ -26,6 +26,23 @@ wotw_talkers.2 = {
 		ruler = {
 			place_character_in_void = 10000
 		}
+		if = {
+			limit = {
+				global_var:wotw_alien_invasion_type = flag:wotw_invasion_type_extermination
+			}
+			trigger_event = {
+				id = wotw_talkers.4
+				popup = yes
+				days = { 7 31 }
+			}
+		}
+		else = {
+			trigger_event = {
+				id = wotw_talkers.3
+				popup = yes
+				days = { 7 31 }
+			}
+		}
 	}
 
 	option = {
@@ -33,4 +50,209 @@ wotw_talkers.2 = {
 		custom_tooltip = "wotw_character_departs"
 	}
 
+}
+
+# Diplomats
+wotw_talkers.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = wotw_talkers.3.t
+	desc = wotw_talkers.3.d
+
+	duration = 2
+
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	after = {
+		if = {
+			limit = {
+				global_var:wotw_alien_invasion_type = flag:wotw_invasion_type_refugees
+			}
+			trigger_event = {
+				id = wotw_talkers.8
+				popup = yes
+				days = { 7 31 }
+			}
+		}
+		else = {
+			trigger_event = {
+				id = wotw_talkers.5
+				popup = yes
+				days = { 7 31 }
+			}
+		}
+	}
+
+	option = {
+		name = wotw_talkers.3.a
+	}
+}
+
+# Dead at arrival
+wotw_talkers.4 = {
+	type = country_event
+	placement = ROOT
+
+	title = wotw_talkers.4.t
+	desc = wotw_talkers.4.d
+
+	duration = 2
+
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	after = {
+		trigger_event = {
+			id = wotw_talkers.7
+			popup = yes
+			days = { 7 31 }
+		}
+	}
+
+	option = {
+		name = wotw_talkers.4.a
+	}
+}
+
+# Electricity
+wotw_talkers.5 = {
+	type = country_event
+	placement = ROOT
+
+	title = wotw_talkers.5.t
+	desc = wotw_talkers.5.d
+
+	duration = 2
+
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	after = {
+		trigger_event = {
+			id = wotw_talkers.6
+			popup = yes
+			days = { 7 31 }
+		}
+	}
+
+	option = {
+		name = wotw_talkers.5.a
+		add_technology_researched = electrical_generation
+	}
+}
+
+wotw_talkers.6 = {
+	type = country_event
+	placement = ROOT
+
+	title = wotw_talkers.6.t
+	desc = wotw_talkers.6.d
+
+	duration = 2
+
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	after = {
+		# No next event
+	}
+
+	option = {
+		name = wotw_talkers.6.a
+		add_journal_entry = {
+			type = je_wotw_the_damocles_of_industry
+		}
+		activate_law = law_type:law_industry_banned
+	}
+}
+
+wotw_talkers.7 = {
+	type = country_event
+	placement = ROOT
+
+	title = wotw_talkers.7.t
+	desc = wotw_talkers.7.d
+
+	duration = 2
+
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	after = {
+		# No next event
+	}
+
+	option = {
+		name = wotw_talkers.7.a
+		global_var:wotw_negotiator_character = {
+			free_character_from_void = yes
+			kill_character = yes
+		}
+	}
+}
+
+wotw_talkers.8 = {
+	type = country_event
+	placement = ROOT
+
+	title = wotw_talkers.8.t
+	desc = wotw_talkers.8.d
+
+	duration = 2
+
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	immediate = {
+		ordered_scope_state = {
+			limit = {
+				is_incorporated = yes
+			}
+			order_by = wotw_reverse_state_population
+			position = 0
+			save_scope_as = wotw_state_with_lowest_population
+		}
+	}
+	option = {
+		name = wotw_talkers.8.a
+		create_country = {
+			tag = WOTW_ALIEN
+			state = scope:wotw_state_with_lowest_population
+		}
+	}
+	option = {
+		name = wotw_talkers.8.b
+	}
 }

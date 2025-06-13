@@ -39,21 +39,37 @@ wotw_organize_a_congress = {
 
 	possible = {
 		custom_tooltip = {
-			text = "wotw_supported_by_three_fourths"
-			wotw_popular_supported_talkers > 0.5
+			text = "wotw_supported_by_a_third"
+			wotw_popular_supported_talkers > 0.33
 		}
 		influence > 2000
+		hidden_trigger = {
+			NOT = {
+				has_variable = wotw_organized_congress
+			}
+		}
 	}
 
 	effect = {
-		set_variable = {
-			name = wotw_response_var
-			value = 0
-		}
+		set_variable = wotw_organized_congress
 		trigger_event = {
 			id = wotw_talkers.2
 			popup = yes
 		}
 	}
 
+}
+
+wotw_ignore_the_damocles = {
+	name = wotw_ignore_the_damocles
+	desc = wotw_ignore_the_damocles_desc
+
+	possible = {
+		has_journal_entry = je_wotw_the_damocles_of_industry
+	}
+
+	effect = {
+		set_variable = wotw_ignored_the_damocles
+		# todo triggers a war
+	}
 }

@@ -1,15 +1,54 @@
 ﻿l_english:
   wotw_organize_a_congress: "Organize a Congress of Mankind"
   wotw_organize_a_congress_desc: "Organizing a Congress of Mankind is a significant step towards uniting humanity in the face of the alien threat. It will allow us to send a diplomat. It will require careful planning and coordination and the support of the global community."
-  wotw_supported_by_three_fourths: "Countries totaling at least half of the world's [concept_prestige] have an [concept_approval] of us over #b;v 20#!. Currently: [GetPlayer.MakeScope.ScriptValue('wotw_popular_supported_talkers')|%v+]"
-
-  wotw_talkers.2.t: "A Congress of Mankind"
-  wotw_talkers.2.d: "Humanity has convened around [Country.GetRuler.GetPrimaryRoleTitle] [Country.GetRuler.GetFullName] to send as a diplomat to the aliens. [Country.GetRuler.GetSheHe] has already made preparations to depart."
-  wotw_character_departs: "@information! The diplomat departs for the agreed meeting point with the aliens."
-
-
+  wotw_supported_by_a_third: "Countries totaling at least a third of the world's [concept_prestige] have an [concept_approval] of us over #b;v 20#!. Currently: [GetPlayer.MakeScope.ScriptValue('wotw_popular_supported_talkers')|%v+]"
 
   je_wotw_the_talkers_path: "To Negotiate a Peace"
   je_wotw_the_talkers_path_reason: "Humanity must be able to come together and negotiate a peace with the aliens. This will require organizing a congregation of nations to elect a diplomat to represent humanity."
 
   wotw_alien_working_towards_talkers: "Working Towards a Congress of Mankind"
+
+  je_wotw_the_damocles_of_industry: "The Damocles of Industry"
+  je_wotw_the_damocles_of_industry_reason: "The aliens have made it clear that they will not tolerate the continued use of steam engines. We must either renounce their use or face the consequences."
+  wotw_ignore_the_damocles: "Use Steam Engines"
+  wotw_ignore_the_damocles_desc: "We will renegue on our agreement with the aliens and continue to use steam engines. This will likely lead to conflict."
+  wotw_the_damocles_of_industry: "Renounced Steam Engines"
+
+
+  wotw_talkers.2.t: "A Congress of Mankind"
+  wotw_talkers.2.d: "Humanity has convened around [Country.GetRuler.GetPrimaryRoleTitle] [Country.GetRuler.GetFullName] to send as a diplomat to the aliens. [Country.GetRuler.GetSheHe] has already made preparations to depart."
+  wotw_character_departs: "@information! The diplomat departs for the agreed meeting point with the aliens."
+  wotw_talkers.2.a: "Proceed with the Mission"
+
+
+# Diplomats
+  wotw_talkers.3.t: "A Cordial Meeting"
+  wotw_talkers.3.d: "Our negotiator has arrived at the agreed meeting point with the aliens. The aliens have sent a representative to meet with them and have exchanged pleasantries. The aliens have expressed a desire to meet with our negotiator again."
+  wotw_talkers.3.a: "Continue Negotiations"
+
+# Dead at arrival
+  wotw_talkers.4.t: "No Contact"
+  wotw_talkers.4.d: "Since our diplomat arrived at the agreed meeting point, we have not heard from them. We have sent a search party to find them, but they have not returned. We fear the worst."
+
+
+# Electricity
+  wotw_talkers.5.t: "A Gracious Light"
+  wotw_talkers.5.d: "The aliens have offered us a the technology of electricity. It is likely they expect concessions in return, but this is a significant step towards a peaceful resolution."
+  wotw_talkers.5.a: "Accept the Gift"
+
+# Renounce Steam Engines
+  wotw_talkers.6.t: "A World without Fumes"
+  wotw_talkers.6.d: "The aliens have asked us to renounce the use of steam engines in exchange for their protection. This is a significant concession, but it may be necessary to secure a peaceful resolution."
+  wotw_talkers.6.a: "Renounce Steam Engines"
+  wotw_talkers.6.b: "Refuse the Offer"
+
+# Body Discovered
+  wotw_talkers.7.t: "A Body Found"
+  wotw_talkers.7.d: "We have found the body of our diplomat. It appears they were killed by the aliens. We must decide how to respond to this atrocity."
+  wotw_talkers.7.a: "To War!"
+
+# Forty acres
+  wotw_talkers.8.t: "Forty Acres and a Mule"
+  wotw_talkers.8.d: "The aliens are seeking refuge for their people on Earth. They ask for us to grant them a small portion of land to settle on, in exchange for their protection and assistance. This is a significant concession, but it may be necessary to secure a peaceful resolution."
+  wotw_talkers.8.a: "Accept the Offer"
+  wotw_talkers.8.b: "Refuse the Offer"

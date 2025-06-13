@@ -33,11 +33,11 @@ je_wotw_deciphering_aliens = {
 	}
 
 	goal_add_value = {
-		value = 8
+		value = 9
 	}
 
 	complete = {
-		is_goal_complete = yes
+		scope:journal_entry = { is_goal_complete = yes }
 	}
 
 	on_complete = {

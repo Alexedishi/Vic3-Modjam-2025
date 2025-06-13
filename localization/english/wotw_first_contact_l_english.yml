@@ -22,7 +22,7 @@
  wotw_first_contact.2.a: "Just what are they babbling on about?"
  wotw_first_contact.2.b: "Have local authorities check it out."
  wotw_first_contact.3.t: "Streaks in the Night"
- wotw_first_contact.3.d: "Multiple residents across [SCOPE.sState('wotw_sighting_state').GetName] reported seeing strange streaks of light darting across the sky late at night. Witnesses claim the lights moved too fast and erratically to be aircraft or shooting stars."
+ wotw_first_contact.3.d: "Multiple residents have reported seeing strange streaks of light darting across the sky late at night. Witnesses claim the lights moved too fast and erratically to be aircraft or shooting stars."
  wotw_first_contact.3.f: "#italic ”They were there and then they weren't! Like lightning! One of them even hovered above my backyard for a second... I swear it looked right at me!”#!"
  wotw_first_contact.3.a: "Just what are they babbling on about?"
  wotw_first_contact.3.b: "Have local authorities conduct interviews."

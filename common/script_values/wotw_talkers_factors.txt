@@ -18,3 +18,8 @@ wotw_total_prestige_world = {
 		add = prestige
 	}
 }
+
+wotw_reverse_state_population = {
+	value = 0
+	subtract = state_population
+}

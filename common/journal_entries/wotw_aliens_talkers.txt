@@ -35,3 +35,28 @@ je_wotw_the_talkers_path = {
 
 	weight = 1000
 }
+
+je_wotw_the_damocles_of_industry = {
+	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
+
+	group = je_group_crises
+
+	should_be_pinned_by_default = yes
+
+	modifiers_while_active = {
+		wotw_the_damocles_of_industry 
+	}
+
+	scripted_button = wotw_ignore_the_damocles
+
+	complete = {
+		# todo
+		has_variable = wotw_ignored_the_damocles
+	}
+
+	on_monthly_pulse = {
+		# todo
+	}
+
+	weight = 1000
+}

@@ -1630,6 +1630,23 @@ wotw_decipher_word_surrender = {
         localization_key = wotw_alien_word_surrender
     }
 }
+wotw_decipher_word_immediately = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_immediately
+        }
+        localization_key = wotw_human_word_immediately
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_immediately
+    }
+}
 wotw_decipher_word_unleash = {
     type = country
     random_valid = no
