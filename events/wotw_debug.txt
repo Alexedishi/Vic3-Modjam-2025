@@ -1,0 +1,11 @@
+
+namespace = wotw_debug
+
+wotw_debug.1 = {
+	type = country_event
+	placement = ROOT
+
+	immediate = {
+		wotw_spawn_alien_tag = yes
+	}
+}

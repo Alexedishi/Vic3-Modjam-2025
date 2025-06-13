@@ -1,0 +1,7 @@
+wotw_spawn_alien_tag = {
+	create_country = {
+		tag = WOTW_ALIEN
+		state = s:STATE_FORMOSA.region_state:CHI
+		state = s:STATE_CORSICA.region_state:FRA
+	}
+}
