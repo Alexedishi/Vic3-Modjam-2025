@@ -71,11 +71,11 @@ je_wotw_first_contact = {
 	on_weekly_pulse = {
 		random_events = {
 			# ~ every 12 weeks
-			chance_of_no_event = 95
-			1 = wotw_first_contact.2
-			1 = wotw_first_contact.3
-			1 = wotw_first_contact.4
-			1 = wotw_first_contact.5
+			chance_of_no_event = 85
+			5 = wotw_first_contact.2
+			5 = wotw_first_contact.3
+			5 = wotw_first_contact.4
+			5 = wotw_first_contact.5
 		}
 	}
 
