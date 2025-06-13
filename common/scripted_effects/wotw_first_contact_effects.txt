@@ -1,5 +1,16 @@
 ﻿wotw_add_awareness_effect = {
-	custom_tooltip = wotw_add_awareness
+	if = {
+		limit = { $AMOUNT$ = 1 }
+		custom_tooltip = wotw_add_1_awareness
+	}
+	if = {
+		limit = { $AMOUNT$ = 2 }
+		custom_tooltip = wotw_add_2_awareness
+	}
+	if = {
+		limit = { $AMOUNT$ = 3 }
+		custom_tooltip = wotw_add_3_awareness
+	}
 	change_variable = {
 		name = wotw_local_aliens_var
 		add = $AMOUNT$
@@ -7,13 +18,20 @@
 }
 
 wotw_remove_awareness_effect = {
-	custom_tooltip = wotw_remove_awareness
+	if = {
+		limit = { $AMOUNT$ = 1 }
+		custom_tooltip = wotw_remove_1_awareness
+	}
+	if = {
+		limit = { $AMOUNT$ = 2 }
+		custom_tooltip = wotw_remove_2_awareness
+	}
+	if = {
+		limit = { $AMOUNT$ = 3 }
+		custom_tooltip = wotw_remove_3_awareness
+	}
 	change_variable = {
 		name = wotw_local_aliens_var
 		subtract = $AMOUNT$
 	}
-}
-
-wotw_cleanup_first_contact_effect = {
-
 }
