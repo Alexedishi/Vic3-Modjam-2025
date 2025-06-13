@@ -68,6 +68,9 @@ je_wotw_first_contact = {
 		random_events = {
 			chance_of_no_event = 95
 			5 = wotw_first_contact.2
+			5 = wotw_first_contact.3
+			5 = wotw_first_contact.4
+			5 = wotw_first_contact.5
 		}
 	}
 
