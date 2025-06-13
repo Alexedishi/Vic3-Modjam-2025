@@ -1,0 +1,25 @@
+wotw_deciphering_factors = {
+	value = 0.05
+	add = {
+		value = 0
+		every_scope_building = {
+			limit = {
+				is_building_type = building_university
+			}
+			add = 1
+		}
+		divide = 200
+	}
+	add = {
+		value = 0
+		every_political_movement = {
+			limit = {
+				is_political_movement_type = wotw_movement_alien_talkers
+			}
+			add = political_movement_support
+			divide = 2
+		}
+	}
+	max = 0.5
+
+}

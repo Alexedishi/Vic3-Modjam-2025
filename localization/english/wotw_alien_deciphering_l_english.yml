@@ -6,6 +6,13 @@
 
   wotw_alien_deciphering.1.a: "Let's begin deciphering the alien message."
 
+  wotw_alien_deciphering.2.t: "A Linguistic Breakthrough"
+  wotw_alien_deciphering.2.d: "Our linguists have made a breakthrough in understanding the alien language. We can now decipher more of the message, revealing its true nature."
+  wotw_alien_deciphering.2.f: "The message now reads:\n[Localize('wotw_alien_message_destroy_initial_contact')]"
+  wotw_alien_deciphering.2.a: "Continue deciphering the alien message."
+
+  wotw_alien_deciphering.2.tt: "@information! Increases Alien Deciphering Progress"
+
   je_wotw_deciphering_aliens: "Deciphering the Alien Message"
   je_wotw_deciphering_aliens_desc: "We have received an alien message that we need to decipher."
-  je_wotw_deciphering_aliens_reason: "The message reads:\n [Localize('wotw_alien_message_destroy_initial_contact')]."
+  je_wotw_deciphering_aliens_reason: "The message reads:\n [Localize('wotw_alien_message_destroy_initial_contact')].\nThe size of the #gold Talkers#! [concept_political_movement] and the number of Universities in the [concept_country] increase the likelihood of #yellow Breakthroughs#!."

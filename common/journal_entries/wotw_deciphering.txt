@@ -52,8 +52,17 @@ je_wotw_deciphering_aliens = {
 	}
 
 	on_monthly_pulse = {
-		events = {
-			
+		effect = {
+			random = {
+				chance = {
+					value = wotw_deciphering_factors
+					multiply = 100
+				}
+				trigger_event = {
+					id = wotw_alien_deciphering.2
+					popup = yes
+				}
+			}
 		}
 	}
 

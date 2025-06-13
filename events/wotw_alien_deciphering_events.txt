@@ -47,3 +47,35 @@ wotw_alien_deciphering.1 = {
 		}
 	}
 }
+
+wotw_alien_deciphering.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = wotw_alien_deciphering.2.t
+	desc = wotw_alien_deciphering.2.d
+	flavor = wotw_alien_deciphering.2.f
+
+	duration = 3
+
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		has_journal_entry = je_wotw_deciphering_aliens
+	}
+
+	immediate = {
+		wotw_decipher_alien_words_helper = yes
+	}
+
+	option = {
+		name = wotw_alien_deciphering.2.a
+		custom_tooltip = wotw_alien_deciphering.2.tt
+	}
+}
