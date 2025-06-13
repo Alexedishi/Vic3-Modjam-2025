@@ -1,0 +1,33 @@
+﻿
+
+wotw_alien_bodysuit = {
+		set_tags = "shrink_arms,shrink_legs,shrink_chest,shrink_belly"
+		entity = { required_tags = ""					shared_pose_entity = torso		entity = "wotw_alien_bodysuit_entity" }	}
+
+wotw_alien_leg_armor = {
+		set_tags = "shrink_arms,shrink_legs,shrink_chest,shrink_belly"
+		entity = { required_tags = ""					shared_pose_entity = torso		entity = "wotw_alien_leg_armor_entity" }	}
+
+wotw_alien_arm_armor = {
+		set_tags = "shrink_arms,shrink_legs,shrink_chest,shrink_belly"
+		entity = { required_tags = ""					shared_pose_entity = torso		entity = "wotw_alien_arm_armor_entity" }	}
+
+wotw_alien_belt = {
+		set_tags = "shrink_arms,shrink_legs,shrink_chest,shrink_belly"
+		entity = { required_tags = ""					shared_pose_entity = torso		entity = "wotw_alien_belt_entity" }	}
+
+wotw_alien_necklace = {
+		set_tags = "shrink_arms,shrink_legs,shrink_chest,shrink_belly"
+		entity = { required_tags = ""					shared_pose_entity = torso		entity = "wotw_alien_necklace_entity" }	}
+
+wotw_alien_boots = {
+		set_tags = "shrink_arms,shrink_legs,shrink_chest,shrink_belly"
+		entity = { required_tags = ""					shared_pose_entity = torso		entity = "wotw_alien_boots_entity" }	}
+
+wotw_alien_gloves = {
+		set_tags = "shrink_arms,shrink_legs,shrink_chest,shrink_belly"
+		entity = { required_tags = ""					shared_pose_entity = torso		entity = "wotw_alien_gloves_entity" }	}
+
+wotw_alien_helmet = {
+	set_tags ="cap1" 
+	entity = { required_tags = ""					shared_pose_entity = head		entity = "wotw_alien_helmet_entity" }	}
