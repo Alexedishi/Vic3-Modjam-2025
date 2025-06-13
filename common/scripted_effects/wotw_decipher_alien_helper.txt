@@ -1,0 +1,7 @@
+wotw_decipher_alien_words_helper = {
+	wotw_decipher_alien_words_next_part = yes
+	change_variable = {
+		name = wotw_alien_deciphering_var
+		add = 1
+	}
+}

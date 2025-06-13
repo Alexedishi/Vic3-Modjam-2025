@@ -1,0 +1,36 @@
+on_acquired_technology = {
+	on_actions = {
+		on_wotw_acquired_technology
+	}
+}
+
+on_wotw_acquired_technology = {
+	effect = {
+		if = {
+			limit = {
+				has_technology_researched = wotw_xeno_linguistics_tech
+				NOT = {
+					has_variable = wotw_xeno_linguistics_tech_acquired
+				}
+			}
+			set_variable = wotw_xeno_linguistics_tech_acquired
+			if = {
+				limit = {
+					NOT = {
+						has_journal_entry = je_wotw_deciphering_aliens
+					}
+				}
+				trigger_event = {
+					id = wotw_alien_deciphering.1
+					popup = yes
+					days = { 3 17 }
+				}
+				set_variable = wotw_xeno_researched_first_flag
+			}
+			else = {
+				post_notification = wotw_xeno_linguistics_progress_message
+				wotw_decipher_alien_words_helper = yes
+			}
+		}
+	}
+}

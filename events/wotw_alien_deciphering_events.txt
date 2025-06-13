@@ -21,5 +21,23 @@ wotw_alien_deciphering.1 = {
 
 	option = {
 		name = wotw_alien_deciphering.1.a
+		show_as_tooltip = {
+			add_journal_entry = {
+				type = je_wotw_deciphering_aliens
+			}
+		}
+	}
+
+	after = {
+		set_variable = {
+			name = wotw_alien_deciphering_var
+			value = 0
+		}
+		if = {
+			limit = {
+				has_variable = wotw_xeno_researched_first_flag
+			}
+			wotw_decipher_alien_words_helper = yes
+		}
 	}
 }

@@ -1,0 +1,10 @@
+wotw_xeno_linguistics_progress_message = {
+	type = country
+	group = "wotw_deciphering_progress"
+	days = 14
+	
+	texture = "gfx/interface/icons/notification_icons/influence.dds"
+
+	notification_type = toast
+	color = good
+}

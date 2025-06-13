@@ -1,0 +1,70 @@
+je_wotw_deciphering_aliens = {
+	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
+
+	group = je_group_crises
+
+	should_be_pinned_by_default = yes
+
+	status_desc = {
+		first_valid = {
+			triggered_desc = { 
+				desc = je_wotw_deciphering_aliens_desc
+			}
+		}
+	}
+
+	is_shown_when_inactive = {
+		custom_tooltip = {
+			text = je_wotw_first_contact_complete
+			var:wotw_local_aliens_var >= 10
+		}
+	}
+
+	possible = {
+		has_variable = wotw_alien_deciphering_var
+	}
+
+	immediate = {
+		wotw_decipher_alien_words_helper = yes
+	}
+
+	current_value = {
+		value = root.var:wotw_alien_deciphering_var
+	}
+
+	goal_add_value = {
+		value = 9
+	}
+
+	complete = {
+		is_goal_complete = yes
+	}
+
+	on_complete = {
+		# effects when deciphered
+	}
+
+	on_monthly_pulse = {
+		events = {
+			
+		}
+	}
+
+	invalid = {
+		custom_tooltip = {
+			text = je_wotw_aliens_invalid
+			has_global_variable = wotw_aliens_whacked
+		}
+	}
+
+	on_invalid = {
+		# effect when aliens whacked
+	}
+
+	on_monthly_pulse = {
+
+	}
+
+	weight = 1000
+
+}

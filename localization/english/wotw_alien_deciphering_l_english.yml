@@ -3,3 +3,9 @@
   wotw_alien_deciphering.1.t: "A Missive from the Stars"
   wotw_alien_deciphering.1.d: "We received an alien missive, written in a language that is not of this world. The message is long and complex, but we can progressively decipher it with the right tools and knowledge."
   wotw_alien_deciphering.1.f: "[Localize('wotw_alien_message_destroy_initial_contact')]"
+
+  wotw_alien_deciphering.1.a: "Let's begin deciphering the alien message."
+
+  je_wotw_deciphering_aliens: "Deciphering the Alien Message"
+  je_wotw_deciphering_aliens_desc: "The message reads:\n [Localize('wotw_alien_message_destroy_initial_contact')]."
+  je_wotw_deciphering_aliens_reason: :"We have received an alien message that we need to decipher."

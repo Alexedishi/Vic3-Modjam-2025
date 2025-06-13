@@ -1,0 +1,5 @@
+﻿l_english:
+  wotw_deciphering_progress: "Deciphering Alien Missive"
+  notification_wotw_xeno_linguistics_progress_message_name: "Progress in Xeno Linguistics"
+  notification_wotw_xeno_linguistics_progress_message_desc: "Advances in xeno linguistics have been made, allowing us to decipher more of the alien message."
+  notification_wotw_xeno_linguistics_progress_message_tooltip: "$notification_wotw_xeno_linguistics_progress_message_name$\n$TOOLTIP_DELIMITER$\n$notification_wotw_xeno_linguistics_progress_message_desc$"
