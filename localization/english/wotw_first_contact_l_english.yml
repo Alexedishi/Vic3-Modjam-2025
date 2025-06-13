@@ -31,3 +31,9 @@
  # tooltips
  wotw_add_awareness: ""
  wotw_remove_awareness: ""
+
+ # modifiers
+ modifier_wotw_investigating_sightings: "Investigating Strange Sightings"
+ modifier_wotw_mysterious_crop_circles: "Mysterious Crop Circles"
+ modifier_wotw_interviewed_ufo_witnesses: "Interviewed UFO Witnesses"
+ modifier_wotw_suppressing_rumors: "Suppressing Rumors"
