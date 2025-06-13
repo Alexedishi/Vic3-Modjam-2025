@@ -79,6 +79,16 @@ je_wotw_first_contact = {
 		}
 	}
 
+	current_value = {
+		value = var:wotw_local_aliens_var
+	}
+
+	goal_add_value = {
+		value = 10
+	}
+
+	progressbar = yes
+
 	status_desc = {
 		first_valid = {
 			triggered_desc = {
