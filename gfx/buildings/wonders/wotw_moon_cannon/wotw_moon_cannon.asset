@@ -1,0 +1,22 @@
+pdxmesh = {
+	name = "wotw_moon_cannon_mesh"
+	file = "wotw_moon_cannon.mesh"
+
+	scale = 2
+
+	meshsettings = {
+		name = "wotw_moon_cannonShape"
+		index = 0
+		texture_diffuse = "wotw_moon_cannon_diffuse.dds"
+		texture_normal = "wotw_moon_cannon_normal.dds"
+		texture_specular = "wotw_moon_cannon_properties.dds"
+		shader = "standard"
+		additional_shader_defines = { "PDX_MESH_SNAP_VERTICES_TO_TERRAIN" "EMISSIVE_NIGHT" "EMISSIVE_NIGHT_RANDOM" }
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "building_wotw_moon_cannon_entity"
+	pdxmesh = "wotw_moon_cannon_mesh"
+}

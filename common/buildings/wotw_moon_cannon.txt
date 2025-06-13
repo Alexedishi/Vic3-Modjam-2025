@@ -1,0 +1,37 @@
+﻿#########################
+# MOON CANNON BUILDING  #
+#########################
+
+#by Lord R
+
+##########################
+
+#Opera House
+
+building_wotw_moon_cannon = {
+	building_group = bg_monuments
+	icon = "gfx/interface/icons/building_icons/food_industry.dds"
+	city_type = city
+	levels_per_mesh = 1
+	expandable = no
+	downsizeable = no
+
+	production_method_groups = {
+	}
+
+	can_build_government = {
+		owner = {
+			is_player = yes
+		}
+	}
+
+	can_build_private = {
+		always = no
+	}
+
+	required_construction = construction_cost_high
+
+	ownership_type = no_ownership
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
