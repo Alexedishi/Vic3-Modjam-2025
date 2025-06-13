@@ -3,7 +3,7 @@
 ########################################
 
 je_wotw_first_contact = {
-	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
 
 	group = je_group_crises
 
@@ -109,7 +109,7 @@ je_wotw_first_contact = {
 }
 
 je_wotw_the_alien_menace = {
-	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
 
 	group = je_group_crises
 

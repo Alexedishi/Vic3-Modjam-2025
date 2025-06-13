@@ -8,9 +8,9 @@
 
   # Game Rules
   rule_wotw_aliens_delay: "Alien Arrival Delay"
-  setting_wotw_aliens_normal_delay_: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_wotw_aliens_normal_delay_desc Normal Delay#!#!"
+  setting_wotw_aliens_normal_delay: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_wotw_aliens_normal_delay_desc Normal Delay#!#!"
   setting_wotw_aliens_normal_delay_desc: "The [concept_alien_menace] will appear #bold 10 years#! after game start."
-  setting_wotw_aliens_short_delay "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_wotw_aliens_short_delay_desc Short Delay#!#!"
+  setting_wotw_aliens_short_delay: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_wotw_aliens_short_delay_desc Short Delay#!#!"
   setting_wotw_aliens_short_delay_desc: "The [concept_alien_menace] will appear #bold 5 years#! after game start."
   setting_wotw_aliens_no_delay: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_wotw_aliens_no_delay_desc No Delay#!#!"
   setting_wotw_aliens_no_delay_desc: "The [concept_alien_menace] will appear #bold immediately#! after game start."
