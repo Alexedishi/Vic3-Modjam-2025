@@ -1,7 +1,7 @@
 ﻿l_english:
  # Journal Entries
  je_wotw_the_alien_menace: "The Alien Menace"
- je_wotw_the_alien_menace_reason: ""
+ je_wotw_the_alien_menace_reason: "The presence of an [concept_alien_menace] has been confirmed. [ROOT.GetCountry.GetName] must choose a course of action while avoiding mass paranoia and pandemonium. So far three plans have been proposed for dealing with this situation:\n•The #white Thinkers#! have proposed researching their technologies and matching them with innovation.\n•The #white Warlikes#! have asserted that their intentions are clearly threatening and the only appropriate response is a show of force.\n•The #white Talkers#! have argued that diplomacy must come first and that we should strive for friendly relations."
  je_wotw_the_alien_menace_complete: "[ROOT.GetCountry.GetNameNoFlag] has selected its response to the [concept_alien_menace]"
  je_wotw_the_alien_menace_invalid: "The [concept_alien_menace] has been resolved"
 
@@ -39,8 +39,8 @@
  wotw_alien_menace_events.8.f: ""
  wotw_alien_menace_events.8.a: ""
  wotw_alien_menace_events.9.t: "Responding to the [concept_alien_menace]"
- wotw_alien_menace_events.9.d: ""
- wotw_alien_menace_events.9.f: ""
+ wotw_alien_menace_events.9.d: "Years of preparations have borne fruit and [ROOT.GetCountry.GetName] is now ready to response to the [concept_alien_menace]. All that remains is to select our solution."
+ wotw_alien_menace_events.9.f: "The [ROOT.GetCountry.GetAdjectiveNoFormatting] administration has been rocked by the discovery of real-life aliens. Whatever we choose, we must be decisive lest paranoia take hold amongst the people."
  wotw_alien_menace_events.9.a: "Support the Thinkers' Proposition." # I'm going to piss on the moooooooooooooooooooooooon!
  wotw_alien_menace_events.9.b: "Support the Warlikes' Proposition."
  wotw_alien_menace_events.9.c: "Support the Talkers' Proposition."
