@@ -1,0 +1,96 @@
+﻿namespace = wotw_alien_menace_events
+
+wotw_alien_menace_events.9 = { #
+	type = country_event
+	placement = root
+
+	title = wotw_alien_menace_events.9.t
+	desc = wotw_alien_menace_events.9.d
+	flavor = wotw_alien_menace_events.9.f
+
+	event_image = {
+		video = "africa_leader_arguing"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	duration = 3
+
+	dlc = dlc_wotw
+
+	trigger = {
+		# triggered by wotw_select_response_button
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = wotw_alien_menace_events.9.a
+		trigger = {
+			custom_tooltip = wotw_thinkers_possible
+			je:je_wotw_the_alien_menace = {
+				"scripted_bar_progress(wotw_thinkers_progressbar)" >= 100
+			}
+		}
+		show_as_unavailable = { always = yes }
+		highlighted_option = yes
+		custom_tooltip = {
+			text = wotw_thinkers_path_tooltip
+			set_variable = {
+				name = wotw_response_var
+				value = 1 # Thinkers
+			}
+		}
+	}
+
+	option = {
+		name = wotw_alien_menace_events.9.b
+		trigger = {
+			custom_tooltip = wotw_thinkers_possible
+			je:je_wotw_the_alien_menace = {
+				"scripted_bar_progress(wotw_warlikes_progressbar)" >= 100
+			}
+		}
+		show_as_unavailable = { always = yes }
+		highlighted_option = yes
+		custom_tooltip = {
+			text = wotw_warlikes_path_tooltip
+			set_variable = {
+				name = wotw_response_var
+				value = 2 # Warlikes
+			}
+		}
+	}
+
+	option = {
+		name = wotw_alien_menace_events.9.c
+		trigger = {
+			custom_tooltip = wotw_talkers_possible
+			je:je_wotw_the_alien_menace = {
+				"scripted_bar_progress(wotw_talkers_progressbar)" >= 100
+			}
+		}
+		show_as_unavailable = { always = yes }
+		highlighted_option = yes
+		custom_tooltip = {
+			text = wotw_talkers_path_tooltip
+			set_variable = {
+				name = wotw_response_var
+				value = 3 # Talkers
+			}
+		}
+	}
+
+	option = {
+		name = wotw_alien_menace_events.9.e
+		default_option = yes
+		custom_tooltip = {
+			text = wotw_nothing_happens
+			remove_variable = wotw_response_var
+		}
+	}
+
+}

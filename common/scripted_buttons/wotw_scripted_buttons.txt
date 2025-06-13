@@ -3,11 +3,14 @@
 	desc = wotw_select_response_button_desc
 
 	possible = {
-		je:je_wotw_the_alien_menace = {
-			OR = {
-				"scripted_bar_progress(wotw_thinkers_progressbar)" >= 100
-				"scripted_bar_progress(wotw_warlikes_progressbar)" >= 100
-				"scripted_bar_progress(wotw_talkers_progressbar)" >= 100
+		custom_tooltip = {
+			text = wotw_selection_possible
+			je:je_wotw_the_alien_menace = {
+				OR = {
+					"scripted_bar_progress(wotw_thinkers_progressbar)" >= 100
+					"scripted_bar_progress(wotw_warlikes_progressbar)" >= 100
+					"scripted_bar_progress(wotw_talkers_progressbar)" >= 100
+				}
 			}
 		}
 		hidden_trigger = {
@@ -21,6 +24,10 @@
 		set_variable = {
 			name = wotw_response_var
 			value = 0
+		}
+		trigger_event = {
+			id = wotw_alien_menace_events.9
+			popup = yes
 		}
 	}
 
