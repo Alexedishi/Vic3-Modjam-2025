@@ -27,5 +27,10 @@
   wotw_no_effects: "No immediate effects..."
   wotw_nothing_happens: "Nothing happens..."
 
+  wotw_invasion_type_refugees: "Refugees"
+  wotw_invasion_type_resort: "Resort-Goers"
+  wotw_invasion_type_saviors: "Saviors"
+  wotw_invasion_type_extermination: "Extermination Force"
+
   WOTW_ALIEN: "Nebulons"
   WOTW_ALIEN_ADJ: "Nebulon"
