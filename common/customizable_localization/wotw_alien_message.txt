@@ -1,0 +1,28 @@
+﻿wotw_alien_message_custom_loc = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+			global_var:wotw_alien_invasion_type = flag:wotw_invasion_type_refugees
+		}
+		localization_key = wotw_alien_message_refugee_initial_contact
+	}
+	text = {
+		trigger = {
+			global_var:wotw_alien_invasion_type = flag:wotw_invasion_type_resort
+		}
+		localization_key = wotw_alien_message_resort_initial_contact
+	}
+	text = {
+        trigger = {
+			global_var:wotw_alien_invasion_type = flag:wotw_invasion_type_saviors
+		}
+		localization_key = wotw_alien_message_savior_initial_contact
+	}
+	text = {
+		trigger = {
+			global_var:wotw_alien_invasion_type = flag:wotw_invasion_type_extermination
+		}
+		localization_key = wotw_alien_message_destroy_initial_contact
+	}
+}

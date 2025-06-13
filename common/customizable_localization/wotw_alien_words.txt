@@ -882,6 +882,244 @@ wotw_decipher_word_future = {
         localization_key = wotw_alien_word_future
     }
 }
+wotw_decipher_word_homeland = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_homeland
+        }
+        localization_key = wotw_human_word_homeland
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_homeland
+    }
+}
+wotw_decipher_word_been = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_been
+        }
+        localization_key = wotw_human_word_been
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_been
+    }
+}
+wotw_decipher_word_paradise = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_paradise
+        }
+        localization_key = wotw_human_word_paradise
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_paradise
+    }
+}
+wotw_decipher_word_to = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_to
+        }
+        localization_key = wotw_human_word_to
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_to
+    }
+}
+wotw_decipher_word_us = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_us
+        }
+        localization_key = wotw_human_word_us
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_us
+    }
+}
+wotw_decipher_word_new = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_new
+        }
+        localization_key = wotw_human_word_new
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_new
+    }
+}
+wotw_decipher_word_technologies = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_technologies
+        }
+        localization_key = wotw_human_word_technologies
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_technologies
+    }
+}
+wotw_decipher_word_terrible = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_terrible
+        }
+        localization_key = wotw_human_word_terrible
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_terrible
+    }
+}
+wotw_decipher_word_curse = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_curse
+        }
+        localization_key = wotw_human_word_curse
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_curse
+    }
+}
+wotw_decipher_word_they = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_they
+        }
+        localization_key = wotw_human_word_they
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_they
+    }
+}
+wotw_decipher_word_start = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_start
+        }
+        localization_key = wotw_human_word_start
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_start
+    }
+}
+wotw_decipher_word_resemble = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_resemble
+        }
+        localization_key = wotw_human_word_resemble
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_resemble
+    }
+}
+wotw_decipher_word_not = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_not
+        }
+        localization_key = wotw_human_word_not
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_not
+    }
+}
+wotw_decipher_word_ask = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_ask
+        }
+        localization_key = wotw_human_word_ask
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_ask
+    }
+}
 wotw_decipher_word_you = {
     type = country
     random_valid = no
@@ -897,6 +1135,295 @@ wotw_decipher_word_you = {
         }
         fallback = yes
         localization_key = wotw_alien_word_you
+    }
+}
+wotw_decipher_word_stop = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_stop
+        }
+        localization_key = wotw_human_word_stop
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_stop
+    }
+}
+wotw_decipher_word_development = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_development
+        }
+        localization_key = wotw_human_word_development
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_development
+    }
+}
+wotw_decipher_word_this = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_this
+        }
+        localization_key = wotw_human_word_this
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_this
+    }
+}
+wotw_decipher_word_resort = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_resort
+        }
+        localization_key = wotw_human_word_resort
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_resort
+    }
+}
+wotw_decipher_word_world = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_world
+        }
+        localization_key = wotw_human_word_world
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_world
+    }
+}
+wotw_decipher_word_as = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_as
+        }
+        localization_key = wotw_human_word_as
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_as
+    }
+}
+wotw_decipher_word_it = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_it
+        }
+        localization_key = wotw_human_word_it
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_it
+    }
+}
+wotw_decipher_word_highly = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_highly
+        }
+        localization_key = wotw_human_word_highly
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_highly
+    }
+}
+wotw_decipher_word_inconvenient = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_inconvenient
+        }
+        localization_key = wotw_human_word_inconvenient
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_inconvenient
+    }
+}
+wotw_decipher_word_other = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_other
+        }
+        localization_key = wotw_human_word_other
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_other
+    }
+}
+wotw_decipher_word_species = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_species
+        }
+        localization_key = wotw_human_word_species
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_species
+    }
+}
+wotw_decipher_word_which = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_which
+        }
+        localization_key = wotw_human_word_which
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_which
+    }
+}
+wotw_decipher_word_long = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_long
+        }
+        localization_key = wotw_human_word_long
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_long
+    }
+}
+wotw_decipher_word_used = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_used
+        }
+        localization_key = wotw_human_word_used
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_used
+    }
+}
+wotw_decipher_word_place = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_place
+        }
+        localization_key = wotw_human_word_place
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_place
+    }
+}
+wotw_decipher_word_away = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_away
+        }
+        localization_key = wotw_human_word_away
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_away
+    }
+}
+wotw_decipher_word_troubles = {
+    type = country
+    random_valid = no
+    text = {
+        trigger = {
+            has_variable = wotw_alien_word_deciphered_troubles
+        }
+        localization_key = wotw_human_word_troubles
+    }
+    text = {
+        trigger = {
+            always = no
+        }
+        fallback = yes
+        localization_key = wotw_alien_word_troubles
     }
 }
 wotw_decipher_word_inferior = {
@@ -931,40 +1458,6 @@ wotw_decipher_word_creature = {
         }
         fallback = yes
         localization_key = wotw_alien_word_creature
-    }
-}
-wotw_decipher_word_place = {
-    type = country
-    random_valid = no
-    text = {
-        trigger = {
-            has_variable = wotw_alien_word_deciphered_place
-        }
-        localization_key = wotw_human_word_place
-    }
-    text = {
-        trigger = {
-            always = no
-        }
-        fallback = yes
-        localization_key = wotw_alien_word_place
-    }
-}
-wotw_decipher_word_this = {
-    type = country
-    random_valid = no
-    text = {
-        trigger = {
-            has_variable = wotw_alien_word_deciphered_this
-        }
-        localization_key = wotw_human_word_this
-    }
-    text = {
-        trigger = {
-            always = no
-        }
-        fallback = yes
-        localization_key = wotw_alien_word_this
     }
 }
 wotw_decipher_word_kind = {
@@ -1120,23 +1613,6 @@ wotw_decipher_word_do = {
         localization_key = wotw_alien_word_do
     }
 }
-wotw_decipher_word_not = {
-    type = country
-    random_valid = no
-    text = {
-        trigger = {
-            has_variable = wotw_alien_word_deciphered_not
-        }
-        localization_key = wotw_human_word_not
-    }
-    text = {
-        trigger = {
-            always = no
-        }
-        fallback = yes
-        localization_key = wotw_alien_word_not
-    }
-}
 wotw_decipher_word_surrender = {
     type = country
     random_valid = no
@@ -1254,23 +1730,6 @@ wotw_decipher_word_longer = {
         }
         fallback = yes
         localization_key = wotw_alien_word_longer
-    }
-}
-wotw_decipher_word_to = {
-    type = country
-    random_valid = no
-    text = {
-        trigger = {
-            has_variable = wotw_alien_word_deciphered_to
-        }
-        localization_key = wotw_human_word_to
-    }
-    text = {
-        trigger = {
-            always = no
-        }
-        fallback = yes
-        localization_key = wotw_alien_word_to
     }
 }
 wotw_decipher_word_prevent = {
@@ -1407,23 +1866,6 @@ wotw_decipher_word_dangers = {
         }
         fallback = yes
         localization_key = wotw_alien_word_dangers
-    }
-}
-wotw_decipher_word_it = {
-    type = country
-    random_valid = no
-    text = {
-        trigger = {
-            has_variable = wotw_alien_word_deciphered_it
-        }
-        localization_key = wotw_human_word_it
-    }
-    text = {
-        trigger = {
-            always = no
-        }
-        fallback = yes
-        localization_key = wotw_alien_word_it
     }
 }
 wotw_decipher_word_bring = {
@@ -1815,22 +2257,5 @@ wotw_decipher_word_abandon = {
         }
         fallback = yes
         localization_key = wotw_alien_word_abandon
-    }
-}
-wotw_decipher_word_development = {
-    type = country
-    random_valid = no
-    text = {
-        trigger = {
-            has_variable = wotw_alien_word_deciphered_development
-        }
-        localization_key = wotw_human_word_development
-    }
-    text = {
-        trigger = {
-            always = no
-        }
-        fallback = yes
-        localization_key = wotw_alien_word_development
     }
 }

@@ -25,14 +25,7 @@ je_wotw_deciphering_aliens = {
 	}
 
 	immediate = {
-		wotw_decipher_alien_words_helper = yes
-		if = {
-			limit = {
-				has_variable = wotw_xeno_researched_first_flag
-			}
-			wotw_decipher_alien_words_helper = yes
-		}
-
+		
 	}
 
 	current_value = {
