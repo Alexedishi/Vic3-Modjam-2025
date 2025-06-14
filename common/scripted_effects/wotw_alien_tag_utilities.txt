@@ -1,4 +1,15 @@
-﻿wotw_spawn_alien_tag = {
+﻿wotw_spawn_alien_tag_if_not_spawned = {
+	if = {
+		limit = {
+			NOT = {
+				exists = c:WOTW_ALIEN
+			}
+		}
+		wotw_spawn_alien_tag = yes
+	}
+}
+
+wotw_spawn_alien_tag = {
 	s:STATE_FORMOSA = {
 		random_scope_state = {
 			wotw_move_all_pops_to_capital = yes
@@ -281,6 +292,12 @@ wotw_move_all_pops_to_capital = {
 	}
 }
 
+wotw_set_aliens_prepared = {
+	c:WOTW_ALIEN = {
+		set_variable = wotw_ready_and_prepared_for_total_war
+	}
+}
+
 wotw_start_total_war_if_not_at_war = {
 	if = {
 		limit = {
@@ -294,16 +311,32 @@ wotw_start_total_war_if_not_at_war = {
 wotw_start_total_war = {
 	set_global_variable = wotw_total_war_against_aliens
 
-	ordered_country = {
-		order_by = prestige
+
+	random_country = {
 		limit = {
-			NOT = {
-				this = c:WOTW_ALIEN
+			is_player = yes
+		}
+		save_scope_as = scope:humanity_center
+	}
+
+	if = {
+		limit = {
+			not = {
+				exists = scope:humanity_center
 			}
 		}
-		position = 0
-		save_scope_as = humanity_center
+		ordered_country = {
+			order_by = prestige
+			limit = {
+				NOT = {
+					this = c:WOTW_ALIEN
+				}
+			}
+			position = 0
+			save_scope_as = humanity_center
+		}
 	}
+
 
 	c:WOTW_ALIEN = {
 		change_infamy = {

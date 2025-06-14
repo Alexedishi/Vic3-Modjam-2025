@@ -19,19 +19,19 @@
 	on_complete = {
 		random_list = {
 			#Production Techs
-			1 = {
+			5 = {
 				trigger = {
 					NOT = { has_technology_researched = wotw_hypersteel_tech }
 				}
 				add_technology_researched = wotw_hypersteel_tech
 			}
-			1 = {
+			5 = {
 				trigger = {
 					NOT = { has_technology_researched = wotw_alien_energy_generation_tech }
 				}
 				add_technology_researched = wotw_alien_energy_generation_tech
 			}
-			1 = {
+			5 = {
 				trigger = {
 					NOT = { has_technology_researched = wotw_4_dimensional_chemistry_tech }
 				}
@@ -59,13 +59,13 @@
 				add_technology_researched = wotw_ray_guns_alien_tech
 			}
 			#Society Techs
-			1 = {
+			5 = {
 				trigger = {
 					NOT = { has_technology_researched = wotw_xeno_cryptography_tech }
 				}
 				add_technology_researched = wotw_xeno_cryptography_tech
 			}
-			1 = {
+			5 = {
 				trigger = {
 					NOT = { has_technology_researched = wotw_4_dimensional_physics_tech }
 				}

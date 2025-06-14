@@ -8,7 +8,7 @@
 			}
 			add = 1
 		}
-		divide = 200
+		divide = 250
 	}
 	add = {
 		value = 0
@@ -17,7 +17,7 @@
 				is_political_movement_type = wotw_movement_alien_talkers
 			}
 			add = political_movement_support
-			divide = 2
+			divide = 4
 		}
 	}
 	max = 0.5
