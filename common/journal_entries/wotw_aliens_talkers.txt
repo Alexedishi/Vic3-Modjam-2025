@@ -15,7 +15,7 @@
 	}
 
 	modifiers_while_active = {
-		wotw_alien_working_towards_talkers 
+		wotw_alien_working_towards_talkers
 	}
 
 	scripted_button = wotw_organize_a_congress
