@@ -6,6 +6,7 @@
 	should_be_pinned_by_default = yes
 
 	scripted_button = wotw_moon_gun_scripted_button
+	scripted_button = wotw_start_crash_site_investigation
 
 	is_shown_when_inactive = {
 		custom_tooltip = {

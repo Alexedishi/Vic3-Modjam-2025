@@ -30,9 +30,11 @@ wotw_alien_menace_events.9 = { #
 	option = {
 		name = wotw_alien_menace_events.9.a
 		trigger = {
-			custom_tooltip = wotw_thinkers_possible
-			je:je_wotw_the_alien_menace = {
-				"scripted_bar_progress(wotw_thinkers_progressbar)" >= 100
+			custom_tooltip = {
+				text = wotw_thinkers_possible
+				je:je_wotw_the_alien_menace = {
+					"scripted_bar_progress(wotw_thinkers_progressbar)" >= 100
+				}
 			}
 		}
 		show_as_unavailable = { always = yes }
@@ -49,9 +51,11 @@ wotw_alien_menace_events.9 = { #
 	option = {
 		name = wotw_alien_menace_events.9.b
 		trigger = {
-			custom_tooltip = wotw_thinkers_possible
-			je:je_wotw_the_alien_menace = {
-				"scripted_bar_progress(wotw_warlikes_progressbar)" >= 100
+			custom_tooltip = {
+				text = wotw_warlikes_possible
+				je:je_wotw_the_alien_menace = {
+					"scripted_bar_progress(wotw_warlikes_progressbar)" >= 100
+				}
 			}
 		}
 		show_as_unavailable = { always = yes }
@@ -68,9 +72,11 @@ wotw_alien_menace_events.9 = { #
 	option = {
 		name = wotw_alien_menace_events.9.c
 		trigger = {
-			custom_tooltip = wotw_talkers_possible
-			je:je_wotw_the_alien_menace = {
-				"scripted_bar_progress(wotw_talkers_progressbar)" >= 100
+			custom_tooltip = {
+				text = wotw_talkers_possible
+				je:je_wotw_the_alien_menace = {
+					"scripted_bar_progress(wotw_talkers_progressbar)" >= 100
+				}
 			}
 		}
 		show_as_unavailable = { always = yes }

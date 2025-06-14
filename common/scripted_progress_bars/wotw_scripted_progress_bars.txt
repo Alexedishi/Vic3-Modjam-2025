@@ -7,7 +7,55 @@
 	min_value = 0
 	max_value = 100
 
-	monthly_progress = {  }
+	weekly_progress = {
+		value = 0
+		add = {
+			value = 0
+			every_scope_building = {
+				limit = {
+					is_building_type = building_university
+				}
+				if = {
+					limit = {
+						has_active_production_method = pm_scholastic_education
+					}
+					add = level
+				}
+				else_if = {
+					limit = {
+						has_active_production_method = pm_philosophy_department
+
+					}
+					add = {
+						value = 2
+						multiply = level
+					}
+				}
+				else_if = {
+					limit = {
+						has_active_production_method = pm_analytical_philosophy_department
+					}
+					add = {
+						value = 3
+						multiply = level
+					}
+				}
+			}
+			divide = 500
+			desc = "wotw_thinkers_progress_universities"
+		}
+		add = {
+			value = 0
+			every_political_movement = {
+				limit = {
+					is_political_movement_type = wotw_movement_alien_thinkers
+				}
+				add = political_movement_support
+			}
+			multiply = 1.5
+			desc = "wotw_thinkers_progress_political_movement"
+		}
+	}
 }
 
 wotw_warlikes_progressbar = {
@@ -19,7 +67,31 @@ wotw_warlikes_progressbar = {
 	min_value = 0
 	max_value = 100
 
-	monthly_progress = {  }
+	weekly_progress = {
+		value = 0
+		add = {
+			value = 0
+			every_scope_building = {
+				limit = {
+					is_building_type = building_barracks
+				}
+				add = 1.5
+			}
+			divide = 200
+			desc = "wotw_warlikes_progress_barracks"
+		}
+		add = {
+			value = 0
+			every_political_movement = {
+				limit = {
+					is_political_movement_type = wotw_movement_alien_warlikes
+				}
+				add = political_movement_support
+			}
+			multiply = 1.5
+			desc = "wotw_warlikes_progress_political_movement"
+		}
+	}
 }
 
 wotw_talkers_progressbar = {
@@ -31,5 +103,24 @@ wotw_talkers_progressbar = {
 	min_value = 0
 	max_value = 100
 
-	monthly_progress = {  }
+	weekly_progress = {
+		value = 0
+		add = {
+			value = 0
+			add = var:wotw_alien_deciphering_var
+			divide = 18
+			desc = "wotw_talkers_progress_deciphering_language"
+		}
+		add = {
+			value = 0
+			every_political_movement = {
+				limit = {
+					is_political_movement_type = wotw_movement_alien_talkers
+				}
+				add = political_movement_support
+			}
+			multiply = 1.5
+			desc = "wotw_talkers_progress_political_movement"
+		}
+	}
 }
