@@ -192,8 +192,9 @@ wotw_sabotage_mission_scripted_button = {
 	}
 
 	possible = {
-		hidden_trigger = {
-			always = yes
+		any_scope_building = {
+			is_building_type = building_wotw_moon_cannon
+			level >= 1
 		}
 	}
 

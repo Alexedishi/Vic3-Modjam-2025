@@ -7,6 +7,7 @@
 
 	scripted_button = wotw_moon_gun_scripted_button
 	scripted_button = wotw_sabotage_mission_scripted_button
+	scripted_button = wotw_start_crash_site_investigation
 
 
 	is_shown_when_inactive = {
@@ -59,6 +60,7 @@ je_wotw_moon_cannon = {
 		}
 	}
 
+
 	on_complete = {
 		trigger_event = {
 			id = wotw_thinkers.1
@@ -83,6 +85,20 @@ je_wotw_sabotage_mission = {
 			text = je_wotw_sabotage_mission_success
 			scope:journal_entry = {
 				"scripted_bar_progress(wotw_sabotage_progressbar)" >= 500
+			}
+		}
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			random = {
+				chance = {
+					value = 2
+				}
+				trigger_event = {
+					id = wotw_totalen_krieg.1
+					popup = yes
+				}
 			}
 		}
 	}

@@ -41,7 +41,7 @@
 					}
 				}
 			}
-			divide = 50
+			divide = 25
 			desc = "wotw_thinkers_progress_universities"
 		}
 		add = {

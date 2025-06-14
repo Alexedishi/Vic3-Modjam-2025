@@ -48,13 +48,13 @@ wotw_sabotage_progressbar = {
 
 	start_value = 0
 	min_value = 0
-	max_value = 12
+	max_value = 500
 
 	weekly_progress = {
-		# + 1 Base Progress
+		# + 10 Base Progress
 		add = {
 			desc = "wotw_ufo_crash_site_progressbar_base_progress_tt"
-			value = 1
+			value = 4
 		}
 	}
 }
