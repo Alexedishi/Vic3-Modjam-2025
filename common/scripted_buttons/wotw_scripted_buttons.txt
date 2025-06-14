@@ -138,8 +138,8 @@ wotw_start_crash_site_investigation = {
 	}
 
 	possible = {
-		hidden_trigger = {
-			always = yes
+		any_scope_building = {
+			is_building_type = building_wotw_ufo_crash_site
 		}
 	}
 
