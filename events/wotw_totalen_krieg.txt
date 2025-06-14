@@ -1,0 +1,115 @@
+namespace = wotw_totalen_krieg
+
+# war begins
+wotw_totalen_krieg.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = wotw_totalen_krieg.1.t
+	desc = wotw_totalen_krieg.1.d
+	flavor = wotw_totalen_krieg.1.f
+
+	duration = 2
+
+	event_image = {
+		video = "southamerica_war_civilians"
+	}
+
+	gui_window = com_event_window_superevent_newspaper
+
+	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	option = {
+		name = wotw_totalen_krieg.1.a
+		default_option = yes
+		hidden_effect = {
+			wotw_set_aliens_prepared = yes
+			wotw_start_total_war_if_not_at_war = yes
+		}
+		custom_tooltip = wotw_totalen_krieg_begin
+		add_journal_entry = {
+			type = je_wotw_total_war
+		}
+	}
+}
+
+# human victory
+wotw_totalen_krieg.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = wotw_totalen_krieg.2.t
+	desc = wotw_totalen_krieg.2.d
+	flavor = wotw_totalen_krieg.2.f
+
+	duration = 2
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	gui_window = com_event_window_superevent_newspaper
+
+	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	option = {
+		name = wotw_totalen_krieg.2.a
+		default_option = yes
+		random_country = {
+			limit = {
+				is_player = yes
+			}
+			annex_with_incorporation = c:WOTW_ALIEN
+		}
+		custom_tooltip = {
+			text = "wotw_deactivate_alien_buildings"
+			every_state = {
+				deactivate_building = {
+					building = building_wotw_alien_emporium
+				}
+			}
+		}
+	}
+}
+
+# alien victory
+wotw_totalen_krieg.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = wotw_totalen_krieg.3.t
+	desc = wotw_totalen_krieg.3.d
+	flavor = wotw_totalen_krieg.3.f
+
+	duration = 2
+
+	event_image = {
+		video = "unspecific_vandalized_storefront"
+	}
+
+	gui_window = com_event_window_superevent_newspaper
+
+	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	option = {
+		name = wotw_totalen_krieg.3.a
+		default_option = yes
+		every_country = {
+			limit = {
+				NOT = {
+					is_country_type = decentralized
+				}
+			}
+			save_scope_as = scope:human_remnant
+			c:WOTW_ALIEN = {
+				annex_with_incorporation = scope:human_remnant
+			}
+		}
+	}
+}

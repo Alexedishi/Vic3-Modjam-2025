@@ -18,7 +18,7 @@
 
 
   wotw_talkers.2.t: "A Congress of Mankind"
-  wotw_talkers.2.d: "Humanity has convened around [Country.GetRuler.GetPrimaryRoleTitle] [Country.GetRuler.GetFullName] to send as a diplomat to the aliens. [Country.GetRuler.GetSheHe] has already made preparations to depart."
+  wotw_talkers.2.d: "Humanity has convened around [Country.GetRuler.GetPrimaryRoleTitle] [Country.GetRuler.GetFullName] to send as a diplomat to the aliens. [Country.GetRuler.GetSheHe] has already made preparations to depart. The aliens have taken Formosa and other islands around the world, as their base of operations, our diplomat will meet with them there."
   wotw_character_departs: "@information! The diplomat departs for the agreed meeting point with the aliens."
   wotw_talkers.2.a: "Proceed with the Mission"
 

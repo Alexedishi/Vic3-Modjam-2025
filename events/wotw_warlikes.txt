@@ -25,6 +25,9 @@ wotw_warlikes.1 = {
 	}
 
 	immediate = {
+		hidden_effect = {
+			wotw_spawn_alien_tag_if_not_spawned = yes
+		}
 		c:WOTW_ALIEN = {
 			save_scope_as = aliens_country_scope
 		}

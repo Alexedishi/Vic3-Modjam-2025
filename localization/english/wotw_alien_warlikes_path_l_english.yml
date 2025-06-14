@@ -4,7 +4,7 @@
  je_wotw_the_warlikes_path_reason: "Humanity must join forces to drive back and exterminate the [concept_alien_menace] lest they undermine us and claim Earth as their own. We must accomplish this no matter the cost!"
  je_wotw_the_warlikes_path_complete: "The [concept_alien_menace] has been destroyed"
  je_wotw_alien_raid: "Expedition Against the [concept_alien_menace]"
- je_wotw_alien_raid_reason: "Our [concept_military_formation]#o s#! are leading a daring assault into the alien's holdings. Should they succeed, we will gain alien [concept_technology]. The more [Concept('concept_battalion', 'Battalions')] the faster the progress."
+ je_wotw_alien_raid_reason: "Our [concept_military_formation]#o s#! are leading a daring assault into the alien's holdings. Should they succeed, we will gain alien [concept_technology]. The more [Concept('concept_battalion', 'Battalions')] the faster the progress. Being at war with the [concept_alien_menace] will also increase the progress."
  je_wotw_alien_raid_complete: "Our raiding force has achieved 1000 progress."
 
  # Events

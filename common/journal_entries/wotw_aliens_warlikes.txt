@@ -23,6 +23,38 @@
 		}
 	}
 
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_variable = wotw_alien_increasing_chance
+					}
+				}
+				set_variable = {
+					name = wotw_alien_increasing_chance
+					value = 1
+				}
+			}
+			else = {
+				change_variable = {
+					name = wotw_alien_increasing_chance
+					add = 2
+				}
+			}
+			random = {
+				chance = {
+					value = var:wotw_alien_increasing_chance
+				}
+				trigger_event = {
+					id = wotw_totalen_krieg.1
+					popup = yes
+				}
+			}
+		}
+	}
+
+
 	scripted_button = wotw_launch_raid_button
 
 	complete = {
@@ -99,6 +131,22 @@ je_wotw_alien_raid = {
 				}
 				add_technology_researched = wotw_ray_guns_alien_tech
 			}
+			1 = {
+				trigger = {
+					is_at_war = yes
+					exists = c:WOTW_ALIEN
+					is_diplomatic_play_enemy_of = c:WOTW_ALIEN
+				}
+				custom_tooltip = {
+					text = "wotw_deactivate_alien_buildings"
+					every_state = {
+						deactivate_building = {
+							building = building_wotw_alien_emporium
+						}
+					}
+				}
+
+			}
 		}
 	}
 
@@ -109,6 +157,7 @@ je_wotw_alien_raid = {
 			}
 		}
 	}
+
 
 	invalid = {
 		custom_tooltip = {

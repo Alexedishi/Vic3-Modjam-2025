@@ -17,6 +17,11 @@ wotw_talkers.2 = {
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
+	immediate = {
+		hidden_effect = {
+			wotw_spawn_alien_tag_if_not_spawned = yes
+		}
+	}
 
 	after = {
 		set_global_variable = {
@@ -213,6 +218,10 @@ wotw_talkers.7 = {
 		name = wotw_talkers.7.a
 		global_var:wotw_negotiator_character = {
 			kill_character = yes
+		}
+		trigger_event = {
+			id = wotw_totalen_krieg.1
+			popup = yes
 		}
 	}
 }

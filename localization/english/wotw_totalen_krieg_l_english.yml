@@ -1,0 +1,22 @@
+﻿l_english:
+  wotw_totalen_krieg.1.t: "World at War"
+  wotw_totalen_krieg.1.d: "The world is at war. The aliens have landed and taken over Formosa as well as other islands around the world. Their presence and incredible might is felt everywhere. Every state they occupy will immediately be annexed by the aliens. This is a total war."
+  wotw_totalen_krieg.1.f: "#italic Then there's one thing you men will be able to say when this war is over and you get back home. Thirty years from now when you're sitting by your fireside with your grandson on your knee and he asks, 'What did you do in the great World War?'#!"
+  wotw_totalen_krieg.1.a: "Step aside you star slime, we're ready for your worst!"
+  wotw_totalen_krieg_begin: "@warning #N Begin a Total War against the [concept_alien_menace]#!"
+
+  wotw_totalen_krieg.2.t: "And then, Silence"
+  wotw_totalen_krieg.2.d: "Silence, deafening silence. The war is over. The aliens have been defeated, and the world is free once more. The cost was high, but we have prevailed. The people of Earth can now rebuild and look forward to a brighter future."
+  wotw_totalen_krieg.2.f: "#italic The war is over, but the scars will remain for generations to come. The world will never be the same again, but we have survived and we will rebuild. We will not forget the sacrifices made by so many, and we will honor their memory by ensuring that such a war never happens again.#!"
+  wotw_totalen_krieg.2.a: "The war is over, and we have won!"
+
+  wotw_totalen_krieg.3.t: "The Fall of Mankind"
+  wotw_totalen_krieg.3.d: "The war is over, and the world is forever changed. The aliens have won, humanity is done for. The aliens have taken over the world, and there is no hope left. The people of Earth are now slaves to their alien overlords, and the future looks bleak."
+  wotw_totalen_krieg.3.f: "#italic The world is forever changed, and there is no going back. The aliens have won, and humanity is now their plaything. We will never forget the sacrifices made by so many, but we must now accept our new reality. The future is uncertain, but we will endure.#!"
+  wotw_totalen_krieg.3.a: "The aliens have won, and humanity is done for."
+
+  wotw_deactivate_alien_buildings: "Deactivate Alien Buildings"
+
+  je_wotw_total_war: "Total War"
+  je_wotw_total_war_reason: "The aliens have landed and taken over Formosa as well as other islands around the world. Their presence and incredible might is felt everywhere. Every state they occupy will immediately be annexed by the aliens. This is a total war. The only way to win is to take their central base of operations in Formosa. This requires massive mobilization of our forces and resources, and the support of the global community. We must be prepared to make sacrifices and fight to the bitter end."
+  

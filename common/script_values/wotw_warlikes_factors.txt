@@ -6,5 +6,12 @@
 		}
 		add = num_units
 	}
+	if = {
+		limit = {
+			exists = c:WOTW_ALIEN
+			is_diplomatic_play_enemy_of = c:WOTW_ALIEN
+		}
+		multiply = 2
+	}
 	divide = 10
 }

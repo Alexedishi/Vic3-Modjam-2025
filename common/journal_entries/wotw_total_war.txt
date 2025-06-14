@@ -1,0 +1,47 @@
+je_wotw_total_war = {
+	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
+
+	group = je_group_crises
+
+	should_be_pinned_by_default = yes
+
+	immediate = {
+
+	}
+
+	scripted_button = wotw_launch_raid_button
+
+	complete = {
+		NOT = {
+			s:STATE_FORMOSA = {
+				any_scope_state = {
+					controller = c:WOTW_ALIEN
+				}			
+			}
+		}
+	}
+
+	on_complete = {
+		trigger_event = {
+			id = wotw_totalen_krieg.2
+		}
+	}
+
+	fail = {
+		NOT = {
+			any_country = {
+				country_rank >= rank_value:major_power
+				NOT = { 
+					is_indirect_subject_of = c:WOTW_ALIEN
+				}
+			}
+		}
+	}
+
+	on_fail = {
+		trigger_event = {
+			id = wotw_totalen_krieg.3
+		}
+	}
+
+}

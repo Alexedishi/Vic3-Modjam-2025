@@ -20,6 +20,11 @@
  wotw_thinkers.2.h: "Send a team to initate trading."
  wotw_thinkers.2.i: "I am not prepared to take a decision yet."
 
+ wotw_thinkers.5.t: "The Aliens are here!"
+ wotw_thinkers.5.d: "Aliens have landed and taken over Formosa as well as other islands around the world. Their presence and incredible might is felt everywhere. We need to act quickly."
+ wotw_thinkers.5.f: "#italic \"They are here! They are here!\"#!"
+ wotw_thinkers.5.a: "We can only hope that they are friendly"
+
  wotw_thinkers.11.t: "A Successfull Mission"
  wotw_thinkers.11.d: "Our Team has returned from their mission. At the same time a huge explosion was visible in the night sky. This will stop the Alien Menace and make our country the leading nation of the world!"
  wotw_thinkers.11.f: "\"It was quite easy honestly. They don't even have windows in their flying outposts!\""
