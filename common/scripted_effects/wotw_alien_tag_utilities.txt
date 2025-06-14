@@ -1,7 +1,97 @@
 wotw_spawn_alien_tag = {
+	s:STATE_FORMOSA = {
+		random_scope_state = {
+			wotw_move_all_pops_to_capital = yes
+			save_scope_as = capital_state
+		}
+	}
+	# Compatibility with Anbennar & other mods with non-earth states
+	if = {
+		limit = {
+			NOT = {
+				exists = scope:capital_state
+			}
+		}
+		random_state = {
+			save_scope_as = capital_state
+		}
+	}
+		
 	create_country = {
 		tag = WOTW_ALIEN
-		state = s:STATE_FORMOSA.region_state:CHI
-		state = s:STATE_CORSICA.region_state:FRA
+		state = scope:capital_state
+	}
+	s:STATE_FORMOSA = {
+		every_scope_state = {
+			limit = {
+				NOT = {
+					this = c:WOTW_ALIEN.capital
+				}
+			}
+			wotw_move_all_pops_to_capital = yes
+			set_state_owner = c:WOTW_ALIEN
+		}
+	}
+	s:STATE_CORSICA = {
+		every_scope_state = {
+			wotw_move_all_pops_to_capital = yes
+			set_state_owner = c:WOTW_ALIEN
+		}
+	}
+	s:STATE_BAHAMAS = {
+		every_scope_state = {
+			wotw_move_all_pops_to_capital = yes
+			set_state_owner = c:WOTW_ALIEN
+		}
+	}
+	s:STATE_SOUTH_ATLANTIC_ISLANDS = {
+		every_scope_state = {
+			wotw_move_all_pops_to_capital = yes
+			set_state_owner = c:WOTW_ALIEN
+		}
+	}
+	s:STATE_JAMAICA = {
+		every_scope_state = {
+			wotw_move_all_pops_to_capital = yes
+			set_state_owner = c:WOTW_ALIEN
+		}
+	}
+	s:STATE_PEGU = {
+		every_scope_state = {
+			wotw_move_all_pops_to_capital = yes
+			set_state_owner = c:WOTW_ALIEN
+		}
+	}
+
+	c:WOTW_ALIEN = {
+		capital = {
+			create_building = {
+				building = building_wotw_alien_emporium
+				add_ownership = {
+					country = {
+						country = c:WOTW_ALIEN
+						levels = 200
+					}
+				}
+			}
+		}
+		every_scope_state = {
+			create_building = {
+				building = building_port
+				level = 20
+				subsidized = yes
+			}
+			create_pop = {
+				pop_type = bureaucrats
+				culture = wotw_nebulons_culture
+				size = 100000
+			}
+		}
+	}
+}
+
+wotw_move_all_pops_to_capital = {
+	every_scope_pop = {
+		move_pop = prev.owner.capital
 	}
 }

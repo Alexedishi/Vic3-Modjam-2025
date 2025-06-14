@@ -48,5 +48,37 @@
 			goods_output_artillery_add = 500
 			goods_output_ammunition_add = 500
 		}
+
+		workforce_scaled = {
+			goods_output_grain_add = 1000
+			goods_output_fish_add = 1000
+			goods_output_wood_add = 1000
+			goods_output_iron_add = 1000
+			goods_output_lead_add = 1000
+			goods_output_sulfur_add = 1000
+			goods_output_rubber_add = 1000
+			goods_output_oil_add = 1000
+			goods_output_dye_add = 1000
+			goods_output_silk_add = 1000
+
+			goods_output_furniture_add = 500
+			goods_output_clothes_add = 500
+			goods_output_clippers_add = 500
+			goods_output_steamers_add = 500
+			goods_output_tools_add = 500
+			goods_output_glass_add = 500
+			goods_output_steel_add = 500
+			goods_output_engines_add = 500
+			goods_output_automobiles_add = 500
+			goods_output_aeroplanes_add = 500
+
+			goods_output_small_arms_add = 500
+			goods_output_artillery_add = 500
+			goods_output_ammunition_add = 500
+		}
+
+		level_scaled = {
+			building_employment_bureaucrats_add = 1000
+		}
 	}
 }
