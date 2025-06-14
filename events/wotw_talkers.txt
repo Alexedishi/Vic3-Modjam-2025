@@ -1,4 +1,4 @@
-namespace = wotw_talkers
+﻿namespace = wotw_talkers
 
 wotw_talkers.2 = {
 	type = country_event

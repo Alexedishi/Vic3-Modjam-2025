@@ -1,4 +1,4 @@
-on_monthly_pulse_state = {
+﻿on_monthly_pulse_state = {
 	on_actions = {
 		on_wotc_monthly_pulse_state
 	}

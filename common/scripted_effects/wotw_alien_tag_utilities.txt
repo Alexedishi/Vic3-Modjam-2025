@@ -1,4 +1,4 @@
-wotw_spawn_alien_tag = {
+﻿wotw_spawn_alien_tag = {
 	s:STATE_FORMOSA = {
 		random_scope_state = {
 			wotw_move_all_pops_to_capital = yes

@@ -1,4 +1,4 @@
-je_wotw_the_talkers_path = {
+﻿je_wotw_the_talkers_path = {
 	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
 
 	group = je_group_crises

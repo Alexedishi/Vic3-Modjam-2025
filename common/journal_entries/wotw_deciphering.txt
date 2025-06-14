@@ -1,4 +1,4 @@
-je_wotw_deciphering_aliens = {
+﻿je_wotw_deciphering_aliens = {
 	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
 
 	group = je_group_crises

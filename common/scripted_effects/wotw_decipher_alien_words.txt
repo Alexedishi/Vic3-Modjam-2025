@@ -1,4 +1,4 @@
-wotw_decipher_alien_words_part_0 = {
+﻿wotw_decipher_alien_words_part_0 = {
     set_variable = wotw_alien_word_deciphered_been
     set_variable = wotw_alien_word_deciphered_pursue
     set_variable = wotw_alien_word_deciphered_hope

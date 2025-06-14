@@ -1,4 +1,4 @@
-wotw_decipher_word_we = {
+﻿wotw_decipher_word_we = {
     type = country
     random_valid = no
     text = {

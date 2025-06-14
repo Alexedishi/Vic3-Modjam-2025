@@ -1,4 +1,4 @@
-wotw_deciphering_factors = {
+﻿wotw_deciphering_factors = {
 	value = 0.05
 	add = {
 		value = 0
