@@ -32,6 +32,12 @@
 	on_complete = {
 	}
 
+	on_monthly_pulse = {
+		events = {
+			wotw_thinkers.5
+		}
+	}
+
 	weight = 1000
 }
 

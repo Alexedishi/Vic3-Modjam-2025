@@ -143,6 +143,59 @@ wotw_thinkers.2 = {
 	}
 }
 
+### The Aliens have arrived ###
+wotw_thinkers.5 = {
+	type = country_event
+	placement = ROOT
+
+	title = wotw_thinkers.5.t
+	desc = wotw_thinkers.5.d
+	flavor = wotw_thinkers.5.f
+
+	duration = 2
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		NOT = { exists = c:WOTW_ALIEN }
+		calc_true_if = {
+			amount >= 4
+			#Production
+			has_technology_researched = wotw_hypersteel_tech
+			has_technology_researched = wotw_alien_energy_generation_tech
+			has_technology_researched = wotw_4_dimensional_chemistry_tech
+			#Society
+			has_technology_researched = wotw_xeno_linguistics_tech
+			has_technology_researched = wotw_xeno_cryptography_tech
+			has_technology_researched = wotw_4_dimensional_physics_tech
+			#Military
+			has_technology_researched = wotw_ray_guns_alien_tech
+			has_technology_researched = wotw_ray_guns_basic_tech
+			has_technology_researched = wotw_ray_guns_advanced_tech
+		}
+	}
+
+	immediate = {
+	}
+
+	#I hope they won't harm us.
+	option = {
+		name = wotw_thinkers.5.g
+		default_option = yes
+		
+		wotw_spawn_alien_tag_if_not_spawned = yes
+	}
+
+	after = {
+	}
+}
+
 ### A Successfull Mission ###
 wotw_thinkers.11 = {
 	type = country_event
