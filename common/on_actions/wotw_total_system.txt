@@ -12,7 +12,7 @@ on_monthly_pulse_country = {
 
 on_wotc_monthly_pulse_country = {
 	effect = {
-		c:WOTW_ALIEN = {
+		c:WOTW_ALIEN ?= {
 			wotw_start_total_war_if_not_at_war = yes
 			every_scope_war = {
 				add_war_war_support = { target = prev value = 100 } 
@@ -27,8 +27,8 @@ on_wotc_monthly_pulse_state = {
 			limit = {
 				has_global_variable = wotw_total_war_against_aliens
 				AND = {
-					c:WOTW_ALIEN = controller
-					NOT = { c:WOTW_ALIEN = owner }
+					c:WOTW_ALIEN ?= controller
+					NOT = { c:WOTW_ALIEN ?= owner }
 				}
 			}
 			set_state_owner = c:WOTW_ALIEN
@@ -37,8 +37,8 @@ on_wotc_monthly_pulse_state = {
 			limit = {
 				has_global_variable = wotw_total_war_against_aliens
 				AND = {
-					c:WOTW_ALIEN = owner
-					NOT = { c:WOTW_ALIEN = controller }
+					c:WOTW_ALIEN ?= owner
+					NOT = { c:WOTW_ALIEN ?= controller }
 				}
 			}
 			set_state_owner = controller

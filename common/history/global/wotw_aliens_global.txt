@@ -53,4 +53,11 @@
 			}
 		}
 	}
+
+	every_country = {
+		set_variable = {
+			name = wotw_local_aliens_var
+			value = 0
+		}
+	}
 }
