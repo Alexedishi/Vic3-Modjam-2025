@@ -64,27 +64,46 @@ wotw_spawn_alien_tag = {
 	}
 
 	c:WOTW_ALIEN = {
+		every_scope_state = {
+			create_building = {
+				building = building_port
+				add_ownership = {
+					country = {
+						country = c:WOTW_ALIEN
+						levels = 20
+					}
+				}
+				subsidized = yes
+			}
+			create_building = {
+				building = building_wotw_alien_emporium
+				add_ownership = {
+					country = {
+						country = c:WOTW_ALIEN
+						levels = 25
+					}
+				}
+			}
+			create_pop = {
+				pop_type = bureaucrats
+				culture = wotw_nebulons_culture
+				size = 10000
+			}
+		}
 		capital = {
 			create_building = {
 				building = building_wotw_alien_emporium
 				add_ownership = {
 					country = {
 						country = c:WOTW_ALIEN
-						levels = 200
+						levels = 1000
 					}
 				}
-			}
-		}
-		every_scope_state = {
-			create_building = {
-				building = building_port
-				level = 20
-				subsidized = yes
 			}
 			create_pop = {
 				pop_type = bureaucrats
 				culture = wotw_nebulons_culture
-				size = 100000
+				size = 4000000
 			}
 		}
 	}
