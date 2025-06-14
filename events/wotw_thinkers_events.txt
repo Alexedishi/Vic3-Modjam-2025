@@ -164,20 +164,43 @@ wotw_thinkers.5 = {
 
 	trigger = {
 		NOT = { exists = c:WOTW_ALIEN }
-		calc_true_if = {
-			amount >= 4
-			#Production
-			has_technology_researched = wotw_hypersteel_tech
-			has_technology_researched = wotw_alien_energy_generation_tech
-			has_technology_researched = wotw_4_dimensional_chemistry_tech
-			#Society
-			has_technology_researched = wotw_xeno_linguistics_tech
-			has_technology_researched = wotw_xeno_cryptography_tech
-			has_technology_researched = wotw_4_dimensional_physics_tech
-			#Military
-			has_technology_researched = wotw_ray_guns_alien_tech
-			has_technology_researched = wotw_ray_guns_basic_tech
-			has_technology_researched = wotw_ray_guns_advanced_tech
+		# exterminationists will come earlier
+		trigger_if = {
+			limit = {
+				global_var:wotw_alien_invasion_type = flag:wotw_invasion_type_extermination
+			}
+			calc_true_if = {
+				amount >= 1
+				#Production
+				has_technology_researched = wotw_hypersteel_tech
+				has_technology_researched = wotw_alien_energy_generation_tech
+				has_technology_researched = wotw_4_dimensional_chemistry_tech
+				#Society
+				has_technology_researched = wotw_xeno_linguistics_tech
+				has_technology_researched = wotw_xeno_cryptography_tech
+				has_technology_researched = wotw_4_dimensional_physics_tech
+				#Military
+				has_technology_researched = wotw_ray_guns_alien_tech
+				has_technology_researched = wotw_ray_guns_basic_tech
+				has_technology_researched = wotw_ray_guns_advanced_tech
+			}
+		}
+		trigger_else = {
+			calc_true_if = {
+				amount >= 4
+				#Production
+				has_technology_researched = wotw_hypersteel_tech
+				has_technology_researched = wotw_alien_energy_generation_tech
+				has_technology_researched = wotw_4_dimensional_chemistry_tech
+				#Society
+				has_technology_researched = wotw_xeno_linguistics_tech
+				has_technology_researched = wotw_xeno_cryptography_tech
+				has_technology_researched = wotw_4_dimensional_physics_tech
+				#Military
+				has_technology_researched = wotw_ray_guns_alien_tech
+				has_technology_researched = wotw_ray_guns_basic_tech
+				has_technology_researched = wotw_ray_guns_advanced_tech
+			}
 		}
 	}
 
@@ -228,6 +251,21 @@ wotw_thinkers.11 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
 	immediate = {
+		set_global_variable = wotw_aliens_whacked
+		random_country = {
+			limit = {
+				is_player = yes
+			}
+			annex_with_incorporation = c:WOTW_ALIEN
+		}
+		custom_tooltip = {
+			text = "wotw_deactivate_alien_buildings"
+			every_state = {
+				deactivate_building = {
+					building = building_wotw_alien_emporium
+				}
+			}
+		}
 	}
 
 	#Huge Success!

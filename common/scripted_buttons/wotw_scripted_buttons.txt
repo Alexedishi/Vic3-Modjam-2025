@@ -118,7 +118,11 @@ wotw_ignore_the_damocles = {
 
 	effect = {
 		set_variable = wotw_ignored_the_damocles
-		# todo triggers a war
+		trigger_event = {
+			id = wotw_totalen_krieg.1
+			popup = yes
+			days = { 12 30 }
+		}
 	}
 }
 

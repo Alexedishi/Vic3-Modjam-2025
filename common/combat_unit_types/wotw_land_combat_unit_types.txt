@@ -16,8 +16,8 @@ wotw_combat_unit_type_ray_gun_infantry = {
     }
 
     battle_modifier = {
-        unit_offense_add = 70
-        unit_defense_add = 80
+        unit_offense_add = 270
+        unit_defense_add = 280
         unit_morale_loss_add = 3
         unit_devastation_mult = 0.1
     }
@@ -71,8 +71,8 @@ wotw_combat_unit_type_ray_gun_trooper = {
     }
 
     battle_modifier = {
-        unit_offense_add = 90
-        unit_defense_add = 100
+        unit_offense_add = 390
+        unit_defense_add = 280
         unit_morale_loss_add = 2
         unit_devastation_mult = 0.1
     }
@@ -124,8 +124,8 @@ wotw_combat_unit_type_alien_shock_trooper = {
     }
 
     battle_modifier = {
-        unit_offense_add = 180
-        unit_defense_add = 160
+        unit_offense_add = 650
+        unit_defense_add = 640
         unit_morale_loss_add = 1
         unit_devastation_mult = 0.1
     }

@@ -42,7 +42,7 @@ wotw_the_damocles_of_industry = {
 
 wotw_alien_invaders = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds"
-	country_prestige_mult = -1
+	country_prestige_mult = -2
 	country_weekly_innovation_add = 9999
 	country_weekly_innovation_max_add = 9999
 }

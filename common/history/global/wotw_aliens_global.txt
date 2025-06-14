@@ -16,7 +16,7 @@
 				value = flag:wotw_invasion_type_refugees
 			}
 		}
-		1 = {
+		3 = {
 			trigger = {
 				OR = {
 					has_game_rule = wotw_invasion_type_random
@@ -28,7 +28,7 @@
 				value = flag:wotw_invasion_type_resort
 			}
 		}
-		1 = {
+		3 = {
 			trigger = {
 				OR = {
 					has_game_rule = wotw_invasion_type_random
@@ -40,7 +40,7 @@
 				value = flag:wotw_invasion_type_saviors
 			}
 		}
-		1 = {
+		3 = {
 			trigger = {
 				OR = {
 					has_game_rule = wotw_invasion_type_random

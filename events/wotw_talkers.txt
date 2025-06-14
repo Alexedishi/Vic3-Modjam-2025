@@ -190,6 +190,16 @@ wotw_talkers.6 = {
 			type = je_wotw_the_damocles_of_industry
 		}
 		activate_law = law_type:law_industry_banned
+		set_global_variable = wotw_aliens_whacked
+	}
+
+	option = {
+		name = wotw_talkers.6.b
+		trigger_event = {
+			id = wotw_totalen_krieg.1
+			popup = yes
+			days = { 12 30 }
+		}
 	}
 }
 
@@ -222,6 +232,7 @@ wotw_talkers.7 = {
 		trigger_event = {
 			id = wotw_totalen_krieg.1
 			popup = yes
+			days = { 12 30 }
 		}
 	}
 }
@@ -259,8 +270,14 @@ wotw_talkers.8 = {
 			tag = WOTW_ALIEN
 			state = scope:wotw_state_with_lowest_population
 		}
+		set_global_variable = wotw_aliens_whacked
 	}
 	option = {
 		name = wotw_talkers.8.b
+		trigger_event = {
+			id = wotw_totalen_krieg.1
+			popup = yes
+			days = { 12 30 }
+		}
 	}
 }

@@ -303,7 +303,10 @@ wotw_start_total_war_if_not_at_war = {
 	if = {
 		limit = {
 			has_variable = wotw_ready_and_prepared_for_total_war
-			is_at_war = no
+			NAND = {
+				has_global_variable = wotw_total_world_war_var
+				exists = global_var:wotw_total_world_war_var
+			}
 		}
 		wotw_start_total_war = yes
 	}
@@ -357,6 +360,11 @@ wotw_start_total_war = {
 			}
 			save_scope_as = wotw_total_world_war
 		}
+	}
+
+	set_global_variable = {
+		name = wotw_total_world_war_var
+		value = scope:wotw_total_world_war
 	}
 
 	ordered_country = {

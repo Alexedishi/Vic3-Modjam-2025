@@ -41,6 +41,16 @@ je_wotw_first_contact = {
 		trigger_event = {
 			id = wotw_first_contact.1
 		}
+		if = {
+			limit = {
+				global_var:wotw_alien_invasion_type = flag:wotw_invasion_type_extermination
+			}
+			trigger_event = {
+				id = wotw_totalen_krieg.1
+				popup = yes
+				days = 3650 # 10 years
+			}
+		}
 	}
 
 	complete = {
@@ -70,7 +80,7 @@ je_wotw_first_contact = {
 	on_weekly_pulse = {
 		random_events = {
 			# ~ every 12 weeks
-			chance_of_no_event = 85
+			chance_of_no_event = 95
 			3 = wotw_first_contact.2
 			3 = wotw_first_contact.3
 			3 = wotw_first_contact.4

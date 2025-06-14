@@ -15,7 +15,10 @@ je_wotw_total_war = {
 		NOT = {
 			s:STATE_FORMOSA = {
 				any_scope_state = {
-					controller = c:WOTW_ALIEN
+					custom_tooltip = {
+						text = "wotw_not_controlled_by_aliens"
+						controller = c:WOTW_ALIEN
+					}
 				}			
 			}
 		}
@@ -24,16 +27,17 @@ je_wotw_total_war = {
 	on_complete = {
 		trigger_event = {
 			id = wotw_totalen_krieg.2
+			popup = yes
 		}
 	}
 
 	fail = {
-		NOT = {
-			any_country = {
-				country_rank >= rank_value:major_power
-				NOT = { 
-					is_indirect_subject_of = c:WOTW_ALIEN
-				}
+		any_country = {
+			count = 0
+			country_rank >= rank_value:major_power
+			custom_tooltip = {
+				text = "wotw_not_controlled_by_aliens"
+				NOT = { is_indirect_subject_of = c:WOTW_ALIEN }
 			}
 		}
 	}
@@ -41,6 +45,7 @@ je_wotw_total_war = {
 	on_fail = {
 		trigger_event = {
 			id = wotw_totalen_krieg.3
+			popup = yes
 		}
 	}
 

@@ -15,20 +15,31 @@ wotw_totalen_krieg.1 = {
 		video = "southamerica_war_civilians"
 	}
 
-	gui_window = com_event_window_superevent_newspaper
+	gui_window = event_window_widescreen_classic
 
 	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
+	immediate = {
+		set_global_variable = wotw_total_war_started
+	}
+	# This event is only available if the aliens have not already started a total war
+	trigger = {
+		NOT = {
+			has_global_variable = wotw_total_war_started
+		}
+		is_player = yes 
+	}
+
 	option = {
 		name = wotw_totalen_krieg.1.a
 		default_option = yes
-		hidden_effect = {
+		custom_tooltip = {
+			text = "wotw_totalen_krieg_begin"
 			wotw_set_aliens_prepared = yes
 			wotw_start_total_war_if_not_at_war = yes
 		}
-		custom_tooltip = wotw_totalen_krieg_begin
 		add_journal_entry = {
 			type = je_wotw_total_war
 		}
@@ -50,7 +61,7 @@ wotw_totalen_krieg.2 = {
 		video = "unspecific_military_parade"
 	}
 
-	gui_window = com_event_window_superevent_newspaper
+	gui_window = event_window_widescreen_classic
 
 	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
 
@@ -73,6 +84,7 @@ wotw_totalen_krieg.2 = {
 				}
 			}
 		}
+		set_global_variable = wotw_aliens_whacked
 	}
 }
 
@@ -91,7 +103,7 @@ wotw_totalen_krieg.3 = {
 		video = "unspecific_vandalized_storefront"
 	}
 
-	gui_window = com_event_window_superevent_newspaper
+	gui_window = event_window_widescreen_classic
 
 	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
 
@@ -111,5 +123,6 @@ wotw_totalen_krieg.3 = {
 				annex_with_incorporation = scope:human_remnant
 			}
 		}
+		set_global_variable = wotw_aliens_whacked
 	}
 }

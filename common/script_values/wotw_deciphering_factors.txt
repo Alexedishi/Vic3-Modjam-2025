@@ -20,6 +20,11 @@
 			divide = 4
 		}
 	}
-	max = 0.5
+
+	je:je_wotw_the_alien_menace = {
+		add = "scripted_bar_progress(wotw_talkers_progressbar)"
+		divide = 200
+	}
+	max = 0.9
 
 }

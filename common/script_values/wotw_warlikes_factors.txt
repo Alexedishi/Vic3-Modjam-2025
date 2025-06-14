@@ -13,5 +13,5 @@
 		}
 		multiply = 2
 	}
-	divide = 10
+	divide = 5
 }

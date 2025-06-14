@@ -31,6 +31,13 @@ wotw_warlikes.1 = {
 		c:WOTW_ALIEN = {
 			save_scope_as = aliens_country_scope
 		}
+		hidden_effect = {
+			trigger_event = {
+				id = wotw_totalen_krieg.1
+				popup = yes
+				days = { 180 365 }
+			}
+		}
 	}
 
 	option = {

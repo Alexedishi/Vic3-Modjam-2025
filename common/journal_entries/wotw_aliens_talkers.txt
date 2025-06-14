@@ -27,7 +27,10 @@
 	}
 
 	complete = {
-		# todo
+		custom_tooltip = {
+			text = "wotw_has_started_negotiations"
+			has_global_variable = wotw_negotiator_character
+		}
 	}
 
 	on_monthly_pulse = {

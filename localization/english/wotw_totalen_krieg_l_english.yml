@@ -3,7 +3,7 @@
   wotw_totalen_krieg.1.d: "The world is at war. The aliens have landed and taken over Formosa as well as other islands around the world. Their presence and incredible might is felt everywhere. Every state they occupy will immediately be annexed by the aliens. This is a total war."
   wotw_totalen_krieg.1.f: "#italic Then there's one thing you men will be able to say when this war is over and you get back home. Thirty years from now when you're sitting by your fireside with your grandson on your knee and he asks, 'What did you do in the great World War?'#!"
   wotw_totalen_krieg.1.a: "Step aside you star slime, we're ready for your worst!"
-  wotw_totalen_krieg_begin: "@warning #N Begin a Total War against the [concept_alien_menace]#!"
+  wotw_totalen_krieg_begin: "@warning! #N Begin a Total War against the [concept_alien_menace]#!"
 
   wotw_totalen_krieg.2.t: "And then, Silence"
   wotw_totalen_krieg.2.d: "Silence, deafening silence. The war is over. The aliens have been defeated, and the world is free once more. The cost was high, but we have prevailed. The people of Earth can now rebuild and look forward to a brighter future."
@@ -20,3 +20,4 @@
   je_wotw_total_war: "Total War"
   je_wotw_total_war_reason: "The aliens have landed and taken over Formosa as well as other islands around the world. Their presence and incredible might is felt everywhere. Every state they occupy will immediately be annexed by the aliens. This is a total war. The only way to win is to take their central base of operations in Formosa. This requires massive mobilization of our forces and resources, and the support of the global community. We must be prepared to make sacrifices and fight to the bitter end."
   
+  wotw_not_controlled_by_aliens: "Not Controlled by Aliens"
