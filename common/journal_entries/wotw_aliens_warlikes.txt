@@ -67,6 +67,13 @@
 	on_complete = {
 	}
 
+	on_yearly_pulse = {
+		random_events = {
+			1 = wotw_crash_sites.1
+			2 = 0
+		}
+	}
+
 	invalid = {
 		custom_tooltip = {
 			text = je_wotw_aliens_invalid

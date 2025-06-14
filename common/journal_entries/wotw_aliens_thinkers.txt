@@ -33,6 +33,13 @@
 	on_complete = {
 	}
 
+	on_yearly_pulse = {
+		random_events = {
+			1 = wotw_crash_sites.1
+			2 = 0
+		}
+	}
+
 	on_monthly_pulse = {
 		events = {
 			wotw_thinkers.5
