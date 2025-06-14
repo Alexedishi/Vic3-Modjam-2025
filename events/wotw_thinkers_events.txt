@@ -12,10 +12,10 @@ wotw_thinkers.1 = {
 	duration = 2
 
 	event_image = {
-		video = "votp_agitator_speaking"
+		video = "europenorthamerica_capitalists_meeting"
 	}
 
-	icon = "gfx/interface/icons/event_icons/europenorthamerica_capitalists_meeting.dds"
+	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
@@ -85,6 +85,97 @@ wotw_thinkers.1 = {
 		scope:state_2_scope = {
 			set_variable = building_wotw_moon_cannon_possible_var
 			start_building_construction = building_wotw_moon_cannon
+		}
+	}
+
+	after = {
+	}
+}
+
+### A Lucky Shot? ###
+wotw_thinkers.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = wotw_thinkers.2.t
+	desc = wotw_thinkers.2.d
+	flavor = wotw_thinkers.2.f
+
+	duration = 2
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	immediate = {
+	}
+
+	#Send a team to sabotage their logistics hub.
+	option = {
+		name = wotw_thinkers.1.g
+		
+		add_journal_entry = {
+			type = je_wotw_sabotage_mission
+		}
+	}
+
+	#Send a team to initate trading 
+	option = {
+		name = wotw_thinkers.1.h
+		trigger = { always = no }
+		
+	#	add_journal_entry = {
+	#		type = je_wotw_ufo_crash_site_expedition
+	#	}
+	}
+
+	#I am not prepared to take a decision yet.
+	option = {
+		name = wotw_thinkers.1.i
+	}
+
+	after = {
+	}
+}
+
+### A Successfull Mission ###
+wotw_thinkers.11 = {
+	type = country_event
+	placement = ROOT
+
+	title = wotw_thinkers.11.t
+	desc = wotw_thinkers.11.d
+	flavor = wotw_thinkers.11.f
+
+	duration = 2
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	immediate = {
+	}
+
+	#Huge Success!
+	option = {
+		name = wotw_thinkers.11.g
+		
+		c:WOTW_ALIEN = {
+			add_modifier = {
+				name = wotw_logistics_sabotaged_modifier
+			}
+			add_change_relations_progress = {
+				country = root
+				value = -100
+			}
 		}
 	}
 

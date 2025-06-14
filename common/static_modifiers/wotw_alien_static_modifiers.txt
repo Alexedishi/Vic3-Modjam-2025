@@ -46,3 +46,8 @@ wotw_alien_invaders = {
 	country_weekly_innovation_add = 9999
 	country_weekly_innovation_max_add = 9999
 }
+
+wotw_logistics_sabotaged_modifier = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds"
+	building_wotw_alien_emporium_throughput_add = -1
+}

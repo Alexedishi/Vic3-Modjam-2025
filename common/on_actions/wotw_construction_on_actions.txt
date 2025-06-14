@@ -1,0 +1,22 @@
+﻿on_building_built = {
+	on_actions = {
+		on_wotw_building_built
+	}
+}
+
+on_wotw_building_built = {
+	effect = {
+		if = {
+			limit = {
+				is_building_type = building_wotw_moon_cannon
+			}
+
+			owner = {
+				trigger_event = {
+					id = wotw_thinkers.2
+					popup = yes
+				}
+			}
+		}
+	}
+}

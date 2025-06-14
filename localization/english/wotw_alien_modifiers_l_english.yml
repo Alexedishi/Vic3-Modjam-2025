@@ -2,3 +2,7 @@
 
   wotw_alien_smodifier_giant_cacophony: "Cacophony of Voices"
   wotw_alien_smodifier_giant_cacophony_tt: "$ALIEN_GIANT_CACOPHONY_tt$"
+
+ 
+ building_wotw_alien_emporium_throughput_add: "$building_wotw_alien_emporium$ building [concept_throughput]"
+ wotw_logistics_sabotaged_modifier: "Logistics Sabotaged"

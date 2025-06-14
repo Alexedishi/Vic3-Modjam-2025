@@ -14,3 +14,12 @@ state_wotw_nebulons_culture_standard_of_living_add={
 		ai_value=0
 	}
 }
+
+building_wotw_alien_emporium_throughput_add={
+	decimals=0
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}

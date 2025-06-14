@@ -152,3 +152,30 @@ wotw_moon_gun_scripted_button = {
 		}
 	}
 }
+
+### Start Sabotage Mission ###
+wotw_sabotage_mission_scripted_button = {
+	name = wotw_sabotage_mission_scripted_button
+	desc = wotw_sabotage_mission_scripted_button_desc
+
+	visible = {
+		NOR = {
+			has_journal_entry = je_wotw_sabotage_mission
+		}
+		any_scope_building = {
+			is_building_type = building_wotw_moon_cannon
+		}
+	}
+
+	possible = {
+		hidden_trigger = {
+			always = yes
+		}
+	}
+
+	effect = {
+		add_journal_entry = {
+			type = je_wotw_sabotage_mission
+		}
+	}
+}
