@@ -56,6 +56,10 @@ wotw_combat_unit_type_ray_gun_infantry = {
 		# fallback
         texture = "gfx/unit_illustrations/infantry_eu_mechanized.dds"
     }
+
+    upgrades = {
+        wotw_combat_unit_type_ray_gun_trooper
+    }
 }
 
 wotw_combat_unit_type_ray_gun_trooper = {
