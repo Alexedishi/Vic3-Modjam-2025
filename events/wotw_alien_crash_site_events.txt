@@ -1,0 +1,99 @@
+﻿namespace = wotw_crash_sites
+
+### A Mysterious Crash Site ###
+wotw_crash_sites.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = wotw_crash_sites.1.t
+	desc = wotw_crash_sites.1.d
+	flavor = wotw_crash_sites.1.f
+
+	duration = 3
+
+	cooldown = {
+		years = 5
+	}
+
+	event_image = {
+		video = "unspecific_devastation"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		any_scope_state = {
+			NOT = {
+				has_building = building_wotw_ufo_crash_site
+			}
+		}
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				NOT = {
+
+					has_building = building_wotw_ufo_crash_site
+				}
+			}
+
+			set_variable = wotw_ufo_crash_site_var
+			create_building = {
+				building = building_wotw_ufo_crash_site
+				level = 1
+			}
+			save_scope_as = crash_site_state
+		}
+	}
+
+	#We need to investigate it!
+	option = {
+		name = wotw_crash_sites.1.g
+		default_option = yes
+
+		if = {
+			limit = {
+				NOT = { has_journal_entry = je_wotw_ufo_crash_site_expedition }
+			}
+
+			add_journal_entry = {
+				type = je_wotw_ufo_crash_site_expedition
+			}
+		}
+
+		show_as_tooltip = {
+			scope:crash_site_state = {
+				create_building = {
+					building = building_wotw_ufo_crash_site
+					level = 1
+				}
+			}
+		}
+	}
+
+	#I'm sure it is just a meteorite...
+	option = {
+		name = wotw_crash_sites.1.h
+
+		scope:crash_site_state = {
+			add_radicals_in_state = {
+				value = 0.01
+			}
+		}
+
+		show_as_tooltip = {
+			scope:crash_site_state = {
+				create_building = {
+					building = building_wotw_ufo_crash_site
+					level = 1
+				}
+			}
+		}
+	}
+
+	after = {
+	}
+}

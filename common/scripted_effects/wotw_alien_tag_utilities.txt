@@ -1,4 +1,4 @@
-wotw_spawn_alien_tag_if_not_spawned = {
+﻿wotw_spawn_alien_tag_if_not_spawned = {
 	if = {
 		limit = {
 			NOT = {
@@ -77,6 +77,19 @@ wotw_spawn_alien_tag = {
 
 	c:WOTW_ALIEN = {
 
+		#Make sure that they have good technology
+		add_era_researched = era_1
+		add_era_researched = era_2
+		add_era_researched = era_3
+		add_era_researched = era_4
+		#Production Technologies
+		add_technology_researched = wotw_hypersteel_tech
+		add_technology_researched = wotw_alien_energy_generation_tech
+		add_technology_researched = wotw_4_dimensional_chemistry_tech
+		#Society Technologies
+		add_technology_researched = wotw_xeno_cryptography_tech
+		add_technology_researched = wotw_4_dimensional_physics_tech
+		#Military Technologies
 		add_technology_researched = wotw_ray_guns_alien_tech
 		add_technology_researched = wotw_ray_guns_basic_tech
 		add_technology_researched = wotw_ray_guns_advanced_tech

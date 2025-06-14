@@ -6,23 +6,25 @@
 
 ##########################
 
-#Opera House
+#Moon Cannon
 
 building_wotw_moon_cannon = {
 	building_group = bg_monuments
-	icon = "gfx/interface/icons/building_icons/food_industry.dds"
+	icon = "gfx/interface/icons/building_icons/wotw_moon_cannon.dds"
 	city_type = city
 	levels_per_mesh = 1
 	expandable = no
 	downsizeable = no
 
 	production_method_groups = {
+		pmg_wotw_moon_cannon
+	}
+
+	potential = {
+		has_variable = building_wotw_moon_cannon_possible_var
 	}
 
 	can_build_government = {
-		owner = {
-			is_player = yes
-		}
 	}
 
 	can_build_private = {

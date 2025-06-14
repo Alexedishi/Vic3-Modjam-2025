@@ -26,13 +26,29 @@ wotw_xeno_linguistics_tech = {
 #Xeno-Cryptography
 wotw_xeno_cryptography_tech = {
 	era = era_1
-	texture = "gfx/interface/icons/invention_icons/nationalism.dds"
+	texture = "gfx/interface/icons/invention_icons/rationalism.dds"
 	category = society
 	can_research = no
 
 	modifier = {
-		country_influence_mult = 0.2
-		country_authority_mult = 0.2
+		country_influence_mult = 0.5
+		country_authority_mult = 0.5
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+#Tetradimensional Physics
+wotw_4_dimensional_physics_tech = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/analytical_philosophy.dds"
+	category = society
+	can_research = no
+
+	modifier = {
+		building_university_throughput_add = 2
 	}
 
 	ai_weight = {

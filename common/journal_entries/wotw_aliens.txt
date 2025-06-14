@@ -10,8 +10,9 @@ je_wotw_first_contact = {
 	should_be_pinned_by_default = yes
 
 	is_shown_when_inactive = {
-		NOT = {
+		NOR = {
 			has_global_variable = wotw_aliens_whacked
+            c:WOTW_ALIEN ?= this
 		}
 		OR = {
 			AND = {
@@ -145,6 +146,7 @@ je_wotw_the_alien_menace = {
 	}
 
 	scripted_button = wotw_select_response_button
+	scripted_button = wotw_start_crash_site_investigation
 
 	scripted_progress_bar = wotw_thinkers_progressbar
 	scripted_progress_bar = wotw_warlikes_progressbar
@@ -169,6 +171,13 @@ je_wotw_the_alien_menace = {
 		custom_tooltip = {
 			text = je_wotw_the_alien_menace_invalid
 			has_global_variable = wotw_aliens_whacked
+		}
+	}
+
+	on_yearly_pulse = {
+		random_events = {
+			1 = wotw_crash_sites.1
+			2 = 0
 		}
 	}
 

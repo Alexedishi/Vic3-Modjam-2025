@@ -1,4 +1,4 @@
-wotw_psychiatry_progress_message = {
+﻿wotw_psychiatry_progress_message = {
 	type = country
 	group = "wotw_deciphering_progress"
 	days = 14

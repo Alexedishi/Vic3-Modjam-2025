@@ -1,0 +1,36 @@
+﻿l_english:
+### Events ###
+ wotw_crash_sites.1.t: "A Mysterious Crash Site"
+ wotw_crash_sites.1.d: "Some people in [SCOPE.sState('crash_site_state').GetName] report hearing a loud bang and an explosion. It appears that an object fell from the sky."
+ wotw_crash_sites.1.f: "\"First, I saw lights in the night sky that were moving strangely. It looked as if they were dancing. Then a light fell down! It must be an angel who has fallen to earth!\"\n- A random Farmer"
+ wotw_crash_sites.1.g: "We need to investigate it!"
+ wotw_crash_sites.1.h: "I'm sure it is just a meteorite..."
+
+ wotw_thinkers.1.t: "Project Luna Completed"
+ wotw_thinkers.1.d: "Our Scientists and Engineers have finished development of Project Luna. Now is the time to actually construct the Cannon and to get it ready."
+ wotw_thinkers.1.f: "\"I think we should construct it on top of a mountain to improve its accuracy!\"\n\"Are you an idiot? Do you know how long it would take to get all the materials on top of a mountain?\""
+ wotw_thinkers.1.g: "Our capital, [SCOPE.sState('capital_scope').GetName] is the best site for this!"
+ wotw_thinkers.1.h: "[SCOPE.sState('state_1_scope').GetName] seems to be a good choice"
+ wotw_thinkers.1.i: "I think [SCOPE.sState('state_2_scope').GetName] is an ideal location."
+
+### Journal Entries
+ je_wotw_moon_cannon: "Project Luna"
+ je_wotw_moon_cannon_reason: "Our scientists are developing the \"Moon Cannon\". A giant gun that will allow us to find a solution to the delicate situation with the aliens.\n\nThe Cannon will allow us to reach space and enable us to disrupt the Aliens or to work together with them."
+ je_wotw_moon_cannon_success: "Project Luna has reached a #V progress of 1000#!"
+
+ je_wotw_ufo_crash_site_expedition: "Crash Site Investigation"
+ je_wotw_ufo_crash_site_expedition_reason: "Our Scientists are currently investigating a Mysterious Crash Site in the hopes to discover something."
+ je_wotw_ufo_crash_site_expedition_success: "The Expedition has reached a #V progress of 100#!"
+
+ wotw_moon_cannon_progressbar_name: "Development Progress"
+ wotw_moon_cannon_progressbar_desc: "Development Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/500)"
+ wotw_ufo_crash_site_progressbar_name: "Investigation Progress"
+ wotw_ufo_crash_site_progressbar_desc: "Investigation Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)"
+ wotw_ufo_crash_site_progressbar_base_progress_tt: "Base Progress"
+ wotw_ufo_crash_site_progressbar_university_progress_tt: "Universities (0.1 per level)"
+
+### Scripted Buttons ###
+ wotw_start_crash_site_investigation: "Crash Site Investigation"
+ wotw_start_crash_site_investigation_desc: "Start investigating a Mysterious Crash Site. This will allow you to find exciting new technologies."
+ wotw_moon_gun_scripted_button: "Develop a Moon Gun"
+ wotw_moon_gun_scripted_button_desc: "Our scientists proposed the creation of a so called \"Moon Gun\" or \"Moon Cannon\", a giant cannon that is able to send a vehicle into space.\nThis would allow us to find solutions to the delicate situation with the aliens. Be it by disrupting them or working together with them."

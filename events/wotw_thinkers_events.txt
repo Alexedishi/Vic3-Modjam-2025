@@ -1,0 +1,93 @@
+﻿namespace = wotw_thinkers
+
+### Project Luna is Ready ###
+wotw_thinkers.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = wotw_thinkers.1.t
+	desc = wotw_thinkers.1.d
+	flavor = wotw_thinkers.1.f
+
+	duration = 2
+
+	event_image = {
+		video = "votp_agitator_speaking"
+	}
+
+	icon = "gfx/interface/icons/event_icons/europenorthamerica_capitalists_meeting.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	immediate = {
+		capital = {
+			save_scope_as = capital_scope
+		}
+		if = {
+			limit = {
+				any_scope_state = {
+					count >= 2
+				}
+			}
+
+			random_scope_state = {
+				limit = {
+					NOT = { scope:capital_scope ?= this }
+				}
+				save_scope_as = state_1_scope
+			}
+		}
+		if = {
+			limit = {
+				any_scope_state = {
+					count >= 3
+				}
+			}
+
+			random_scope_state = {
+				limit = {
+					NOR = {
+						scope:capital_scope ?= this
+						scope:state_1_scope ?= this
+					}
+				}
+				save_scope_as = state_2_scope
+			}
+		}
+	}
+
+	#Build it in our Capital
+	option = {
+		name = wotw_thinkers.1.g
+		
+		capital = {
+			set_variable = building_wotw_moon_cannon_possible_var
+			start_building_construction = building_wotw_moon_cannon
+		}
+	}
+
+	#Build it in [state_1_scope]
+	option = {
+		name = wotw_thinkers.1.h
+		trigger = { exists = scope:state_1_scope }
+		
+		scope:state_1_scope = {
+			set_variable = building_wotw_moon_cannon_possible_var
+			start_building_construction = building_wotw_moon_cannon
+		}
+	}
+
+	#Build it in our Capital
+	option = {
+		name = wotw_thinkers.1.i
+		trigger = { exists = scope:state_2_scope }
+		
+		scope:state_2_scope = {
+			set_variable = building_wotw_moon_cannon_possible_var
+			start_building_construction = building_wotw_moon_cannon
+		}
+	}
+
+	after = {
+	}
+}

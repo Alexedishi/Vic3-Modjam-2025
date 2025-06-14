@@ -1,4 +1,4 @@
-on_acquired_technology = {
+﻿on_acquired_technology = {
 	on_actions = {
 		on_wotw_acquired_technology
 	}

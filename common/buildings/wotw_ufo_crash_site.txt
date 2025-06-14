@@ -1,0 +1,39 @@
+﻿###########################
+# UFO CRASHSITE BUILDING  #
+###########################
+
+#by Lord R
+
+##########################
+
+#UFO Crash Site
+
+building_wotw_ufo_crash_site = {
+	building_group = bg_monuments
+	icon = "gfx/interface/icons/building_icons/wotw_moon_cannon.dds"
+	city_type = farm
+
+	expandable = no
+	downsizeable = no
+
+	production_method_groups = {
+		pmg_wotw_ufo_crash_site
+	}
+
+	potential = {
+		has_variable = wotw_ufo_crash_site_var
+	}
+
+	can_build_government = {
+	}
+
+	can_build_private = {
+		always = no
+	}
+
+	required_construction = construction_cost_medium
+
+	ownership_type = no_ownership
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}

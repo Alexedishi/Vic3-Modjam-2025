@@ -1,4 +1,4 @@
-
+﻿
 namespace = wotw_debug
 
 wotw_debug.1 = {
