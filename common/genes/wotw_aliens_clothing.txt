@@ -123,6 +123,38 @@ special_genes = {
 			}
 		} ## END GENE
 
+		wotw_alien_belt_accessory = {
+			inheritable = no
+			
+			wotw_alien_bo_belt_accessory = {
+				index = 0
+				male = {
+					1 = empty
+				}		   
+				female = male
+				boy = male
+				girl = male
+			}
+			
+			wotw_alien_all_belt_accessory = {
+				index = 1
+				male = {
+					2 = wotw_alien_belt_accessory
+					1 = empty
+				}		   
+				female = {
+					2 = wotw_alien_belt_accessory_f
+					1 = empty
+				}		
+				boy = {
+					1 = empty
+				}		
+				girl = {
+					1 = empty
+				}		
+			}
+		} ## END GENE
+
 		wotw_alien_boots = {
 			inheritable = no
 			
