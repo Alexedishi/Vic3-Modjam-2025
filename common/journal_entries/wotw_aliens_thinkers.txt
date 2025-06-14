@@ -31,7 +31,10 @@
 		any_scope_building = {
 			is_building_type = building_wotw_moon_cannon
 		}
-		has_variable = wotw_moon_cannon_mission_successful_var
+		custom_tooltip = {
+			text = je_wotw_thinkers_moon_cannon_successful
+			has_variable = wotw_moon_cannon_mission_successful_var
+		}
 	}
 
 	on_complete = {
