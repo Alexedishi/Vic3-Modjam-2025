@@ -1,0 +1,150 @@
+types wotw_pop_custom_types {
+	
+	
+
+	### POP PORTRAITS
+	type pop_portrait_base = character_portrait_base {
+		size = { 80 100 }
+		
+		blockoverride "portrait_texture"
+		{
+			block "pop_portrait_texture" {
+				# Always use Cached portraits by default (better for performance and they can't be animated)
+				portrait_texture = "[Pop.GetTypedPortrait('environment_standard', 'camera_head', 'wotw_idle', GetPortraitRenderSize(PdxGuiWidget.Self), 'random_adult', '(int32)-1')]"
+				
+				# GetTypedPortrait will return the specified type, and age.
+				#  Valid types are 'male', 'female', 'boy', 'girl', 'random_adult', 'random_child', 'scripted'. Scripted uses the same scripted weights as GetPortrait (i.e. based on laws etc)
+				#  Valid values for age are 0-100 (years), or -1 to use the scripted age.
+				#  Valid values for pose are defined in common/genes/99_genes_special.txt. Empty will use the default pose.
+				# portrait_texture = "[Pop.GetTypedPortrait('environment_standard', 'camera_head', 'wotw_idle', GetPortraitRenderSize(PdxGuiWidget.Self), 'random_adult', '(int32)30')]"
+			}
+		}
+		blockoverride "portrait_icons" {}
+		blockoverride "tooltip" {}
+		blockoverride "show_hat" {}
+
+		# Override click/hover effects since we don't set a character context for these
+		blockoverride "portrait_button" {
+			block "portrait_button" {
+				button = {
+					size = { 100% 100% }
+				}
+			}
+		}
+	}
+	
+	### BIG (animated)
+	type pop_portrait_big = pop_portrait_base {
+		size = { 250 400 }
+		blockoverride "portrait_size" {
+			size = { 430 430 }
+		}
+		blockoverride "pop_portrait_texture" {
+			block "pop_portrait_texture" {
+				portrait_texture = "[Pop.GetAnimatedTypedPortrait('environment_standard', 'camera_body', 'wotw_idle', GetPortraitRenderSize(PdxGuiWidget.Self), 'random_adult', '(int32)-1')]"
+			}
+		}
+	}
+	
+	type pop_portrait_big_female = pop_portrait_big {
+		blockoverride "pop_portrait_texture" {
+			portrait_texture = "[Pop.GetAnimatedTypedPortrait('pop_environment', 'camera_body', 'wotw_idle', GetPortraitRenderSize(PdxGuiWidget.Self), 'female', '(int32)-1')]"
+		}
+
+	}
+	
+	type pop_portrait_big_male = pop_portrait_big {
+		blockoverride "pop_portrait_texture" {
+			portrait_texture = "[Pop.GetAnimatedTypedPortrait('pop_environment', 'camera_body', 'wotw_idle', GetPortraitRenderSize(PdxGuiWidget.Self), 'male', '(int32)-1')]"
+			# Make males slightly taller
+			size = { 440 440 }
+		}
+		
+		blockoverride "portrait_mask" {
+			mask = "gfx/interface/portraits/portrait_mask_small_fade_bottom.dds"
+		}
+	}
+
+	### MEDIUM (animated)
+	type pop_portrait_medium = pop_portrait_base {
+		size = { 140 205 }
+		blockoverride "portrait_size" {
+			size = { 225 225 }
+		}
+		blockoverride "pop_portrait_texture" {
+			block "pop_portrait_texture" {
+				portrait_texture = "[Pop.GetAnimatedTypedPortrait('environment_standard', 'camera_body', 'wotw_idle', GetPortraitRenderSize(PdxGuiWidget.Self), 'random_adult', '(int32)-1')]"
+			}
+		}
+	}
+	
+	type pop_portrait_medium_female = pop_portrait_medium {
+		blockoverride "pop_portrait_texture" {
+			portrait_texture = "[Pop.GetAnimatedTypedPortrait('environment_standard', 'camera_body', 'wotw_idle', GetPortraitRenderSize(PdxGuiWidget.Self), 'female', '(int32)-1')]"
+		}
+	}
+	
+	type pop_portrait_medium_male = pop_portrait_medium {
+		blockoverride "pop_portrait_texture" {
+			portrait_texture = "[Pop.GetAnimatedTypedPortrait('small_pop_environment', 'camera_body', 'wotw_idle', GetPortraitRenderSize(PdxGuiWidget.Self), 'male', '(int32)-1')]"
+			
+			# Make males slightly taller
+			size = { 230 230 }
+		}
+		block "portrait_mask" {}
+	}
+
+	### SMALL (animated)
+
+	type pop_portrait_small = pop_portrait_base {
+		size = { 85 95 }
+
+		blockoverride "pop_portrait_texture" {
+			block "pop_portrait_texture" {
+				portrait_texture = "[Pop.GetAnimatedTypedPortrait('small_pop_environment', 'camera_body', 'wotw_idle', GetPortraitRenderSize(PdxGuiWidget.Self), 'random_adult', '(int32)-1')]"
+			}
+		}
+	}
+
+	type pop_portrait_small_female = pop_portrait_small {
+		blockoverride "pop_portrait_texture" {
+			portrait_texture = "[Pop.GetAnimatedTypedPortrait('small_pop_environment', 'camera_body', 'wotw_idle', GetPortraitRenderSize(PdxGuiWidget.Self), 'female', '(int32)-1')]"
+		}
+	}
+
+	type pop_portrait_small_male = pop_portrait_small {
+		blockoverride "pop_portrait_texture" {
+			portrait_texture = "[Pop.GetAnimatedTypedPortrait('small_pop_environment', 'camera_body', 'wotw_idle', GetPortraitRenderSize(PdxGuiWidget.Self), 'male', '(int32)-1')]"
+			
+			# Make males slightly taller
+			size = { 82 102 }
+		}
+	}
+
+
+	### SIMPLE (non-animated and cached, for long lists etc)
+	type pop_portrait_simple = pop_portrait_base {
+		size = { 85 95 }
+
+		blockoverride "pop_portrait_texture" {
+			block "pop_portrait_texture" {
+				portrait_texture = "[Pop.GetTypedPortrait('small_pop_environment', 'camera_body', 'wotw_idle', GetPortraitRenderSize(PdxGuiWidget.Self), 'random_adult', '(int32)-1')]"
+			}
+		}
+	}
+
+	type pop_portrait_simple_female = pop_portrait_simple {
+		blockoverride "pop_portrait_texture" {
+			portrait_texture = "[Pop.GetTypedPortrait('small_pop_environment', 'camera_body', 'wotw_idle', GetPortraitRenderSize(PdxGuiWidget.Self), 'female', '(int32)-1')]"
+		}
+	}
+
+	type pop_portrait_simple_male = pop_portrait_simple {
+		blockoverride "pop_portrait_texture" {
+			portrait_texture = "[Pop.GetTypedPortrait('small_pop_environment', 'camera_body', 'wotw_idle', GetPortraitRenderSize(PdxGuiWidget.Self), 'male', '(int32)-1')]"
+			
+			# Make males slightly taller
+			size = { 82 102 }
+		}
+	}
+}

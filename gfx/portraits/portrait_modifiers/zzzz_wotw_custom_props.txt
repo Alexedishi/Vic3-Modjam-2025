@@ -1,0 +1,17 @@
+﻿wotw_animations_props = {
+	usage = none
+
+    alien_ray_gun_attachment = {
+    dna_modifiers = {
+      accessory = {
+          mode = add
+          gene = wotw_props
+          template = wotw_ray_gun
+          value = 1
+      }
+    }
+  }
+
+
+
+}

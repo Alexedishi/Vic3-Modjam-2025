@@ -32,6 +32,7 @@ wotw_alien_helmet = {
 	set_tags ="cap1" 
 	entity = { required_tags = ""					shared_pose_entity = head		entity = "wotw_alien_helmet_entity" }	}
 
+	
 
 
 
@@ -66,3 +67,14 @@ wotw_alien_gloves_f = {
 wotw_alien_helmet_f = {
 	set_tags ="cap1" 
 	entity = { required_tags = ""					shared_pose_entity = head		entity = "wotw_alien_helmet_f_entity" }	}
+
+
+
+	
+
+wotw_alien_ray_gun = {
+	entity = { required_tags = ""					node = "bn_r_prop"		entity = "wotw_alien_ray_gun_entity" }	
+}
+wotw_alien_ray_gun_f = {
+	entity = { required_tags = ""					node = "bn_r_prop"		entity = "wotw_alien_ray_gun_f_entity" }	
+}

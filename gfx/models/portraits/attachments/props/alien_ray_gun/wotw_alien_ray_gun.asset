@@ -1,0 +1,40 @@
+pdxmesh = {
+	name = "wotw_alien_ray_gun_mesh"
+	file = "wotw_alien_ray_gun.mesh"
+
+	meshsettings = {
+		name = "wotw_alien_ray_gun"
+		index = 0
+		texture_diffuse = "wotw_alien_ray_gun_d.dds"
+		texture_normal = "wotw_alien_ray_gun_n.dds"
+		texture_specular = "wotw_alien_ray_gun_p.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "wotw_alien_ray_gun_entity"
+	pdxmesh = "wotw_alien_ray_gun_mesh"
+}
+
+
+pdxmesh = {
+	name = "wotw_alien_ray_gun_f_mesh"
+	file = "wotw_alien_ray_gun_f.mesh"
+
+	meshsettings = {
+		name = "wotw_alien_ray_gun"
+		index = 0
+		texture_diffuse = "wotw_alien_ray_gun_d.dds"
+		texture_normal = "wotw_alien_ray_gun_n.dds"
+		texture_specular = "wotw_alien_ray_gun_p.dds"
+		shader = "portrait_attachment_alpha_to_coverage"
+		shader_file = "gfx/FX/jomini/portrait.shader"
+	}
+}
+
+entity = {
+	name = "wotw_alien_ray_gun_f_entity"
+	pdxmesh = "wotw_alien_ray_gun_f_mesh"
+}
