@@ -146,6 +146,7 @@ je_wotw_the_alien_menace = {
 	}
 
 	scripted_button = wotw_select_response_button
+	scripted_button = wotw_start_crash_site_investigation
 
 	scripted_progress_bar = wotw_thinkers_progressbar
 	scripted_progress_bar = wotw_warlikes_progressbar
