@@ -145,6 +145,12 @@
                 template = wotw_alien_all_boots
                 range = { 0 1 }
             }
+            accessory = {
+                mode = add
+                gene = wotw_alien_belt_accessory
+                template = wotw_alien_all_belt_accessory
+                range = { 0 1 }
+            }
 
             }
         weight = {
