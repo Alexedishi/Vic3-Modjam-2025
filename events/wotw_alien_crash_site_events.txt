@@ -71,4 +71,15 @@ wotw_crash_sites.1 = {
 
 	after = {
 	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = {
+			owner = {
+				is_player = yes
+			}
+
+			factor = 2
+		}
+	}
 }

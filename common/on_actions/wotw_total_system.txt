@@ -4,6 +4,12 @@
 	}
 }
 
+on_yearly_pulse_state = {
+	on_actions = {
+		on_wotc_yearly_pulse_state
+	}
+}
+
 on_monthly_pulse_country = {
 	on_actions = {
 		on_wotc_monthly_pulse_country
@@ -43,5 +49,29 @@ on_wotc_monthly_pulse_state = {
 			}
 			set_state_owner = controller
 		}
+	}
+}
+
+on_wotc_yearly_pulse_state = {
+	trigger = {
+		NOT = {
+			has_global_variable = wotw_aliens_whacked
+		}
+		OR = {
+			AND = {
+				has_game_rule = wotw_aliens_normal_delay
+				year >= 1846
+			}
+			AND = {
+				has_game_rule = wotw_aliens_short_delay
+				year >= 1841
+			}
+			has_game_rule = wotw_aliens_no_delay
+		}
+	}
+
+	random_events = {
+		1 = wotw_crash_sites.1
+		4 = 0
 	}
 }
