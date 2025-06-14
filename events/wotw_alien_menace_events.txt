@@ -78,6 +78,10 @@ wotw_alien_menace_events.9 = { #
 					"scripted_bar_progress(wotw_talkers_progressbar)" >= 100
 				}
 			}
+			custom_tooltip = {
+				text = wotw_alien_deciphering_complete
+				var:wotw_alien_deciphering_var >= 9
+			}
 		}
 		show_as_unavailable = { always = yes }
 		highlighted_option = yes

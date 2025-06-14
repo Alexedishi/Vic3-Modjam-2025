@@ -25,6 +25,7 @@
  je_wotw_ufo_crash_site_expedition: "Crash Site Investigation"
  je_wotw_ufo_crash_site_expedition_reason: "Our Scientists are currently investigating a Mysterious Crash Site in the hopes to discover something."
  je_wotw_ufo_crash_site_expedition_success: "The Expedition has reached a #V progress of 100#!"
+ wotw_alien_investigating_crash_sites: "Investigating Crash Sites"
 
  wotw_moon_cannon_progressbar_name: "Development Progress"
  wotw_moon_cannon_progressbar_desc: "Development Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/500)"

@@ -14,8 +14,7 @@
 	}
 
 	possible = {
-		has_variable = wotw_response_var
-		var:wotw_response_var = 3
+		var:wotw_response_var ?= 2
 	}
 
 	immediate = {
@@ -29,9 +28,7 @@
 	complete = {
 		custom_tooltip = {
 			text = je_wotw_the_warlikes_path_complete
-			NOT = {
-				exists = c:WOTW_ALIEN
-			}
+			has_variable = wotw_total_war_victory_var
 		}
 	}
 
@@ -80,6 +77,29 @@ je_wotw_alien_raid = {
 
 	on_complete = {
 		remove_variable = wotw_alien_raid_var
+		random_list = {
+			#Military Techs
+			1 = {
+				trigger = {
+					NOT = { has_technology_researched = wotw_ray_guns_basic_tech }
+				}
+				add_technology_researched = wotw_ray_guns_basic_tech
+			}
+			1 = {
+				trigger = {
+					has_technology_researched = wotw_ray_guns_basic_tech
+					NOT = { has_technology_researched = wotw_ray_guns_advanced_tech }
+				}
+				add_technology_researched = wotw_ray_guns_advanced_tech
+			}
+			1 = {
+				trigger = {
+					has_technology_researched = wotw_ray_guns_advanced_tech
+					NOT = { has_technology_researched = wotw_ray_guns_alien_tech }
+				}
+				add_technology_researched = wotw_ray_guns_alien_tech
+			}
+		}
 	}
 
 	fail = {
@@ -105,13 +125,13 @@ je_wotw_alien_raid = {
 		effect = {
 			change_variable = {
 				name = wotw_alien_raid_var
-				value = wotw_alien_raid_value
+				add = wotw_alien_raid_value
 			}
 		}
 	}
 
 	current_value = {
-		value = var:wotw_alien_raid_value
+		value = var:wotw_alien_raid_var
 	}
 
 	goal_add_value = {

@@ -7,6 +7,10 @@
 
 	should_be_pinned_by_default = yes
 
+	modifiers_while_active = {
+		wotw_alien_investigating_crash_sites
+	}
+
 	complete = {
 		custom_tooltip = {
 			text = je_wotw_ufo_crash_site_expedition_success

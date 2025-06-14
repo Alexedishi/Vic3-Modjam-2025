@@ -51,3 +51,8 @@ wotw_logistics_sabotaged_modifier = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds"
 	building_wotw_alien_emporium_throughput_add = -1
 }
+
+wotw_alien_investigating_crash_sites = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds"
+	country_weekly_innovation_mult = -0.5
+}

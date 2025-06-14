@@ -6,4 +6,5 @@
 		}
 		add = num_units
 	}
+	divide = 10
 }

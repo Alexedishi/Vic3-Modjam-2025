@@ -75,9 +75,12 @@ wotw_warlikes_progressbar = {
 				limit = {
 					is_building_type = building_barracks
 				}
-				add = 1.5
+				add = {
+					value = 1
+					multiply = level
+				}
 			}
-			divide = 200
+			divide = 2000
 			desc = "wotw_warlikes_progress_barracks"
 		}
 		add = {
@@ -108,7 +111,7 @@ wotw_talkers_progressbar = {
 		add = {
 			value = 0
 			add = var:wotw_alien_deciphering_var
-			divide = 18
+			divide = 9
 			desc = "wotw_talkers_progress_deciphering_language"
 		}
 		add = {

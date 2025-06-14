@@ -1,4 +1,6 @@
 ﻿l_english:
+  wotw_alien_deciphering_complete: "Deciphered the Alien Message"
+
   wotw_organize_a_congress: "Organize a Congress of Mankind"
   wotw_organize_a_congress_desc: "Organizing a Congress of Mankind is a significant step towards uniting humanity in the face of the alien threat. It will allow us to send a diplomat. It will require careful planning and coordination and the support of the global community."
   wotw_supported_by_a_third: "Countries totaling at least a third of the world's [concept_prestige] have an [concept_approval] of us over #b;v 20#!. Currently: [GetPlayer.MakeScope.ScriptValue('wotw_popular_supported_talkers')|%v+]"
