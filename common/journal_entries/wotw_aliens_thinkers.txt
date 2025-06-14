@@ -93,7 +93,11 @@ je_wotw_sabotage_mission = {
 		effect = {
 			random = {
 				chance = {
-					value = 2
+					value = 0
+					scope:journal_entry = {
+						add = "scripted_bar_progress(wotw_sabotage_progressbar)"
+						divide = 10
+					}
 				}
 				trigger_event = {
 					id = wotw_totalen_krieg.1

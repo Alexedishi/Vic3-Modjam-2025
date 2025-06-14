@@ -45,7 +45,7 @@
 
  je_wotw_sabotage_mission: "Sabotage Mission"
  je_wotw_sabotage_mission_reason: "Our Scientists have developed a plan to sabotage the logistics hub of the Aliens. This will cripple their economy and make them an easy target."
- je_wotw_sabotage_mission_success: "The Sabotage Mission has reached a #V progress of 12#!"
+ je_wotw_sabotage_mission_success: "The Sabotage Mission has reached a #V progress of 500#!"
 
  je_wotw_ufo_crash_site_expedition: "Crash Site Investigation"
  je_wotw_ufo_crash_site_expedition_reason: "Our Scientists are currently investigating a Mysterious Crash Site in the hopes to discover something."
