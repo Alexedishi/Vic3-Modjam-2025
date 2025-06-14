@@ -42,7 +42,6 @@ wotw_launch_raid_button = {
 			has_journal_entry = je_wotw_alien_raid
 		}
 		any_military_formation = {
-			is_mobilized = yes
 			has_mobilization_option = mobilization_option:mobilization_option_alien_raiding
 		}
 	}

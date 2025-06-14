@@ -101,4 +101,23 @@ je_wotw_alien_raid = {
 		remove_variable = wotw_alien_raid_var
 	}
 
+	on_monthly_pulse = {
+		effect = {
+			change_variable = {
+				name = wotw_alien_raid_var
+				value = wotw_alien_raid_value
+			}
+		}
+	}
+
+	current_value = {
+		value = var:wotw_alien_raid_value
+	}
+
+	goal_add_value = {
+		value = 1000
+	}
+
+	progressbar = yes
+
 }
