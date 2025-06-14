@@ -10,8 +10,9 @@ je_wotw_first_contact = {
 	should_be_pinned_by_default = yes
 
 	is_shown_when_inactive = {
-		NOT = {
+		NOR = {
 			has_global_variable = wotw_aliens_whacked
+            c:WOTW_ALIEN ?= this
 		}
 		OR = {
 			AND = {
