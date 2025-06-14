@@ -13,7 +13,23 @@
  wotw_thinkers.1.h: "[SCOPE.sState('state_1_scope').GetName] seems to be a good choice"
  wotw_thinkers.1.i: "I think [SCOPE.sState('state_2_scope').GetName] is an ideal location."
 
+ wotw_thinkers.2.t: "A Lucky Shot?"
+ wotw_thinkers.2.d: "Project Luna is finally constructed. Now is the time to decide what we will do with it. Should we reach out to the Aliens or sabotage them, so that they will no longer pose a threat?"
+ wotw_thinkers.2.f: "\"You may fire when ready.\""
+ wotw_thinkers.2.g: "Send a team to sabotage their logistics hub."
+ wotw_thinkers.2.h: "Send a team to initate trading."
+ wotw_thinkers.2.i: "I am not prepared to take a decision yet."
+
+ wotw_thinkers.11.t: "A Successfull Mission"
+ wotw_thinkers.11.d: "Our Team has returned from their mission. At the same time a huge explosion was visible in the night sky. This will stop the Alien Menace and make our country the leading nation of the world!"
+ wotw_thinkers.11.f: "\"It was quite easy honestly. They don't even have windows in their flying outposts!\""
+ wotw_thinkers.11.g: "Huge Success!"
+
 ### Journal Entries
+ je_wotw_the_thinkers: "The Thinkers"
+ je_wotw_the_thinkers_reason: "The Great Minds of our country think that we could learn a lot from our new alien neighbours.\n\nAnd once we have learnt everything necessary, we can decide how to deal with them."
+ wotw_moon_cannon_mission_successful_tt: "You completed Project Luna and sent a mission to Space."
+
  je_wotw_moon_cannon: "Project Luna"
  je_wotw_moon_cannon_reason: "Our scientists are developing the \"Moon Cannon\". A giant gun that will allow us to find a solution to the delicate situation with the aliens.\n\nThe Cannon will allow us to reach space and enable us to disrupt the Aliens or to work together with them."
  je_wotw_moon_cannon_success: "Project Luna has reached a #V progress of 1000#!"

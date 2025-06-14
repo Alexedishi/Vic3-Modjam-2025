@@ -22,16 +22,11 @@
 	}
 
 	complete = {
-		has_technology_researched = wotw_hypersteel_tech
-		has_technology_researched = wotw_alien_energy_generation_tech
-		has_technology_researched = wotw_4_dimensional_chemistry_tech
-		has_technology_researched = wotw_xeno_linguistics_tech
-		has_technology_researched = wotw_xeno_cryptography_tech
-		has_technology_researched = wotw_4_dimensional_physics_tech
-		any_scope_building = {
-			is_building_type = building_wotw_moon_cannon
+		custom_tooltip = {
+			text = wotw_moon_cannon_mission_successful_tt
+
+			has_variable = wotw_moon_cannon_mission_successful_var
 		}
-		has_variable = wotw_moon_cannon_mission_successful_var
 	}
 
 	on_complete = {

@@ -116,7 +116,8 @@ wotw_thinkers.2 = {
 
 	#Send a team to sabotage their logistics hub.
 	option = {
-		name = wotw_thinkers.1.g
+		name = wotw_thinkers.2.g
+		default_option = yes
 		
 		add_journal_entry = {
 			type = je_wotw_sabotage_mission
@@ -125,7 +126,7 @@ wotw_thinkers.2 = {
 
 	#Send a team to initate trading 
 	option = {
-		name = wotw_thinkers.1.h
+		name = wotw_thinkers.2.h
 		trigger = { always = no }
 		
 	#	add_journal_entry = {
@@ -135,7 +136,7 @@ wotw_thinkers.2 = {
 
 	#I am not prepared to take a decision yet.
 	option = {
-		name = wotw_thinkers.1.i
+		name = wotw_thinkers.2.i
 	}
 
 	after = {
@@ -167,6 +168,7 @@ wotw_thinkers.11 = {
 	#Huge Success!
 	option = {
 		name = wotw_thinkers.11.g
+		default_option = yes
 		
 		c:WOTW_ALIEN = {
 			add_modifier = {
@@ -177,6 +179,8 @@ wotw_thinkers.11 = {
 				value = -100
 			}
 		}
+
+		set_variable = wotw_moon_cannon_mission_successful_var
 	}
 
 	after = {
