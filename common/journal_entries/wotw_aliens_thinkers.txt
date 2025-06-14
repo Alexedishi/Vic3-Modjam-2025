@@ -20,8 +20,11 @@
 
 	complete = {
 		has_technology_researched = wotw_hypersteel_tech
+		has_technology_researched = wotw_alien_energy_generation_tech
+		has_technology_researched = wotw_4_dimensional_chemistry_tech
 		has_technology_researched = wotw_xeno_linguistics_tech
 		has_technology_researched = wotw_xeno_cryptography_tech
+		has_technology_researched = wotw_4_dimensional_physics_tech
 	}
 
 	on_complete = {

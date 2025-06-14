@@ -14,7 +14,45 @@ wotw_hypersteel_tech = {
 	can_research = no
 
 	modifier = {
-		building_steel_mills_throughput_add = 0.5
+		building_steel_mills_throughput_add = 1
+		building_tooling_workshops_throughput_add = 1
+		building_motor_industry_throughput_add = 1
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+#Alien Energy Generation
+wotw_alien_energy_generation_tech = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/electrical_generation.dds"
+	category = production
+	can_research = no
+
+	modifier = {
+		building_electrics_industry_throughput_add = 1
+		building_power_plant_throughput_add = 1
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+#Tetradimensional Chemistry
+wotw_4_dimensional_chemistry_tech = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/electrical_generation.dds"
+	category = production
+	can_research = no
+
+	modifier = {
+		building_chemical_plants_throughput_add = 1
+		building_explosives_factory_throughput_add = 1
+		building_synthetics_plants_throughput_add = 1
+		building_munition_plants_throughput_add = 1
 	}
 
 	ai_weight = {
