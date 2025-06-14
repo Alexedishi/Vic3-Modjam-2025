@@ -102,8 +102,12 @@ pm_wotw_moon_cannon = {
 	}
 }
 
-### UFO Crashsite
-pm_wotw_ufo_crashsite_basic_research = {
+### UFO crash_site
+pm_wotw_ufo_crash_site_no_research = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+}
+
+pm_wotw_ufo_crash_site_basic_research = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
 	country_modifiers = {
@@ -111,9 +115,15 @@ pm_wotw_ufo_crashsite_basic_research = {
 			country_weekly_innovation_add = 2
 		}
 	}
+
+	state_modifiers = {
+		unscaled = {
+			state_mortality_mult = 0.01
+		}
+	}
 }
 
-pm_wotw_ufo_crashsite_materials_focus = {
+pm_wotw_ufo_crash_site_materials_focus = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 	
 	unlocking_technologies = {
@@ -126,9 +136,15 @@ pm_wotw_ufo_crashsite_materials_focus = {
 			country_production_tech_research_speed_mult = 0.05
 		}
 	}
+
+	state_modifiers = {
+		unscaled = {
+			state_mortality_mult = 0.01
+		}
+	}
 }
 
-pm_wotw_ufo_crashsite_society_focus = {
+pm_wotw_ufo_crash_site_society_focus = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 	
 	unlocking_technologies = {
@@ -141,9 +157,15 @@ pm_wotw_ufo_crashsite_society_focus = {
 			country_society_tech_research_speed_mult = 0.05
 		}
 	}
+
+	state_modifiers = {
+		unscaled = {
+			state_mortality_mult = 0.01
+		}
+	}
 }
 
-pm_wotw_ufo_crashsite_weapons_focus = {
+pm_wotw_ufo_crash_site_weapons_focus = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 	
 	unlocking_technologies = {
@@ -159,7 +181,7 @@ pm_wotw_ufo_crashsite_weapons_focus = {
 
 	state_modifiers = {
 		unscaled = {
-			state_mortality_mult = 0.1
+			state_mortality_mult = 0.01
 		}
 	}
 }

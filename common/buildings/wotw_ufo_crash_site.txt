@@ -8,7 +8,7 @@
 
 #UFO Crash Site
 
-building_wotw_ufo_crashsite = {
+building_wotw_ufo_crash_site = {
 	building_group = bg_monuments
 	icon = "gfx/interface/icons/building_icons/wotw_moon_cannon.dds"
 
@@ -16,7 +16,7 @@ building_wotw_ufo_crashsite = {
 	downsizeable = no
 
 	production_method_groups = {
-		pmg_wotw_ufo_crashsite
+		pmg_wotw_ufo_crash_site
 	}
 
 	potential = {

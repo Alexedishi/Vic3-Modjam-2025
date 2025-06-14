@@ -1,0 +1,6 @@
+﻿l_english:
+ wotw_crash_sites.1.t: "A Mysterious Crash Site"
+ wotw_crash_sites.1.d: "Some people in [SCOPE.sState('crash_site_state').GetName] report hearing a loud bang and an explosion. It appears that an object fell from the sky."
+ wotw_crash_sites.1.f: "\"First, I saw lights in the night sky that were moving strangely. It looked as if they were dancing. Then a light fell down! It must be an angel who has fallen to earth!\"\n- A random Farmer"
+ wotw_crash_sites.1.g: "We need to investigate it!"
+ wotw_crash_sites.1.h: "I'm sure it is just a meteorite..."
