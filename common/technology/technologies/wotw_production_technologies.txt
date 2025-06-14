@@ -1,6 +1,6 @@
-﻿##############################
-# WORW SOCIETY TECHNOLOGIES  #
-##############################
+﻿#################################
+# WOTW PRODUCTION TECHNOLOGIES  #
+#################################
 
 #by Lord R
 
@@ -10,7 +10,7 @@
 wotw_hypersteel_tech = {
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/electric_arc_process.dds"
-	category = society
+	category = production
 	can_research = no
 
 	modifier = {
