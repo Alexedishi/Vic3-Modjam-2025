@@ -13,7 +13,23 @@
  wotw_thinkers.1.h: "[SCOPE.sState('state_1_scope').GetName] seems to be a good choice"
  wotw_thinkers.1.i: "I think [SCOPE.sState('state_2_scope').GetName] is an ideal location."
 
+ wotw_thinkers.2.t: "A Lucky Shot?"
+ wotw_thinkers.2.d: "Project Luna is finally constructed. Now is the time to decide what we will do with it. Should we reach out to the Aliens or sabotage them, so that they will no longer pose a threat?"
+ wotw_thinkers.2.f: "\"You may fire when ready.\""
+ wotw_thinkers.2.g: "Send a team to sabotage their logistics hub."
+ wotw_thinkers.2.h: "Send a team to initate trading."
+ wotw_thinkers.2.i: "I am not prepared to take a decision yet."
+
+ wotw_thinkers.11.t: "A Successfull Mission"
+ wotw_thinkers.11.d: "Our Team has returned from their mission. At the same time a huge explosion was visible in the night sky. This will stop the Alien Menace and make our country the leading nation of the world!"
+ wotw_thinkers.11.f: "\"It was quite easy honestly. They don't even have windows in their flying outposts!\""
+ wotw_thinkers.11.g: "Huge Success!"
+
 ### Journal Entries
+ je_wotw_the_thinkers: "The Thinkers"
+ je_wotw_the_thinkers_reason: "The Great Minds of our country think that we could learn a lot from our new alien neighbours.\n\nAnd once we have learnt everything necessary, we can decide how to deal with them."
+ wotw_moon_cannon_mission_successful_tt: "You completed Project Luna and sent a mission to Space."
+
  je_wotw_moon_cannon: "Project Luna"
  je_wotw_moon_cannon_reason: "Our scientists are developing the \"Moon Cannon\". A giant gun that will allow us to find a solution to the delicate situation with the aliens.\n\nThe Cannon will allow us to reach space and enable us to disrupt the Aliens or to work together with them."
  je_wotw_moon_cannon_success: "Project Luna has reached a #V progress of 1000#!"
@@ -33,10 +49,13 @@
  wotw_ufo_crash_site_progressbar_desc: "Investigation Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)"
  wotw_ufo_crash_site_progressbar_base_progress_tt: "Base Progress"
  wotw_ufo_crash_site_progressbar_university_progress_tt: "Universities (0.1 per level)"
+ wotw_sabotage_progressbar_name: "Mission Progress"
+ wotw_sabotage_progressbar_desc: "Mission Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/12)"
 
 ### Scripted Buttons ###
  wotw_start_crash_site_investigation: "Crash Site Investigation"
  wotw_start_crash_site_investigation_desc: "Start investigating a Mysterious Crash Site. This will allow you to find exciting new technologies."
  wotw_moon_gun_scripted_button: "Develop a Moon Gun"
  wotw_moon_gun_scripted_button_desc: "Our scientists proposed the creation of a so called \"Moon Gun\" or \"Moon Cannon\", a giant cannon that is able to send a vehicle into space.\nThis would allow us to find solutions to the delicate situation with the aliens. Be it by disrupting them or working together with them."
-
+ wotw_sabotage_mission_scripted_button: "Start Sabotage Mission"
+ wotw_sabotage_mission_scripted_button_desc: "Send a team to destroy the logistics hub of the aliens which will cripple their economy and make them an easy target."
