@@ -48,10 +48,13 @@
  wotw_ufo_crash_site_progressbar_desc: "Investigation Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)"
  wotw_ufo_crash_site_progressbar_base_progress_tt: "Base Progress"
  wotw_ufo_crash_site_progressbar_university_progress_tt: "Universities (0.1 per level)"
+ wotw_sabotage_progressbar_name: "Mission Progress"
+ wotw_sabotage_progressbar_desc: "Mission Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/12)"
 
 ### Scripted Buttons ###
  wotw_start_crash_site_investigation: "Crash Site Investigation"
  wotw_start_crash_site_investigation_desc: "Start investigating a Mysterious Crash Site. This will allow you to find exciting new technologies."
  wotw_moon_gun_scripted_button: "Develop a Moon Gun"
  wotw_moon_gun_scripted_button_desc: "Our scientists proposed the creation of a so called \"Moon Gun\" or \"Moon Cannon\", a giant cannon that is able to send a vehicle into space.\nThis would allow us to find solutions to the delicate situation with the aliens. Be it by disrupting them or working together with them."
-
+ wotw_sabotage_mission_scripted_button: "Start Sabotage Mission"
+ wotw_sabotage_mission_scripted_button_desc: "Send a team to destroy the logistics hub of the aliens which will cripple their economy and make them an easy target."
