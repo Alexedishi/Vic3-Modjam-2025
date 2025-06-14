@@ -76,6 +76,7 @@ wotw_thinkers.1 = {
 			start_building_construction = building_wotw_moon_cannon
 		}
 	}
+	dlc = dlc_wotw
 
 	#Build it in our Capital
 	option = {
@@ -138,6 +139,7 @@ wotw_thinkers.2 = {
 	option = {
 		name = wotw_thinkers.2.i
 	}
+	dlc = dlc_wotw
 
 	after = {
 	}
@@ -203,6 +205,7 @@ wotw_thinkers.5 = {
 			}
 		}
 	}
+	dlc = dlc_wotw
 
 	immediate = {
 	}
@@ -247,6 +250,7 @@ wotw_thinkers.11 = {
 	}
 
 	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
+	dlc = dlc_wotw
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 

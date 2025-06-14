@@ -13,6 +13,7 @@ wotw_politics.1 = {
 	event_image = {
 		video = "votp_agitator_speaking"
 	}
+	dlc = dlc_wotw
 
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 

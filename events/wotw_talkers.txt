@@ -22,6 +22,7 @@ wotw_talkers.2 = {
 			wotw_spawn_alien_tag_if_not_spawned = yes
 		}
 	}
+	dlc = dlc_wotw
 
 	after = {
 		set_global_variable = {
@@ -70,6 +71,7 @@ wotw_talkers.3 = {
 	event_image = {
 		video = "votp_agitator_speaking"
 	}
+	dlc = dlc_wotw
 
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 
@@ -109,6 +111,7 @@ wotw_talkers.4 = {
 	desc = wotw_talkers.4.d
 
 	duration = 2
+	dlc = dlc_wotw
 
 	event_image = {
 		video = "votp_agitator_speaking"
@@ -144,6 +147,7 @@ wotw_talkers.5 = {
 	event_image = {
 		video = "votp_agitator_speaking"
 	}
+	dlc = dlc_wotw
 
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 
@@ -179,6 +183,7 @@ wotw_talkers.6 = {
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	dlc = dlc_wotw
 
 	after = {
 		# No next event
@@ -211,6 +216,7 @@ wotw_talkers.7 = {
 	desc = wotw_talkers.7.d
 
 	duration = 2
+	dlc = dlc_wotw
 
 	event_image = {
 		video = "votp_agitator_speaking"
@@ -245,6 +251,7 @@ wotw_talkers.8 = {
 	desc = wotw_talkers.8.d
 
 	duration = 2
+	dlc = dlc_wotw
 
 	event_image = {
 		video = "votp_agitator_speaking"

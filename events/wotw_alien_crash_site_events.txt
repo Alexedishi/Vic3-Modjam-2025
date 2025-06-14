@@ -14,6 +14,8 @@ wotw_crash_sites.1 = {
 	cooldown = {
 		years = 5
 	}
+	dlc = dlc_wotw
+
 
 	event_image = {
 		video = "unspecific_devastation"

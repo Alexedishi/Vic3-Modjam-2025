@@ -16,6 +16,7 @@ wotw_alien_deciphering.1 = {
 	event_image = {
 		video = "votp_agitator_speaking"
 	}
+	dlc = dlc_wotw
 
 	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
 
@@ -57,6 +58,7 @@ wotw_alien_deciphering.2 = {
 	flavor = wotw_alien_deciphering.2.f
 
 	duration = 3
+	dlc = dlc_wotw
 
 	event_image = {
 		video = "votp_agitator_speaking"
