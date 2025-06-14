@@ -90,3 +90,13 @@
 		}
 	}
 }
+
+pm_wotw_moon_cannon = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+
+	country_modifiers = {
+		unscaled = {
+			country_prestige_add = 100
+		}
+	}
+}

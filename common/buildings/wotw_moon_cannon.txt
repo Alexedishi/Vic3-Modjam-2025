@@ -17,12 +17,16 @@ building_wotw_moon_cannon = {
 	downsizeable = no
 
 	production_method_groups = {
+		pmg_wotw_moon_cannon
 	}
 
-	can_build_government = {
+	potential = {
 		owner = {
 			is_player = yes
 		}
+	}
+
+	can_build_government = {
 	}
 
 	can_build_private = {
