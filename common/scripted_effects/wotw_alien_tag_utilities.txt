@@ -19,6 +19,7 @@ wotw_spawn_alien_tag = {
 		
 	create_country = {
 		tag = WOTW_ALIEN
+		origin = c:GBR
 		state = scope:capital_state
 	}
 	s:STATE_FORMOSA = {
@@ -64,6 +65,125 @@ wotw_spawn_alien_tag = {
 	}
 
 	c:WOTW_ALIEN = {
+
+		add_technology_researched = wotw_ray_guns_alien_tech
+		add_technology_researched = wotw_ray_guns_basic_tech
+		add_technology_researched = wotw_ray_guns_advanced_tech
+		add_technology_researched = ironclad_tech
+		add_technology_researched = battleship_tech
+
+
+		add_modifier = {
+			name = wotw_alien_invaders
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_china
+
+			combat_unit = {
+				type = unit_type:wotw_combat_unit_type_alien_shock_trooper
+				state_region = s:STATE_FORMOSA
+				count = 100
+			}
+
+			combat_unit = {
+				type = unit_type:wotw_combat_unit_type_alien_shock_trooper
+				state_region = s:STATE_CORSICA
+				count = 50
+			}
+
+			combat_unit = {
+				type = unit_type:wotw_combat_unit_type_alien_shock_trooper
+				state_region = s:STATE_BAHAMAS
+				count = 50
+			}
+
+			combat_unit = {
+				type = unit_type:wotw_combat_unit_type_alien_shock_trooper
+				state_region = s:STATE_SOUTH_ATLANTIC_ISLANDS
+				count = 50
+			}
+
+			combat_unit = {
+				type = unit_type:wotw_combat_unit_type_alien_shock_trooper
+				state_region = s:STATE_JAMAICA
+				count = 50
+			}
+
+			combat_unit = {
+				type = unit_type:wotw_combat_unit_type_alien_shock_trooper
+				state_region = s:STATE_PEGU
+				count = 50
+			}
+		}		
+
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_south_china
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_battleship
+				state_region = s:STATE_FORMOSA
+				count = 100
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_scout_cruiser
+				state_region = s:STATE_CORSICA
+				count = 50
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_scout_cruiser
+				state_region = s:STATE_BAHAMAS
+				count = 50
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_scout_cruiser
+				state_region = s:STATE_SOUTH_ATLANTIC_ISLANDS
+				count = 50
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_scout_cruiser
+				state_region = s:STATE_JAMAICA
+				count = 50
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_scout_cruiser
+				state_region = s:STATE_PEGU
+				count = 50
+			}
+		}		
+
+
+		if = {
+			limit = {
+				global_var:wotw_alien_invasion_type = flag:wotw_invasion_type_extermination
+			}
+			wotw_set_alien_exterminatory_laws = yes
+			every_scope_state = {
+				create_pop = {
+					pop_type = officers
+					culture = wotw_nebulons_culture
+					size = 1600000
+				}
+			}
+		} 
+		else = {
+			wotw_set_alien_normal_laws = yes
+			every_scope_state = {
+				create_pop = {
+					pop_type = officers
+					culture = wotw_nebulons_culture
+					size = 400000
+				}
+			}
+		}
 		every_scope_state = {
 			create_building = {
 				building = building_port
@@ -87,7 +207,7 @@ wotw_spawn_alien_tag = {
 			create_pop = {
 				pop_type = bureaucrats
 				culture = wotw_nebulons_culture
-				size = 10000
+				size = 500000
 			}
 		}
 		capital = {
@@ -103,14 +223,111 @@ wotw_spawn_alien_tag = {
 			create_pop = {
 				pop_type = bureaucrats
 				culture = wotw_nebulons_culture
-				size = 4000000
+				size = 8000000
 			}
 		}
 	}
 }
 
+
+wotw_set_alien_exterminatory_laws = {
+	activate_law = law_type:law_corporate_state
+	activate_law = law_type:law_state_atheism
+	activate_law = law_type:law_technocracy
+	activate_law = law_type:law_appointed_bureaucrats
+	activate_law = law_type:law_command_economy
+	activate_law = law_type:law_isolationism	
+	activate_law = law_type:law_ethnostate
+	activate_law = law_type:law_mass_conscription
+	activate_law = law_type:law_closed_borders
+	activate_law = law_type:law_collectivized_agriculture
+	activate_law = law_type:law_debt_slavery
+	activate_law = law_type:law_no_schools
+	activate_law = law_type:law_public_health_insurance
+}
+
+wotw_set_alien_normal_laws = {
+	activate_law = law_type:law_council_republic
+	activate_law = law_type:law_state_atheism
+	activate_law = law_type:law_technocracy
+	activate_law = law_type:law_appointed_bureaucrats
+	activate_law = law_type:law_command_economy
+	activate_law = law_type:law_no_migration_controls	
+	activate_law = law_type:law_multicultural
+	activate_law = law_type:law_professional_army
+	activate_law = law_type:law_free_trade
+	activate_law = law_type:law_collectivized_agriculture
+	activate_law = law_type:law_slavery_banned
+	activate_law = law_type:law_no_schools
+	activate_law = law_type:law_public_health_insurance
+}
+
 wotw_move_all_pops_to_capital = {
 	every_scope_pop = {
 		move_pop = prev.owner.capital
+	}
+}
+
+wotw_start_total_war_if_not_at_war = {
+	if = {
+		limit = {
+			has_variable = wotw_ready_and_prepared_for_total_war
+			is_at_war = no
+		}
+		wotw_start_total_war = yes
+	}
+}
+
+wotw_start_total_war = {
+	set_global_variable = wotw_total_war_against_aliens
+
+	ordered_country = {
+		order_by = prestige
+		limit = {
+			NOT = {
+				this = c:WOTW_ALIEN
+			}
+		}
+		position = 0
+		save_scope_as = humanity_center
+	}
+
+	c:WOTW_ALIEN = {
+		change_infamy = {
+			add = 100
+		}
+		create_diplomatic_play = {  
+			name = total_war
+			target_country = scope:humanity_center
+			type = dp_annex_war
+			war = yes
+			add_war_goal = { holder = scope:humanity_center type = contain_threat target_country = c:WOTW_ALIEN }  
+		}  
+		random_diplomatic_play = {
+			limit = {
+				initiator = c:WOTW_ALIEN
+				is_diplomatic_play_type = dp_annex_war
+			}
+			save_scope_as = wotw_total_world_war
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			NOT = {
+				is_country_type = decentralized
+			}
+			NOR = {
+				this = c:WOTW_ALIEN
+				is_indirect_subject_of = c:WOTW_ALIEN
+			}
+		}
+		order_by = prestige
+		min = 0
+		max = 40
+		scope:wotw_total_world_war = {
+			add_target_backers = { prev }
+			add_war_goal = { holder = c:WOTW_ALIEN type = annex_country target_country = prev }
+		}
 	}
 }

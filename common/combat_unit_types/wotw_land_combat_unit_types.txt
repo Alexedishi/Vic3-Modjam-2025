@@ -7,57 +7,6 @@
 
 ### Infantry
 
-wotw_combat_unit_type_alien_shock_trooper = {
-    group = combat_unit_group_infantry
-
-    upkeep_modifier = {
-        goods_input_small_arms_add = 5
-        goods_input_ammunition_add = 5
-    }
-
-    battle_modifier = {
-        unit_offense_add = 100
-        unit_defense_add = 120
-        unit_morale_loss_add = 1
-        unit_devastation_mult = 0.1
-    }
-
-	unlocking_technologies = { wotw_ray_guns_alien_tech }
-
-    combat_unit_image = {
-        trigger = {
-            has_culture_graphics = east_asian
-        }
-        texture = "gfx/unit_illustrations/infantry_east_asian_mechanized.dds"
-    }
-
-    combat_unit_image = {
-        trigger = {
-            has_culture_graphics = south_asian
-        }
-        texture = "gfx/unit_illustrations/infantry_south_asian_mechanized.dds"
-    }
-
-    combat_unit_image = {
-        trigger = {
-            has_culture_graphics = african
-        }
-        texture = "gfx/unit_illustrations/infantry_african_mechanized.dds"
-    }
-
-    combat_unit_image = {
-        trigger = {
-            has_culture_graphics = arabic
-        }
-        texture = "gfx/unit_illustrations/infantry_arabic_mechanized.dds"
-    }
-
-    combat_unit_image = {
-		# fallback
-        texture = "gfx/unit_illustrations/infantry_eu_mechanized.dds"
-    }
-}
-
 wotw_combat_unit_type_ray_gun_infantry = {
     group = combat_unit_group_infantry
 
@@ -125,6 +74,59 @@ wotw_combat_unit_type_ray_gun_trooper = {
     }
 
 	unlocking_technologies = { wotw_ray_guns_advanced_tech }
+
+    combat_unit_image = {
+        trigger = {
+            has_culture_graphics = east_asian
+        }
+        texture = "gfx/unit_illustrations/infantry_east_asian_mechanized.dds"
+    }
+
+    combat_unit_image = {
+        trigger = {
+            has_culture_graphics = south_asian
+        }
+        texture = "gfx/unit_illustrations/infantry_south_asian_mechanized.dds"
+    }
+
+    combat_unit_image = {
+        trigger = {
+            has_culture_graphics = african
+        }
+        texture = "gfx/unit_illustrations/infantry_african_mechanized.dds"
+    }
+
+    combat_unit_image = {
+        trigger = {
+            has_culture_graphics = arabic
+        }
+        texture = "gfx/unit_illustrations/infantry_arabic_mechanized.dds"
+    }
+
+    combat_unit_image = {
+		# fallback
+        texture = "gfx/unit_illustrations/infantry_eu_mechanized.dds"
+    }
+}
+
+
+
+wotw_combat_unit_type_alien_shock_trooper = {
+    group = combat_unit_group_infantry
+
+    upkeep_modifier = {
+        goods_input_small_arms_add = 5
+        goods_input_ammunition_add = 5
+    }
+
+    battle_modifier = {
+        unit_offense_add = 180
+        unit_defense_add = 160
+        unit_morale_loss_add = 1
+        unit_devastation_mult = 0.1
+    }
+
+	unlocking_technologies = { wotw_ray_guns_alien_tech }
 
     combat_unit_image = {
         trigger = {

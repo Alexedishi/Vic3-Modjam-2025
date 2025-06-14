@@ -11,3 +11,16 @@ wotw_debug.1 = {
 		wotw_spawn_alien_tag = yes
 	}
 }
+
+wotw_debug.2 = {
+	type = country_event
+	placement = ROOT
+
+	hidden = yes
+	
+	immediate = {
+		c:WOTW_ALIEN = {
+			set_variable = wotw_ready_and_prepared_for_total_war
+		}
+	}
+}

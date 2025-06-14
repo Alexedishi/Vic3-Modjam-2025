@@ -1,5 +1,5 @@
 ﻿building_wotw_alien_emporium = {
-	building_group = bg_monuments
+	building_group = bg_manufacturing
 	icon = "gfx/interface/icons/building_icons/building_government_administration.dds"
 
 	expandable = no
