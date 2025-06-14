@@ -41,3 +41,12 @@
  pm_wotw_alien_emporium: "Alien Emporium"
 
  building_wotw_moon_cannon: "Moon Cannon"
+ pmg_wotw_moon_cannon: "Moon Cannon"
+ pm_wotw_moon_cannon: "Moon Cannon"
+
+ building_wotw_ufo_crashsite: "Mysterious Crash Site"
+ pmg_wotw_ufo_crashsite: "Crash Site Research"
+ pm_wotw_ufo_crashsite_basic_research: "Basic Crash Site Research"
+ pm_wotw_ufo_crashsite_materials_focus: "Focus on Materials"
+ pm_wotw_ufo_crashsite_society_focus: "Focus on Traces of Culture"
+ pm_wotw_ufo_crashsite_weapons_focus: "Focus on Weapons"
