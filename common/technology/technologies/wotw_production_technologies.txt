@@ -1,0 +1,23 @@
+﻿##############################
+# WORW SOCIETY TECHNOLOGIES  #
+##############################
+
+#by Lord R
+
+##########################
+
+#Hypersteel
+wotw_hypersteel_tech = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/electric_arc_process.dds"
+	category = society
+	can_research = no
+
+	modifier = {
+		building_steel_mills_throughput_add = 0.5
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
