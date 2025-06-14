@@ -5,6 +5,8 @@
 
 	should_be_pinned_by_default = yes
 
+	scripted_button = wotw_moon_gun_scripted_button
+
 	is_shown_when_inactive = {
 		custom_tooltip = {
 			text = je_wotw_first_contact_complete
@@ -14,8 +16,7 @@
 	}
 
 	possible = {
-		has_variable = wotw_response_var
-		var:wotw_response_var = 1
+		var:wotw_response_var ?= 1
 	}
 
 	complete = {
@@ -25,10 +26,41 @@
 		has_technology_researched = wotw_xeno_linguistics_tech
 		has_technology_researched = wotw_xeno_cryptography_tech
 		has_technology_researched = wotw_4_dimensional_physics_tech
+		any_scope_building = {
+			is_building_type = building_wotw_moon_cannon
+		}
 	}
 
 	on_complete = {
 	}
 
 	weight = 1000
+}
+
+je_wotw_moon_cannon = {
+	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
+
+	group = je_group_crises
+
+	scripted_progress_bar = wotw_moon_cannon_progressbar
+
+	should_be_pinned_by_default = yes
+
+	complete = {
+		custom_tooltip = {
+			text = je_wotw_moon_cannon_success
+			scope:journal_entry = {
+				"scripted_bar_progress(wotw_moon_cannon_progressbar)" >= 100
+			}
+		}
+	}
+
+	on_complete = {
+#		trigger_event = {
+#			id = wotw_thinkers.1
+#			popup = yes
+#		}
+	}
+
+	weight = 500
 }

@@ -125,3 +125,30 @@ wotw_start_crash_site_investigation = {
 		}
 	}
 }
+
+### Moon Gun ###
+wotw_moon_gun_scripted_button = {
+	name = wotw_moon_gun_scripted_button
+	desc = wotw_moon_gun_scripted_button_desc
+
+	visible = {
+		NOR = {
+			has_journal_entry = je_wotw_moon_cannon
+			any_scope_building = {
+				is_building_type = building_wotw_moon_cannon
+			}
+		}
+	}
+
+	possible = {
+		has_technology_researched = wotw_hypersteel_tech
+		has_technology_researched = wotw_4_dimensional_chemistry_tech
+		has_technology_researched = wotw_xeno_cryptography_tech
+	}
+
+	effect = {
+		add_journal_entry = {
+			type = je_wotw_moon_cannon
+		}
+	}
+}
