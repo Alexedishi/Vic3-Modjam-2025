@@ -91,6 +91,7 @@
 	}
 }
 
+### Moon Cannon ###
 pm_wotw_moon_cannon = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
@@ -100,3 +101,66 @@ pm_wotw_moon_cannon = {
 		}
 	}
 }
+
+### UFO Crashsite
+pm_wotw_ufo_crashsite_basic_research = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+
+	country_modifiers = {
+		unscaled = {
+			country_weekly_innovation_add = 2
+		}
+	}
+}
+
+pm_wotw_ufo_crashsite_materials_focus = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+	
+	unlocking_technologies = {
+#		Maybe add a technology here
+	}
+
+	country_modifiers = {
+		unscaled = {
+			country_weekly_innovation_add = 2
+			country_production_tech_research_speed_mult = 0.05
+		}
+	}
+}
+
+pm_wotw_ufo_crashsite_society_focus = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+	
+	unlocking_technologies = {
+#		Maybe add a technology here
+	}
+
+	country_modifiers = {
+		unscaled = {
+			country_weekly_innovation_add = 2
+			country_society_tech_research_speed_mult = 0.05
+		}
+	}
+}
+
+pm_wotw_ufo_crashsite_weapons_focus = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+	
+	unlocking_technologies = {
+#		Maybe add a technology here
+	}
+
+	country_modifiers = {
+		unscaled = {
+			country_weekly_innovation_add = 2
+			country_military_tech_research_speed_mult = 0.05
+		}
+	}
+
+	state_modifiers = {
+		unscaled = {
+			state_mortality_mult = 0.1
+		}
+	}
+}
+

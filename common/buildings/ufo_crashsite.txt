@@ -1,29 +1,26 @@
-﻿#########################
-# MOON CANNON BUILDING  #
-#########################
+﻿###########################
+# UFO CRASHSITE BUILDING  #
+###########################
 
 #by Lord R
 
 ##########################
 
-#Moon Cannon
+#UFO Crash Site
 
-building_wotw_moon_cannon = {
+building_wotw_ufo_crashsite = {
 	building_group = bg_monuments
 	icon = "gfx/interface/icons/building_icons/wotw_moon_cannon.dds"
-	city_type = city
-	levels_per_mesh = 1
+
 	expandable = no
 	downsizeable = no
 
 	production_method_groups = {
-		pmg_wotw_moon_cannon
+		pmg_wotw_ufo_crashsite
 	}
 
 	potential = {
-		owner = {
-			is_player = yes
-		}
+		has_variable = wotw_ufo_crash_site_var
 	}
 
 	can_build_government = {
@@ -33,7 +30,7 @@ building_wotw_moon_cannon = {
 		always = no
 	}
 
-	required_construction = construction_cost_high
+	required_construction = construction_cost_medium
 
 	ownership_type = no_ownership
 
