@@ -6,7 +6,7 @@
 
 ##########################
 
-#Opera House
+#Moon Cannon
 
 building_wotw_moon_cannon = {
 	building_group = bg_monuments
