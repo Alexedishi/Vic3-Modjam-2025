@@ -1,3 +1,14 @@
+wotw_spawn_alien_tag_if_not_spawned = {
+	if = {
+		limit = {
+			NOT = {
+				exists = c:WOTW_ALIEN
+			}
+		}
+		wotw_spawn_alien_tag = yes
+	}
+}
+
 wotw_spawn_alien_tag = {
 	s:STATE_FORMOSA = {
 		random_scope_state = {
