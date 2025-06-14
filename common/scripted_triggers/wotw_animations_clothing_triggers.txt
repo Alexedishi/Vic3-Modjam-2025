@@ -1,0 +1,19 @@
+﻿#### SPECIAL UNIT OFFICER CHECK
+
+
+ wotw_is_alien_pop_or_character_triggers = {
+	OR = {
+		AND = {
+			exists = scope:pop
+			scope:pop ?= {
+    			has_pop_culture = wotw_nebulons_culture
+			}
+		}
+		AND = {
+			exists = scope:character
+			scope:character ?= {
+    		    has_culture = cu:wotw_nebulons_culture
+			}
+		}
+	}
+}

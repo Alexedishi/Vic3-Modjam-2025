@@ -1,49 +1,123 @@
 ﻿je_wotw_the_warlikes_path = {
 	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
 
-	 group = je_group_crises
+	group = je_group_crises
 
-	 should_be_pinned_by_default = yes
+	should_be_pinned_by_default = yes
 
-	 is_shown_when_inactive = {
-	 	custom_tooltip = {
+	is_shown_when_inactive = {
+		custom_tooltip = {
 			text = je_wotw_first_contact_complete
 			has_variable = wotw_local_aliens_var
 			var:wotw_local_aliens_var >= 10
 		}
-	 }
+	}
 
-	 possible = {
-		 has_variable = wotw_response_var
-		 var:wotw_response_var = 3
-	 }
+	possible = {
+		has_variable = wotw_response_var
+		var:wotw_response_var = 3
+	}
 
-	 immediate = {
-		 trigger_event = {
-			 id = wotw_warlikes.1
-		 }
-	 }
+	immediate = {
+		trigger_event = {
+			id = wotw_warlikes.1
+		}
+	}
 
-	 complete = {
-		 custom_tooltip = {
-			 text = je_wotw_the_warlikes_path_complete
-			 NOT = {
-				 exists = c:WOTW_ALIEN
-			 }
-		 }
-	 }
+	scripted_button = wotw_launch_raid_button
 
-	 on_complete = {
-	 }
+	complete = {
+		custom_tooltip = {
+			text = je_wotw_the_warlikes_path_complete
+			NOT = {
+				exists = c:WOTW_ALIEN
+			}
+		}
+	}
 
-	 invalid = {
-		 custom_tooltip = {
-			 text = je_wotw_aliens_invalid
-			 has_global_variable = wotw_aliens_whacked
-		 }
-	 }
+	on_complete = {
+	}
 
-	 on_invalid = {
-	 }
+	invalid = {
+		custom_tooltip = {
+			text = je_wotw_aliens_invalid
+			has_global_variable = wotw_aliens_whacked
+		}
+	}
+
+	on_invalid = {
+	}
+
+}
+
+je_wotw_alien_raid = {
+	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
+
+	group = je_group_crises
+
+	should_be_pinned_by_default = yes
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					has_variable = wotw_alien_raid_var
+				}
+			}
+			set_variable = {
+				name = wotw_alien_raid_var
+				value = 0
+			}
+		}
+	}
+
+	complete = {
+		custom_tooltip = {
+			text = je_wotw_alien_raid_complete
+			var:wotw_alien_raid_var >= 1000
+		}
+	}
+
+	on_complete = {
+		remove_variable = wotw_alien_raid_var
+	}
+
+	fail = {
+		NOT = {
+			any_military_formation = {
+				has_mobilization_option = mobilization_option:mobilization_option_alien_raiding
+			}
+		}
+	}
+
+	invalid = {
+		custom_tooltip = {
+			text = je_wotw_aliens_invalid
+			has_global_variable = wotw_aliens_whacked
+		}
+	}
+
+	on_invalid = {
+		remove_variable = wotw_alien_raid_var
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			change_variable = {
+				name = wotw_alien_raid_var
+				value = wotw_alien_raid_value
+			}
+		}
+	}
+
+	current_value = {
+		value = var:wotw_alien_raid_value
+	}
+
+	goal_add_value = {
+		value = 1000
+	}
+
+	progressbar = yes
 
 }

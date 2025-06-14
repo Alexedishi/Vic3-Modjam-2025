@@ -319,12 +319,18 @@
                 template = stubble_low
                 range = { 0 0 } # For the randomness to work correctly
             }
+            #Making sure it stays to the normal body type
+            morph = {
+                mode = replace
+                gene = gene_bs_body_type
+                value = 0
+            } 
         }
 
         weight = {
             base = 0
             modifier = {
-                add = 100
+                add = 1000
 
                 OR = {
                     scope:character ?= {

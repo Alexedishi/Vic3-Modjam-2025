@@ -1,0 +1,23 @@
+﻿mobilization_option_alien_raiding = {
+	texture = "gfx/interface/icons/mobilization_options/basic_supplies.dds"
+	possible = {
+		has_journal_entry = je_wotw_the_warlikes_path
+	}
+	upkeep_modifier = {
+		# empty on purpose
+	}
+	upkeep_modifier_unscaled = {
+		# empty on purpose
+	}
+
+	unit_modifier = {
+		unit_morale_loss_mult = -0.10
+		unit_offense_mult = -0.5
+		unit_defense_mult = -0.5
+	}
+	ai_weight = {
+		value = 0
+	}
+
+	group = alien_raiding
+}

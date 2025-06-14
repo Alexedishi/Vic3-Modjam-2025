@@ -1,0 +1,9 @@
+﻿wotw_alien_raid_value = {
+	value = 0
+	every_military_formation = {
+		limit = {
+			has_mobilization_option = mobilization_option:mobilization_option_alien_raiding
+		}
+		add = num_units
+	}
+}

@@ -33,6 +33,28 @@
 
 }
 
+wotw_launch_raid_button = {
+	name = wotw_launch_raid_button
+	desc = wotw_launch_raid_button_desc
+
+	possible = {
+		NOT = {
+			has_journal_entry = je_wotw_alien_raid
+		}
+		any_military_formation = {
+			has_mobilization_option = mobilization_option:mobilization_option_alien_raiding
+		}
+	}
+
+	effect = {
+		add_journal_entry = {
+			type = je_wotw_alien_raid
+		}
+		custom_tooltip = wotw_launch_raid_warning
+	}
+
+}
+
 wotw_organize_a_congress = {
 	name = wotw_organize_a_congress
 	desc = wotw_organize_a_congress_desc

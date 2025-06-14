@@ -1,0 +1,33 @@
+﻿special_genes = {
+	accessory_genes = {
+
+		wotw_props = {
+			inheritable = no
+
+			wotw_no_props = {
+				index = 0
+				male = {
+					1 = empty
+				}		   
+				female = {
+					1 = empty
+				}
+				boy = male
+				girl = female
+			}
+
+			wotw_ray_gun = {
+				index = 1
+				male = {
+					1 = wotw_alien_ray_gun
+				}		   
+				female = {
+					1 = wotw_alien_ray_gun_f
+				}
+				boy = male
+				girl = female
+			}
+		}
+
+	}
+}
