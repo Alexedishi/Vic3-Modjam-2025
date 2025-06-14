@@ -1,0 +1,75 @@
+﻿je_wotw_the_thinkers = {
+	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
+
+	group = je_group_crises
+
+	should_be_pinned_by_default = yes
+
+	scripted_button = wotw_start_crash_site_investigation
+
+	is_shown_when_inactive = {
+		custom_tooltip = {
+			text = je_wotw_first_contact_complete
+			has_variable = wotw_local_aliens_var
+			var:wotw_local_aliens_var >= 10
+		}
+	}
+
+	possible = {
+		always = yes
+	}
+
+	complete = {
+	}
+
+	on_complete = {
+	}
+
+	weight = 1000
+}
+
+je_wotw_ufo_crash_site_expedition = {
+	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
+
+	group = je_group_crises
+
+	scripted_progress_bar = wotw_ufo_crash_site_progressbar
+
+	should_be_pinned_by_default = yes
+
+	complete = {
+		custom_tooltip = {
+			text = je_wotw_ufo_crash_site_expedition_success
+			scope:journal_entry = {
+				"scripted_bar_progress(wotw_ufo_crash_site_progressbar)" >= 100
+			}
+		}
+	}
+
+	on_complete = {
+		random_list = {
+			1 = {
+				trigger = {
+					NOT = { has_technology_researched = wotw_hypersteel_tech }
+				}
+				add_technology_researched = wotw_hypersteel_tech
+			}
+			1 = {
+				trigger = {
+					NOT = { has_technology_researched = wotw_ray_guns_basic_tech }
+				}
+				add_technology_researched = wotw_ray_guns_basic_tech
+			}
+			1 = {
+				trigger = {
+					has_technology_researched = wotw_ray_guns_basic_tech
+					NOT = { has_technology_researched = wotw_ray_guns_advanced_tech }
+				}
+				add_technology_researched = wotw_ray_guns_advanced_tech
+			}
+		}
+	}
+
+	weight = 1000
+}
+

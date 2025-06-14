@@ -172,6 +172,13 @@ je_wotw_the_alien_menace = {
 		}
 	}
 
+	on_yearly_pulse = {
+		random_events = {
+			1 = wotw_crash_sites.1
+			2 = 0
+		}
+	}
+
 	on_monthly_pulse = {
 		random_events = {
 			chance_of_no_event = 50

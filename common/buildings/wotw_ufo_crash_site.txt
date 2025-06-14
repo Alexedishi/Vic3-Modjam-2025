@@ -11,6 +11,7 @@
 building_wotw_ufo_crash_site = {
 	building_group = bg_monuments
 	icon = "gfx/interface/icons/building_icons/wotw_moon_cannon.dds"
+	city_type = farm
 
 	expandable = no
 	downsizeable = no

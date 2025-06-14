@@ -1,0 +1,34 @@
+pdxmesh = {
+	name = "wotw_ufo_crash_site_mesh"
+	file = "wotw_ufo_crash_site.mesh"
+
+	scale = 1
+
+	meshsettings = {
+		name = "wotw_crash_siteShape"
+		index = 0
+		texture_diffuse = "wotw_ufo_crash_site_diffuse.dds"
+		texture_normal = "wotw_ufo_crash_site_normal.dds"
+		texture_specular = "wotw_ufo_crash_site_properties.dds"
+		shader = "standard"
+		additional_shader_defines = { "PDX_MESH_SNAP_VERTICES_TO_TERRAIN" "EMISSIVE_NIGHT" "EMISSIVE_NIGHT_RANDOM" }
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+	meshsettings = {
+		name = "wotw_ufoShape"
+		index = 0
+		texture_diffuse = "wotw_ufo_diffuse.dds"
+		texture_normal = "wotw_ufo_normal.dds"
+		texture_specular = "wotw_ufo_properties.dds"
+		shader = "standard"
+		additional_shader_defines = { "PDX_MESH_SNAP_VERTICES_TO_TERRAIN" "EMISSIVE_NIGHT" "EMISSIVE_NIGHT_RANDOM" }
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+}
+
+entity = {
+	name = "building_wotw_ufo_crash_site_entity"
+	pdxmesh = "wotw_ufo_crash_site_mesh"
+}

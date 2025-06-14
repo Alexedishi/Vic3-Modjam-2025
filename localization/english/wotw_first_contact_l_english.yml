@@ -31,7 +31,7 @@
  wotw_first_contact.4.d: "A mysterious scene played out in [SCOPE.sState('wotw_sighting_state').GetName] where an abandoned riverboat was found which had left port the evening prior. Villagers have reported sighting a dark figure in the waters."
  wotw_first_contact.4.f: "It was the small steamer #italic Rita#! that was found beached on a shore. Only a single mauled body was found with the deck with the slight smell of spent gunpowder."
  wotw_first_contact.4.a: "Disturbing circumstances."
- wotw_first_contact.5.t: "The Gentleman of [SCOPE.sState('wotw_sighting_state').GetCityHubName)]"
+ wotw_first_contact.5.t: "The Gentleman of [SCOPE.sState('wotw_sighting_state').GetCityHubName]"
  wotw_first_contact.5.d: "Disturbing stories of disappearances have spread across [SCOPE.sState('wotw_sighting_state').GetName)]."
  wotw_first_contact.5.f: "Alleged "survivors" of these incidents have been clearly traumatized by the experience, raving about "monsters" and "aliens." Initial interviews have provided little clarity."
  wotw_first_contact.5.a: "Just another urban killer..."

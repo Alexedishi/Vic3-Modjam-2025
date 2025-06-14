@@ -2,7 +2,7 @@
 
 ### A Mysterious Crash Site ###
 wotw_crash_sites.1 = {
-	type = state_event
+	type = country_event
 	placement = ROOT
 
 	title = wotw_crash_sites.1.t
@@ -10,6 +10,10 @@ wotw_crash_sites.1 = {
 	flavor = wotw_crash_sites.1.f
 
 	duration = 3
+
+	cooldown = {
+		years = 5
+	}
 
 	event_image = {
 		video = "unspecific_devastation"
@@ -20,18 +24,29 @@ wotw_crash_sites.1 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
 	trigger = {
-		NOT = {
-			has_building = building_wotw_ufo_crash_site
+		any_scope_state = {
+			NOT = {
+				has_building = building_wotw_ufo_crash_site
+			}
 		}
 	}
 
 	immediate = {
-		set_variable = wotw_ufo_crash_site_var
-		create_building = {
-			building = building_wotw_ufo_crash_site
-			level = 1
+		random_scope_state = {
+			limit = {
+				NOT = {
+
+					has_building = building_wotw_ufo_crash_site
+				}
+			}
+
+			set_variable = wotw_ufo_crash_site_var
+			create_building = {
+				building = building_wotw_ufo_crash_site
+				level = 1
+			}
+			save_scope_as = crash_site_state
 		}
-		save_scope_as = crash_site_state
 	}
 
 	#We need to investigate it!
@@ -39,16 +54,22 @@ wotw_crash_sites.1 = {
 		name = wotw_crash_sites.1.g
 		default_option = yes
 
-		owner = {
-	#		add_journal_entry = {
-	#			type = je_wotw_crash_site_investigation
-	#		}
+		if = {
+			limit = {
+				NOT = { has_journal_entry = je_wotw_ufo_crash_site_expedition }
+			}
+
+			add_journal_entry = {
+				type = je_wotw_ufo_crash_site_expedition
+			}
 		}
 
 		show_as_tooltip = {
-			create_building = {
-				building = building_wotw_ufo_crash_site
-				level = 1
+			scope:crash_site_state = {
+				create_building = {
+					building = building_wotw_ufo_crash_site
+					level = 1
+				}
 			}
 		}
 	}
@@ -57,29 +78,22 @@ wotw_crash_sites.1 = {
 	option = {
 		name = wotw_crash_sites.1.h
 
-		add_radicals_in_state = {
-			value = 0.01
+		scope:crash_site_state = {
+			add_radicals_in_state = {
+				value = 0.01
+			}
 		}
 
 		show_as_tooltip = {
-			create_building = {
-				building = building_wotw_ufo_crash_site
-				level = 1
+			scope:crash_site_state = {
+				create_building = {
+					building = building_wotw_ufo_crash_site
+					level = 1
+				}
 			}
 		}
 	}
 
 	after = {
-	}
-
-	weight_multiplier = {
-		base = 1
-		modifier = {
-			owner = {
-				is_player = yes
-			}
-
-			factor = 2
-		}
 	}
 }
