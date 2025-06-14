@@ -34,6 +34,10 @@
  je_wotw_moon_cannon_reason: "Our scientists are developing the \"Moon Cannon\". A giant gun that will allow us to find a solution to the delicate situation with the aliens.\n\nThe Cannon will allow us to reach space and enable us to disrupt the Aliens or to work together with them."
  je_wotw_moon_cannon_success: "Project Luna has reached a #V progress of 1000#!"
 
+ je_wotw_the_thinkers: "The Thinkers"
+ je_wotw_the_thinkers_reason: "The Thinkers are a group of Scientists and Engineers that are working on the development of new technologies based on the knowledge we have gained from the Aliens. They are working on a variety of projects, including the Moon Cannon."
+ je_wotw_thinkers_moon_cannon_successful: "Completed the development of the Moon Gun"
+
  je_wotw_ufo_crash_site_expedition: "Crash Site Investigation"
  je_wotw_ufo_crash_site_expedition_reason: "Our Scientists are currently investigating a Mysterious Crash Site in the hopes to discover something."
  je_wotw_ufo_crash_site_expedition_success: "The Expedition has reached a #V progress of 100#!"
@@ -50,3 +54,4 @@
  wotw_start_crash_site_investigation_desc: "Start investigating a Mysterious Crash Site. This will allow you to find exciting new technologies."
  wotw_moon_gun_scripted_button: "Develop a Moon Gun"
  wotw_moon_gun_scripted_button_desc: "Our scientists proposed the creation of a so called \"Moon Gun\" or \"Moon Cannon\", a giant cannon that is able to send a vehicle into space.\nThis would allow us to find solutions to the delicate situation with the aliens. Be it by disrupting them or working together with them."
+
