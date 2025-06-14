@@ -50,16 +50,16 @@ je_wotw_moon_cannon = {
 		custom_tooltip = {
 			text = je_wotw_moon_cannon_success
 			scope:journal_entry = {
-				"scripted_bar_progress(wotw_moon_cannon_progressbar)" >= 100
+				"scripted_bar_progress(wotw_moon_cannon_progressbar)" >= 500
 			}
 		}
 	}
 
 	on_complete = {
-#		trigger_event = {
-#			id = wotw_thinkers.1
-#			popup = yes
-#		}
+		trigger_event = {
+			id = wotw_thinkers.1
+			popup = yes
+		}
 	}
 
 	weight = 500

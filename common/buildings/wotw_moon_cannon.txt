@@ -21,9 +21,7 @@ building_wotw_moon_cannon = {
 	}
 
 	potential = {
-		owner = {
-			is_player = yes
-		}
+		has_variable = building_wotw_moon_cannon_possible_var
 	}
 
 	can_build_government = {

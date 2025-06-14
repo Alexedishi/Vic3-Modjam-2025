@@ -6,6 +6,13 @@
  wotw_crash_sites.1.g: "We need to investigate it!"
  wotw_crash_sites.1.h: "I'm sure it is just a meteorite..."
 
+ wotw_thinkers.1.t: "Project Luna Completed"
+ wotw_thinkers.1.d: "Our Scientists and Engineers have finished development of Project Luna. Now is the time to actually construct the Cannon and to get it ready."
+ wotw_thinkers.1.f: "\"I think we should construct it on top of a mountain to improve its accuracy!\"\n\"Are you an idiot? Do you know how long it would take to get all the materials on top of a mountain?\""
+ wotw_thinkers.1.g: "Our capital, [SCOPE.sState('capital_scope').GetName] is the best site for this!"
+ wotw_thinkers.1.h: "[SCOPE.sState('state_1_scope').GetName] seems to be a good choice"
+ wotw_thinkers.1.i: "I think [SCOPE.sState('state_2_scope').GetName] is an ideal location."
+
 ### Journal Entries
  je_wotw_moon_cannon: "Project Luna"
  je_wotw_moon_cannon_reason: "Our scientists are developing the \"Moon Cannon\". A giant gun that will allow us to find a solution to the delicate situation with the aliens.\n\nThe Cannon will allow us to reach space and enable us to disrupt the Aliens or to work together with them."
