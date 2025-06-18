@@ -59,6 +59,7 @@ wotw_thinkers.1 = {
 	#Build it in our Capital
 	option = {
 		name = wotw_thinkers.1.g
+		default_option = yes
 		
 		capital = {
 			set_variable = building_wotw_moon_cannon_possible_var

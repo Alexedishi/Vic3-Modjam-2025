@@ -320,7 +320,7 @@ wotw_start_total_war = {
 		limit = {
 			is_player = yes
 		}
-		save_scope_as = scope:humanity_center
+		save_scope_as = humanity_center
 	}
 
 	if = {

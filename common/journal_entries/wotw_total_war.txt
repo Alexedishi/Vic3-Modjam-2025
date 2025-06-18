@@ -1,4 +1,4 @@
-je_wotw_total_war = {
+﻿je_wotw_total_war = {
 	icon = "gfx/interface/icons/event_icons/event_tripod.dds"
 
 	group = je_group_crises

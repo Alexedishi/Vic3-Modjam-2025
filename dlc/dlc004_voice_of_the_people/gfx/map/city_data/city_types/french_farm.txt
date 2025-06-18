@@ -1,8 +1,6 @@
 ﻿french_farm = {
 #	graphical_culture = "french"
 	city_type = farm
-	center_building_mesh = "french_farm_centerpiece_01_mesh"
-	center_building_size = { 2 2 }
 	
 	trigger = {
 		any_scope_state = {

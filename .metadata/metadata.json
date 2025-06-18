@@ -3,9 +3,11 @@
   "picture" : "thumbnail.png",
   "id" : "",
   "version" : "1.0",
-  "supported_game_version" : "1.8.*",
+  "supported_game_version" : "1.9.*",
   "short_description" : "",
-  "tags" : [],
+  "tags" : [
+    "1.9"
+  ],
   "relationships" : [
     {
       "rel_type" : "dependency",

@@ -60,7 +60,7 @@
 	complete = {
 		custom_tooltip = {
 			text = je_wotw_the_warlikes_path_complete
-			has_variable = wotw_total_war_victory_var
+			has_global_variable = wotw_aliens_whacked
 		}
 	}
 

@@ -24,6 +24,7 @@
  wotw_thinkers.5.d: "Aliens have landed and taken over Formosa as well as other islands around the world. Their presence and incredible might is felt everywhere. We need to act quickly."
  wotw_thinkers.5.f: "#italic \"They are here! They are here!\"#!"
  wotw_thinkers.5.a: "We can only hope that they are friendly"
+ wotw_thinkers.5.g: "I hope they don't harm us!"
 
  wotw_thinkers.11.t: "A Successfull Mission"
  wotw_thinkers.11.d: "Our Team has returned from their mission. At the same time a huge explosion was visible in the night sky. This will stop the Alien Menace and make our country the leading nation of the world!"
@@ -31,13 +32,10 @@
  wotw_thinkers.11.g: "Huge Success!"
 
 ### Journal Entries
- je_wotw_the_thinkers: "The Thinkers"
- je_wotw_the_thinkers_reason: "The Great Minds of our country think that we could learn a lot from our new alien neighbours.\n\nAnd once we have learnt everything necessary, we can decide how to deal with them."
- wotw_moon_cannon_mission_successful_tt: "You completed Project Luna and sent a mission to Space."
-
  je_wotw_moon_cannon: "Project Luna"
  je_wotw_moon_cannon_reason: "Our scientists are developing the \"Moon Cannon\". A giant gun that will allow us to find a solution to the delicate situation with the aliens.\n\nThe Cannon will allow us to reach space and enable us to disrupt the Aliens or to work together with them."
  je_wotw_moon_cannon_success: "Project Luna has reached a #V progress of 1000#!"
+ wotw_moon_cannon_mission_successful_tt: "You completed Project Luna and sent a mission to Space."
 
  je_wotw_the_thinkers: "The Thinkers"
  je_wotw_the_thinkers_reason: "The Thinkers are a group of Scientists and Engineers that are working on the development of new technologies based on the knowledge we have gained from the Aliens. They are working on a variety of projects, including the Moon Cannon."

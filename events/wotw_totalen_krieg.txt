@@ -1,4 +1,4 @@
-namespace = wotw_totalen_krieg
+﻿namespace = wotw_totalen_krieg
 
 # war begins
 wotw_totalen_krieg.1 = {
@@ -118,7 +118,7 @@ wotw_totalen_krieg.3 = {
 					is_country_type = decentralized
 				}
 			}
-			save_scope_as = scope:human_remnant
+			save_scope_as = human_remnant
 			c:WOTW_ALIEN = {
 				annex_with_incorporation = scope:human_remnant
 			}
