@@ -1,8 +1,9 @@
 ﻿wotw_spawn_alien_tag_if_not_spawned = {
 	if = {
 		limit = {
-			NOT = {
+			NOR = {
 				exists = c:WOTW_ALIEN
+				has_global_variable = wotw_aliens_have_arrived
 			}
 		}
 		wotw_spawn_alien_tag = yes
@@ -10,6 +11,8 @@
 }
 
 wotw_spawn_alien_tag = {
+	set_global_variable = wotw_aliens_have_arrived
+
 	s:STATE_FORMOSA = {
 		random_scope_state = {
 			wotw_move_all_pops_to_capital = yes
